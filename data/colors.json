@@ -1,0 +1,14 @@
+[
+  { "slug": "d", "grade": "D", "label": "Incolore (D)", "category": "incolore" },
+  { "slug": "e", "grade": "E", "label": "Incolore (E)", "category": "incolore" },
+  { "slug": "f", "grade": "F", "label": "Incolore (F)", "category": "incolore" },
+  { "slug": "g", "grade": "G", "label": "Quasi incolore (G)", "category": "quasi-incolore" },
+  { "slug": "h", "grade": "H", "label": "Quasi incolore (H)", "category": "quasi-incolore" },
+  { "slug": "i", "grade": "I", "label": "Quasi incolore (I)", "category": "quasi-incolore" },
+  { "slug": "j", "grade": "J", "label": "Quasi incolore (J)", "category": "quasi-incolore" },
+  { "slug": "k", "grade": "K", "label": "Légèrement teinté (K)", "category": "teinte-legere" },
+  { "slug": "fancy-jaune", "grade": "Fancy", "label": "Fancy jaune", "category": "fancy" },
+  { "slug": "fancy-rose", "grade": "Fancy", "label": "Fancy rose", "category": "fancy" },
+  { "slug": "fancy-bleu", "grade": "Fancy", "label": "Fancy bleu", "category": "fancy" },
+  { "slug": "fancy-champagne", "grade": "Fancy", "label": "Fancy champagne", "category": "fancy" }
+]

@@ -1,0 +1,13 @@
+[
+  { "value": 0.1, "label": "0,10 ct", "threshold_effect": false },
+  { "value": 0.25, "label": "0,25 ct", "threshold_effect": false },
+  { "value": 0.3, "label": "0,30 ct", "threshold_effect": false },
+  { "value": 0.5, "label": "0,50 ct", "threshold_effect": true, "note": "Palier psychologique : le prix au carat bondit nettement au-dessus de 0,50 ct." },
+  { "value": 0.7, "label": "0,70 ct", "threshold_effect": false },
+  { "value": 0.9, "label": "0,90 ct", "threshold_effect": true, "note": "Juste sous la barre du carat : souvent recherché pour son rapport prix/taille apparente." },
+  { "value": 1.0, "label": "1,00 ct", "threshold_effect": true, "note": "Le palier le plus recherché commercialement — plus forte demande de recherche et plus forte prime au carat." },
+  { "value": 1.5, "label": "1,50 ct", "threshold_effect": false },
+  { "value": 2.0, "label": "2,00 ct", "threshold_effect": true, "note": "Deuxième palier majeur, prime marquée au-delà de 2 ct." },
+  { "value": 3.0, "label": "3,00 ct", "threshold_effect": false },
+  { "value": 5.0, "label": "5,00 ct", "threshold_effect": false }
+]

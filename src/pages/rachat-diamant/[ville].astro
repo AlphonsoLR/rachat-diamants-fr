@@ -1,0 +1,351 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GeoBar from '../../components/GeoBar.astro';
+import BottomLine from '../../components/BottomLine.astro';
+import PriceTable from '../../components/PriceTable.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import ColorScale from '../../components/ColorScale.astro';
+import ClarityScale from '../../components/ClarityScale.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import cities from '../../../data/cities.json';
+import shapes from '../../../data/shapes.json';
+import carats from '../../../data/carats.json';
+import pricingMatrix from '../../../data/pricing-matrix.json';
+import { estimate, formatRange } from '../../lib/pricing';
+
+export function getStaticPaths() {
+  // Tier 1 uniquement pour cette première passe (30 villes) — cf. jalon L2 du brief.
+  return cities
+    .filter((c) => c.tier === 1)
+    .map((city) => ({ params: { ville: city.slug }, props: { city } }));
+}
+
+const { city } = Astro.props;
+const pageUrl = `https://rachat-diamants.fr/rachat-diamant/${city.slug}/`;
+const tier1Slugs = new Set(cities.filter((c) => c.tier === 1).map((c) => c.slug));
+
+const priceRows = carats
+  .filter((c) => [0.5, 1.0, 1.5, 2.0, 3.0].includes(c.value))
+  .map((c) => {
+    const est = estimate({ carat: c.value, colorSlug: 'g', claritySlug: 'vs1', cutSlug: 'excellent' });
+    return {
+      carat: c.label,
+      retail: formatRange(est.retail),
+      rachat: formatRange(est.rachat),
+      delai: '48 h',
+    };
+  });
+
+const oneCaratEstimate = estimate({ carat: 1.0, colorSlug: 'g', claritySlug: 'vs1', cutSlug: 'excellent' });
+const oneCaratRachatRange = formatRange(oneCaratEstimate.rachat);
+
+const faqItems = [
+  { q: `Combien vaut mon diamant à ${city.name} ?`, a: `Le calcul dépend du carat, de la couleur, de la pureté et de la taille. Utilisez notre estimation gratuite pour une fourchette personnalisée.` },
+  { q: `Où faire estimer un diamant à ${city.name} ?`, a: `Aucun comptoir n'est encore recensé précisément pour ${city.name} sur ce site — nous ne citons pas d'enseigne tant qu'elle n'a pas été vérifiée individuellement.` },
+  { q: 'Faut-il un certificat pour vendre son diamant ?', a: "Un certificat (GIA, HRD, IGI) n'est pas obligatoire mais augmente sensiblement la confiance de l'acheteur et donc le prix proposé." },
+  { q: 'Quelle fiscalité sur la vente d\'un diamant en France ?', a: "Une taxe forfaitaire ou un régime de plus-value optionnel peuvent s'appliquer selon les cas — voir notre guide fiscalité (chiffres à confirmer auprès d'un professionnel)." },
+  { q: 'Un diamant de synthèse a-t-il une valeur de rachat ?', a: "Oui, mais nettement inférieure à un diamant naturel équivalent — voir notre page dédiée naturel/synthèse." },
+  { q: `Combien de temps prend un rachat depuis ${city.name} ?`, a: 'Le délai indicatif est de 48 heures après réception et validation du diamant, sous réserve de vérification.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://rachat-diamants.fr/' },
+    { '@type': 'ListItem', position: 2, name: 'Rachat de diamant', item: 'https://rachat-diamants.fr/rachat-diamant/' },
+    { '@type': 'ListItem', position: 3, name: city.region.name, item: `https://rachat-diamants.fr/rachat-diamant/region/${city.region.slug}/` },
+    { '@type': 'ListItem', position: 4, name: city.name, item: pageUrl },
+  ],
+};
+---
+
+<BaseLayout
+  title={`Rachat de diamant à ${city.name} — Prix, barème & estimation gratuite`}
+  description={`Combien vaut votre diamant à ${city.name} (${city.department.name}) ? Barème de rachat par carat, couleur et pureté. Estimation gratuite sous 24 h, sans engagement.`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <div class="wrap page-head">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a> › <a href="/rachat-diamant/">Rachat de diamant</a> ›
+      {city.region.name} › {city.name}
+    </nav>
+    <h1>Rachat, achat et vente de diamants à {city.name}</h1>
+    <p class="authority">Barème révisé le {pricingMatrix.last_review} · Lecture 6 min</p>
+    <p class="chapo">
+      À {city.name} ({city.department.name}), la valeur de rachat d'un diamant dépend d'abord de
+      son certificat, puis de ses 4C. Voici nos fourchettes de référence et la méthode complète.
+    </p>
+    <div class="cta-row">
+      <a class="btn" href="/estimation/">Estimer mon diamant</a>
+      <a class="btn btn-ghost" href="#bareme">Voir le barème</a>
+    </div>
+
+    <GeoBar pageUrl={pageUrl} mdUrl={`${pageUrl}.md`} />
+
+    <div class="en-bref">
+      <span class="label">En bref</span>
+      <ul>
+        <li>Un diamant 1 carat G/VS1 se rachète indicativement entre <strong>{oneCaratRachatRange}</strong> à {city.name}.</li>
+        <li>{city.population.toLocaleString('fr-FR')} habitants à {city.name} ({city.department.name}, {city.region.name}).</li>
+        <li>Aucun comptoir partenaire recensé pour l'instant à {city.name} — liste en cours de constitution.</li>
+        <li>Délai indicatif de rachat : 48 h après réception et vérification du diamant.</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="bareme">
+    <div class="wrap">
+      <h2>Barème de rachat à {city.name}</h2>
+      <p>Fourchettes en qualité de référence G / VS1 / taille Excellent.</p>
+      <PriceTable rows={priceRows} />
+      <p class="disclaimer-inline">
+        Fourchettes indicatives calculées à partir d'un barème d'exemple non encore validé par un
+        expert métier — à ne pas utiliser en production.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Formes</h2>
+      <div class="grid grid-5">
+        {shapes.slice(0, 10).map((s) => (
+          <ProductCard href={`/diamant/forme/${s.slug}/`} title={s.name} shape={s.slug} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Couleur &amp; pureté</h2>
+      <h3>Échelle de couleur (D → K)</h3>
+      <ColorScale highlight="g" />
+      <h3>Échelle de pureté (IF → SI2)</h3>
+      <ClarityScale highlight="vs1" />
+
+      <BottomLine>
+        À {city.name}, la valeur de rachat dépend d'abord du certificat, puis du couple
+        couleur/pureté : un diamant G/VS1 certifié GIA se rachète nettement au-dessus d'une pierre
+        équivalente sans certificat.
+      </BottomLine>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap two-col">
+      <div>
+        <h2>Vendre à {city.name}</h2>
+        <ol>
+          <li>Estimation en ligne gratuite (photos + caractéristiques connues)</li>
+          <li>Envoi assuré ou rendez-vous en agence partenaire</li>
+          <li>Examen physique et confirmation du prix</li>
+          <li>Paiement sous 48 h après accord</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Acheter à {city.name}</h2>
+        <p>
+          Un diamant certifié GIA, HRD ou IGI, accompagné d'une garantie de rachat, reste le choix
+          le plus sûr pour un premier achat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Naturel ou synthèse ?</h2>
+      <p>
+        Un diamant de synthèse a une valeur de rachat très inférieure à un diamant naturel
+        équivalent. <a href="/diamant-synthese-lab-grown/">Voir notre page dédiée →</a>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Experts &amp; comptoirs à {city.name}</h2>
+      <p class="disclaimer-inline">
+        Aucun comptoir n'est encore recensé individuellement pour {city.name}. Nous ne citons pas
+        d'enseigne tant qu'elle n'a pas été vérifiée (liste indicative, sans classement, à venir).
+      </p>
+
+      <h3>Ce qu'il faut vérifier avant de vendre</h3>
+      <ul>
+        <li>Certificat GIA, HRD ou IGI si disponible</li>
+        <li>Un second avis avant d'accepter une offre</li>
+        <li>Le poids ne fait pas la valeur — couleur et pureté comptent autant</li>
+        <li>L'inscription laser du diamant, si certifié</li>
+        <li>Un écrit détaillé avant toute remise de la pierre</li>
+      </ul>
+
+      <BottomLine>
+        À {city.name}, comme partout en France, obtenir un second avis avant de vendre reste la
+        meilleure protection contre une offre en dessous du marché.
+      </BottomLine>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Questions fréquentes</h2>
+      {faqItems.map((item) => (
+        <details class="faq-item">
+          <summary>{item.q}</summary>
+          <p>{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Autour de {city.name}</h2>
+      <p>
+        Département : {city.department.name} · Région : {city.region.name}
+        <span class="disclaimer-inline"> (pages département/région à venir)</span>
+      </p>
+      <div class="grid grid-4">
+        {city.nearby_cities.map((n) =>
+          tier1Slugs.has(n.slug) ? (
+            <a class="city-link" href={`/rachat-diamant/${n.slug}/`}>{n.name} <span>{n.km} km</span></a>
+          ) : (
+            <span class="city-link soon">{n.name} <span>{n.km} km</span></span>
+          )
+        )}
+      </div>
+
+      <AuthorBox />
+
+      <p class="disclaimer-inline">
+        Fourchettes indicatives, ni offre ferme ni conseil en investissement. Prix ferme
+        uniquement après examen physique du diamant.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding-top: 2.5rem;
+  }
+  .breadcrumb {
+    font-size: 0.78rem;
+    color: var(--gris-sourd);
+    margin-bottom: 1.5rem;
+  }
+  .breadcrumb a {
+    color: var(--gris-sourd);
+    border-bottom: none;
+  }
+  .authority {
+    font-size: 0.78rem;
+    color: var(--gris-fume);
+    margin: 0.8rem 0 1.2rem;
+  }
+  .chapo {
+    font-size: 1.05rem;
+    max-width: 60ch;
+  }
+  .cta-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+  }
+  .en-bref {
+    background: var(--noir-carbone);
+    border: 1px solid var(--filet);
+    padding: 1.4rem 1.6rem;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .en-bref .label {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+  .en-bref ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+  .en-bref li {
+    color: var(--eclat);
+    font-size: 0.92rem;
+    margin-bottom: 0.4rem;
+  }
+  .disclaimer-inline {
+    font-size: 0.78rem;
+    color: var(--gris-sourd);
+    max-width: var(--mesure);
+  }
+  .grid {
+    display: grid;
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+    margin: 1rem 0;
+  }
+  .grid-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .city-link {
+    display: block;
+    background: var(--noir-carbone);
+    padding: 0.9rem 1rem;
+    color: var(--platine);
+    border-bottom: none;
+    font-size: 0.85rem;
+  }
+  .city-link.soon {
+    color: var(--gris-sourd);
+  }
+  .city-link span {
+    display: block;
+    color: var(--gris-sourd);
+    font-size: 0.72rem;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--filet);
+    padding: 1rem 0;
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-family: var(--font-heading);
+    color: var(--eclat);
+    font-size: 1rem;
+  }
+  .faq-item p {
+    margin: 0.8rem 0 0;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 900px) {
+    .grid-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+</style>

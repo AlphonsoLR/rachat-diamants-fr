@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import cities from '../../../data/cities.json';
+
+const t1 = cities.filter((c) => c.tier === 1);
+const t2 = cities.filter((c) => c.tier === 2);
+
+// Regroupement région → villes, pour un maillage en 2 clics max (brief §12)
+function groupByRegion(list: typeof cities) {
+  const map = new Map<string, typeof cities>();
+  for (const c of list) {
+    const key = c.region.name;
+    if (!map.has(key)) map.set(key, []);
+    map.get(key)!.push(c);
+  }
+  return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+}
+
+const regions = groupByRegion(cities);
+---
+
+<BaseLayout
+  title="Rachat de diamant par ville"
+  description="Toutes les villes couvertes pour l'estimation et le rachat de diamants en France."
+>
+  <div class="wrap page-head">
+    <h1>Rachat de diamant par ville</h1>
+    <p class="chapo">
+      {t1.length} métropoles en couverture complète, {t2.length} villes supplémentaires en cours
+      d'enrichissement. Objectif final : 1 000 villes (cf. phasage T1/T2/T3).
+    </p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      {regions.map(([region, list]) => (
+        <details class="region-block">
+          <summary>{region} <span>({list.length})</span></summary>
+          <div class="grid">
+            {list.map((c) =>
+              c.tier === 1 ? (
+                <a href={`/rachat-diamant/${c.slug}/`}>{c.name}</a>
+              ) : (
+                <span class="soon" title="Page en préparation (tier 2)">{c.name}</span>
+              )
+            )}
+          </div>
+        </details>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding-top: 2.5rem;
+  }
+  .chapo {
+    max-width: 60ch;
+  }
+  .region-block {
+    border-bottom: 1px solid var(--filet);
+    padding: 1rem 0;
+  }
+  .region-block summary {
+    cursor: pointer;
+    font-family: var(--font-heading);
+    color: var(--eclat);
+    font-size: 1.1rem;
+  }
+  .region-block summary span {
+    color: var(--gris-sourd);
+    font-size: 0.8rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+  .grid a {
+    font-size: 0.85rem;
+    border-bottom: none;
+  }
+  .grid .soon {
+    font-size: 0.85rem;
+    color: var(--gris-sourd);
+  }
+</style>

@@ -1,0 +1,55 @@
+---
+import colors from '../../data/colors.json';
+import pricing from '../../data/pricing-matrix.json';
+
+interface Props {
+  highlight?: string;
+}
+const { highlight } = Astro.props;
+const scale = colors.filter((c) => c.category !== 'fancy');
+---
+
+<div class="scale">
+  {scale.map((c) => {
+    const factor = pricing.facteur_couleur[c.slug] ?? 1;
+    return (
+      <div class:list={['step', { active: c.slug === highlight }]}>
+        <span class="grade">{c.grade}</span>
+        <span class="factor">{factor >= 1 ? '+' : ''}{Math.round((factor - 1) * 100)}%</span>
+      </div>
+    );
+  })}
+</div>
+
+<style>
+  .scale {
+    display: flex;
+    border: 1px solid var(--filet);
+    max-width: var(--mesure);
+    margin: 1.4rem 0;
+  }
+  .step {
+    flex: 1;
+    text-align: center;
+    padding: 0.8rem 0.4rem;
+    border-right: 1px solid var(--filet);
+  }
+  .step:last-child {
+    border-right: none;
+  }
+  .step.active {
+    background: rgba(176, 141, 87, 0.12);
+  }
+  .grade {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--eclat);
+  }
+  .factor {
+    display: block;
+    font-size: 0.68rem;
+    color: var(--gris-fume);
+    margin-top: 0.2rem;
+  }
+</style>

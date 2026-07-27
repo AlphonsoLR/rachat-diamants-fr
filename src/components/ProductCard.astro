@@ -1,0 +1,54 @@
+---
+import DiamondShapeIcon from './DiamondShapeIcon.astro';
+
+interface Props {
+  href: string;
+  title: string;
+  subtitle?: string;
+  shape?: string;
+}
+const { href, title, subtitle, shape } = Astro.props;
+---
+
+<a class="product-card" href={href}>
+  {shape && (
+    <div class="icon-wrap">
+      <DiamondShapeIcon shape={shape} size={40} />
+    </div>
+  )}
+  <span class="title">{title}</span>
+  {subtitle && <span class="subtitle">{subtitle}</span>}
+</a>
+
+<style>
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: center;
+    background: var(--noir-carbone);
+    border: 1px solid var(--filet);
+    padding: 1.4rem 1rem;
+    border-bottom: none;
+    transition: border-color 0.2s ease-out;
+  }
+  .product-card:hover {
+    border-color: var(--filet-fort);
+  }
+  .icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+  }
+  .title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: var(--eclat);
+  }
+  .subtitle {
+    font-size: 0.72rem;
+    color: var(--gris-fume);
+  }
+</style>

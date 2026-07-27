@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import pricingMatrix from '../../../data/pricing-matrix.json';
+---
+
+<BaseLayout
+  title="Diamant naturel ou de synthèse : quelle différence de valeur ?"
+  description="La différence de valeur de rachat entre un diamant naturel et un diamant de synthèse (laboratoire)."
+>
+  <div class="wrap page-head">
+    <h1>Diamant naturel ou de synthèse ?</h1>
+    <p class="chapo">
+      Un diamant de synthèse (dit « lab-grown ») a exactement la même composition chimique qu'un
+      diamant naturel — mais une valeur de revente très différente. Nous choisissons de le dire
+      clairement plutôt que de l'atténuer.
+    </p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Pourquoi un tel écart de valeur</h2>
+      <p>
+        Le diamant naturel s'est formé sur des centaines de millions d'années dans le manteau
+        terrestre — sa rareté géologique en fait la base de sa valeur. Le diamant de synthèse est
+        produit en quelques semaines en laboratoire (procédés HPHT ou CVD) : visuellement et
+        chimiquement identique, mais sans cette rareté, ce qui explique un marché de revente
+        beaucoup plus restreint.
+      </p>
+      <div class="note warn">
+        <span class="label">Chiffre d'exemple — non validé</span>
+        <p>
+          Facteur d'écart utilisé à titre indicatif dans notre barème d'exemple :
+          synthèse ≈ {Math.round(pricingMatrix.facteur_origine.synthese * 100)}% de la valeur d'un
+          diamant naturel équivalent. À confirmer avec un expert métier avant publication.
+        </p>
+      </div>
+      <h2>Comment les distinguer</h2>
+      <p>
+        À l'œil nu ou à la loupe, un diamant de synthèse et un diamant naturel sont
+        indiscernables. Seul un laboratoire équipé (spectroscopie, luminescence) peut les
+        différencier avec certitude — d'où l'importance du certificat au moment de la vente.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-top: 2.5rem; }
+  .chapo { max-width: 60ch; }
+</style>

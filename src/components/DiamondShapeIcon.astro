@@ -1,0 +1,52 @@
+---
+// Schéma de taille simplifié, vue de dessus — traits fins platine, pas de photo (cf. brief §16.3)
+interface Props {
+  shape: string;
+  size?: number;
+}
+const { shape, size = 64 } = Astro.props;
+
+const paths: Record<string, string> = {
+  'rond-brillant': '<circle cx="32" cy="32" r="26" /><circle cx="32" cy="32" r="14" />',
+  princesse: '<rect x="8" y="8" width="48" height="48" /><rect x="18" y="18" width="28" height="28" />',
+  ovale: '<ellipse cx="32" cy="32" rx="19" ry="27" /><ellipse cx="32" cy="32" rx="10" ry="17" />',
+  coussin:
+    '<rect x="8" y="8" width="48" height="48" rx="14" /><rect x="19" y="19" width="26" height="26" rx="8" />',
+  emeraude:
+    '<rect x="10" y="6" width="44" height="52" rx="4" /><rect x="18" y="14" width="28" height="36" rx="2" />',
+  poire:
+    '<path d="M32 6 C 46 20, 52 34, 40 46 C 34 54, 26 54, 20 46 C 14 38, 18 20, 32 6 Z" />',
+  radiant:
+    '<rect x="9" y="9" width="46" height="46" rx="3" transform="rotate(0 32 32)" /><rect x="19" y="19" width="26" height="26" />',
+  asscher: '<rect x="10" y="10" width="44" height="44" /><rect x="19" y="19" width="26" height="26" />',
+  marquise:
+    '<path d="M32 4 C 44 16, 50 24, 50 32 C 50 40, 44 48, 32 60 C 20 48, 14 40, 14 32 C 14 24, 20 16, 32 4 Z" />',
+  coeur:
+    '<path d="M32 54 C 10 38, 8 24, 18 16 C 25 10, 32 14, 32 22 C 32 14, 39 10, 46 16 C 56 24, 54 38, 32 54 Z" />',
+};
+
+const svgInner = paths[shape] ?? paths['rond-brillant'];
+---
+
+<svg
+  class="diamond-icon"
+  width={size}
+  height={size}
+  viewBox="0 0 64 64"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  set:html={svgInner}
+/>
+
+<style>
+  .diamond-icon {
+    stroke: var(--platine);
+    stroke-width: 1;
+    transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+  }
+  a:hover > .diamond-icon,
+  .diamond-icon:hover {
+    transform: scale(1.06);
+    opacity: 0.85;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+// Bloc "Bottom line" — affirmation chiffrée, citable verbatim par un LLM (brief §15)
+---
+
+<div class="bottom-line">
+  <span class="mark" aria-hidden="true"></span>
+  <p><slot /></p>
+</div>
+
+<style>
+  .bottom-line {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: var(--noir-carbone);
+    border: 1px solid var(--filet);
+    padding: 1.3rem 1.5rem;
+    margin: 1.8rem 0;
+    max-width: var(--mesure);
+  }
+  .mark {
+    width: 8px;
+    height: 8px;
+    margin-top: 0.5rem;
+    background: var(--accent);
+    transform: rotate(45deg);
+    flex: none;
+  }
+  .bottom-line p {
+    margin: 0;
+    color: var(--eclat);
+    font-size: 0.95rem;
+    max-width: none;
+  }
+</style>

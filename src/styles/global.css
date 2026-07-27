@@ -1,0 +1,220 @@
+/* Design system — rachat-diamants.fr, d'après le brief §16 (registre joaillerie haut de gamme) */
+:root {
+  --noir-profond: #0a0a0c;
+  --noir-carbone: #141418;
+  --noir-surface: #1a1a20;
+  --blanc-diamant: #fafaf8;
+  --gris-fume: #8a8a94;
+  --gris-sourd: #5e5e68;
+  --platine: #c7c9ce;
+  --eclat: #e8eaf0;
+  --accent: #b08d57;
+  --alerte: #c4703f;
+  --filet: rgba(199, 201, 206, 0.15);
+  --filet-fort: rgba(199, 201, 206, 0.28);
+  --mesure: 68ch;
+  --font-heading: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  margin: 0;
+  background: var(--noir-profond);
+  color: var(--blanc-diamant);
+  font-family: var(--font-body);
+  font-size: 16.5px;
+  line-height: 1.72;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  color: var(--eclat);
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6.5vw, 4.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+}
+
+h1 em,
+h2 em {
+  font-style: italic;
+  color: var(--platine);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3.6vw, 2.5rem);
+  line-height: 1.14;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.22rem;
+}
+
+p {
+  max-width: var(--mesure);
+  margin: 0 0 1.1rem;
+  color: var(--platine);
+}
+
+a {
+  color: var(--platine);
+  text-decoration: none;
+  border-bottom: 1px solid var(--filet-fort);
+}
+a:hover {
+  color: var(--eclat);
+}
+
+strong {
+  font-weight: 600;
+  color: var(--eclat);
+}
+
+.eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gris-fume);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+.eyebrow .mark {
+  width: 9px;
+  height: 9px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  flex: none;
+}
+
+.tbl-wrap {
+  overflow-x: auto;
+  margin: 1.6rem 0;
+  border: 1px solid var(--filet);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.63rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gris-fume);
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--filet-fort);
+  background: var(--noir-carbone);
+  white-space: nowrap;
+}
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--filet);
+  vertical-align: top;
+  color: var(--platine);
+}
+tbody tr:nth-child(even) td {
+  background: rgba(199, 201, 206, 0.022);
+}
+td.num,
+th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.note {
+  border-left: 2px solid var(--accent);
+  background: rgba(176, 141, 87, 0.05);
+  padding: 1.1rem 1.4rem;
+  margin: 1.4rem 0;
+  max-width: var(--mesure);
+}
+.note.warn {
+  border-left-color: var(--alerte);
+  background: rgba(196, 112, 63, 0.06);
+}
+.note .label {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.note.warn .label {
+  color: var(--alerte);
+}
+.note p:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: var(--noir-profond);
+  border: none;
+  padding: 0.85rem 1.6rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.92rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-out;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--eclat);
+  border: 1px solid var(--filet-fort);
+}
+
+section {
+  padding: clamp(3rem, 8vw, 7.5rem) 0;
+  border-bottom: 1px solid var(--filet);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

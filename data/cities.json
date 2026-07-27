@@ -1,0 +1,6736 @@
+[
+  {
+    "slug": "paris",
+    "name": "Paris",
+    "insee": "75056",
+    "postal_codes": [
+      "75001",
+      "75002",
+      "75003",
+      "75004",
+      "75005",
+      "75006",
+      "75007",
+      "75008",
+      "75009",
+      "75010",
+      "75011",
+      "75012",
+      "75013",
+      "75014",
+      "75015",
+      "75016",
+      "75017",
+      "75018",
+      "75019",
+      "75020",
+      "75116"
+    ],
+    "population": 2103778,
+    "department": {
+      "code": "75",
+      "name": "Paris",
+      "slug": "paris"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8589,
+    "lng": 2.347,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 5.9
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 5.9
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 5.9
+      },
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 6.5
+      },
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 6.7
+      },
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 7.3
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 7.3
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 7.5
+      }
+    ],
+    "content_seed": 2640
+  },
+  {
+    "slug": "marseille",
+    "name": "Marseille",
+    "insee": "13055",
+    "postal_codes": [
+      "13001",
+      "13002",
+      "13003",
+      "13004",
+      "13005",
+      "13006",
+      "13007",
+      "13008",
+      "13009",
+      "13010",
+      "13011",
+      "13012",
+      "13013",
+      "13014",
+      "13015",
+      "13016"
+    ],
+    "population": 886040,
+    "department": {
+      "code": "13",
+      "name": "Bouches-du-Rhône",
+      "slug": "bouches-du-rhone"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.2803,
+    "lng": 5.3806,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 28.4
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 45.9
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 47.6
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 85.7
+      },
+      {
+        "slug": "nimes",
+        "name": "Nîmes",
+        "km": 103.7
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 115.2
+      },
+      {
+        "slug": "montpellier",
+        "name": "Montpellier",
+        "km": 127
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 135.3
+      }
+    ],
+    "content_seed": 698
+  },
+  {
+    "slug": "lyon",
+    "name": "Lyon",
+    "insee": "69123",
+    "postal_codes": [
+      "69001",
+      "69002",
+      "69003",
+      "69004",
+      "69005",
+      "69006",
+      "69007",
+      "69008",
+      "69009"
+    ],
+    "population": 519127,
+    "department": {
+      "code": "69",
+      "name": "Rhône",
+      "slug": "rhone"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.758,
+    "lng": 4.8351,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 4.5
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 7.2
+      },
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 52
+      },
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 85.5
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 93
+      },
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 93.7
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 101.3
+      },
+      {
+        "slug": "clermont-ferrand",
+        "name": "Clermont-Ferrand",
+        "km": 133.6
+      }
+    ],
+    "content_seed": 881
+  },
+  {
+    "slug": "toulouse",
+    "name": "Toulouse",
+    "insee": "31555",
+    "postal_codes": [
+      "31000",
+      "31100",
+      "31200",
+      "31300",
+      "31400",
+      "31500"
+    ],
+    "population": 514819,
+    "department": {
+      "code": "31",
+      "name": "Haute-Garonne",
+      "slug": "haute-garonne"
+    },
+    "region": {
+      "name": "Occitanie",
+      "slug": "occitanie"
+    },
+    "lat": 43.6007,
+    "lng": 1.4328,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "montauban",
+        "name": "Montauban",
+        "km": 47.1
+      },
+      {
+        "slug": "pau",
+        "name": "Pau",
+        "km": 146.7
+      },
+      {
+        "slug": "beziers",
+        "name": "Béziers",
+        "km": 148
+      },
+      {
+        "slug": "perpignan",
+        "name": "Perpignan",
+        "km": 155.9
+      },
+      {
+        "slug": "montpellier",
+        "name": "Montpellier",
+        "km": 196.6
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 213.3
+      },
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 213.9
+      },
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 217.1
+      }
+    ],
+    "content_seed": 6923
+  },
+  {
+    "slug": "nice",
+    "name": "Nice",
+    "insee": "06088",
+    "postal_codes": [
+      "06000",
+      "06100",
+      "06200",
+      "06300"
+    ],
+    "population": 357737,
+    "department": {
+      "code": "06",
+      "name": "Alpes-Maritimes",
+      "slug": "alpes-maritimes"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.7032,
+    "lng": 7.2528,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 18
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 26
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 46.7
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 123.8
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 130.6
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 151.3
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 158.2
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 195.9
+      }
+    ],
+    "content_seed": 7962
+  },
+  {
+    "slug": "nantes",
+    "name": "Nantes",
+    "insee": "44109",
+    "postal_codes": [
+      "44000",
+      "44100",
+      "44200",
+      "44300"
+    ],
+    "population": 327734,
+    "department": {
+      "code": "44",
+      "name": "Loire-Atlantique",
+      "slug": "loire-atlantique"
+    },
+    "region": {
+      "name": "Pays de la Loire",
+      "slug": "pays-de-la-loire"
+    },
+    "lat": 47.2382,
+    "lng": -1.5603,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 51.4
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 79.9
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 98.1
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 123.2
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 131.4
+      },
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 155.5
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 163.7
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 170.9
+      }
+    ],
+    "content_seed": 5281
+  },
+  {
+    "slug": "montpellier",
+    "name": "Montpellier",
+    "insee": "34172",
+    "postal_codes": [
+      "34000",
+      "34070",
+      "34080",
+      "34090"
+    ],
+    "population": 310240,
+    "department": {
+      "code": "34",
+      "name": "Hérault",
+      "slug": "herault"
+    },
+    "region": {
+      "name": "Occitanie",
+      "slug": "occitanie"
+    },
+    "lat": 43.61,
+    "lng": 3.8742,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "nimes",
+        "name": "Nîmes",
+        "km": 45
+      },
+      {
+        "slug": "beziers",
+        "name": "Béziers",
+        "km": 59.3
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 85.4
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 122.2
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 127
+      },
+      {
+        "slug": "perpignan",
+        "name": "Perpignan",
+        "km": 128.3
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 168
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 172.3
+      }
+    ],
+    "content_seed": 8537
+  },
+  {
+    "slug": "strasbourg",
+    "name": "Strasbourg",
+    "insee": "67482",
+    "postal_codes": [
+      "67000",
+      "67100",
+      "67200"
+    ],
+    "population": 293771,
+    "department": {
+      "code": "67",
+      "name": "Bas-Rhin",
+      "slug": "bas-rhin"
+    },
+    "region": {
+      "name": "Grand Est",
+      "slug": "grand-est"
+    },
+    "lat": 48.5691,
+    "lng": 7.7621,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "colmar",
+        "name": "Colmar",
+        "km": 57.8
+      },
+      {
+        "slug": "mulhouse",
+        "name": "Mulhouse",
+        "km": 96.4
+      },
+      {
+        "slug": "nancy",
+        "name": "Nancy",
+        "km": 117.5
+      },
+      {
+        "slug": "metz",
+        "name": "Metz",
+        "km": 129.2
+      },
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 195.4
+      },
+      {
+        "slug": "dijon",
+        "name": "Dijon",
+        "km": 245.5
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 273.7
+      },
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 281.4
+      }
+    ],
+    "content_seed": 7646
+  },
+  {
+    "slug": "bordeaux",
+    "name": "Bordeaux",
+    "insee": "33063",
+    "postal_codes": [
+      "33000",
+      "33100",
+      "33200",
+      "33300",
+      "33800"
+    ],
+    "population": 267991,
+    "department": {
+      "code": "33",
+      "name": "Gironde",
+      "slug": "gironde"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 44.8624,
+    "lng": -0.5848,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 8.4
+      },
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 11.4
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 151.7
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 163.2
+      },
+      {
+        "slug": "pau",
+        "name": "Pau",
+        "km": 172.4
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 179.5
+      },
+      {
+        "slug": "montauban",
+        "name": "Montauban",
+        "km": 180.8
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 205.4
+      }
+    ],
+    "content_seed": 3288
+  },
+  {
+    "slug": "lille",
+    "name": "Lille",
+    "insee": "59350",
+    "postal_codes": [
+      "59000",
+      "59160",
+      "59260",
+      "59777",
+      "59800"
+    ],
+    "population": 238246,
+    "department": {
+      "code": "59",
+      "name": "Nord",
+      "slug": "nord"
+    },
+    "region": {
+      "name": "Hauts-de-France",
+      "slug": "hauts-de-france"
+    },
+    "lat": 50.6311,
+    "lng": 3.0468,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "villeneuve-d-ascq",
+        "name": "Villeneuve-d'Ascq",
+        "km": 8.1
+      },
+      {
+        "slug": "roubaix",
+        "name": "Roubaix",
+        "km": 11.6
+      },
+      {
+        "slug": "tourcoing",
+        "name": "Tourcoing",
+        "km": 12.7
+      },
+      {
+        "slug": "dunkerque",
+        "name": "Dunkerque",
+        "km": 65.6
+      },
+      {
+        "slug": "calais",
+        "name": "Calais",
+        "km": 90.2
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 97.8
+      },
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 169.3
+      },
+      {
+        "slug": "cergy",
+        "name": "Cergy",
+        "km": 191.2
+      }
+    ],
+    "content_seed": 3971
+  },
+  {
+    "slug": "rennes",
+    "name": "Rennes",
+    "insee": "35238",
+    "postal_codes": [
+      "35000",
+      "35200",
+      "35700"
+    ],
+    "population": 230890,
+    "department": {
+      "code": "35",
+      "name": "Ille-et-Vilaine",
+      "slug": "ille-et-vilaine"
+    },
+    "region": {
+      "name": "Bretagne",
+      "slug": "bretagne"
+    },
+    "lat": 48.1159,
+    "lng": -1.6884,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 98.1
+      },
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 102
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 109.7
+      },
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 140.8
+      },
+      {
+        "slug": "caen",
+        "name": "Caen",
+        "km": 153.2
+      },
+      {
+        "slug": "cherbourg-en-cotentin",
+        "name": "Cherbourg-en-Cotentin",
+        "km": 168.1
+      },
+      {
+        "slug": "quimper",
+        "name": "Quimper",
+        "km": 179.5
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 195.4
+      }
+    ],
+    "content_seed": 9358
+  },
+  {
+    "slug": "toulon",
+    "name": "Toulon",
+    "insee": "83137",
+    "postal_codes": [
+      "83000",
+      "83100",
+      "83200"
+    ],
+    "population": 179116,
+    "department": {
+      "code": "83",
+      "name": "Var",
+      "slug": "var"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.1364,
+    "lng": 5.9334,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 7.3
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 47.6
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 62.6
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 77.5
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 98.6
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 106.9
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 123.8
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 126
+      }
+    ],
+    "content_seed": 4112
+  },
+  {
+    "slug": "reims",
+    "name": "Reims",
+    "insee": "51454",
+    "postal_codes": [
+      "51100"
+    ],
+    "population": 177674,
+    "department": {
+      "code": "51",
+      "name": "Marne",
+      "slug": "marne"
+    },
+    "region": {
+      "name": "Grand Est",
+      "slug": "grand-est"
+    },
+    "lat": 49.2535,
+    "lng": 4.0551,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 106.9
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 118.8
+      },
+      {
+        "slug": "noisy-le-grand",
+        "name": "Noisy-le-Grand",
+        "km": 118.9
+      },
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 121.5
+      },
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 121.9
+      },
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 122.8
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 124.6
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 124.8
+      }
+    ],
+    "content_seed": 417
+  },
+  {
+    "slug": "saint-etienne",
+    "name": "Saint-Étienne",
+    "insee": "42218",
+    "postal_codes": [
+      "42000",
+      "42100",
+      "42230"
+    ],
+    "population": 173136,
+    "department": {
+      "code": "42",
+      "name": "Loire",
+      "slug": "loire"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.4241,
+    "lng": 4.3665,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 50.5
+      },
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 52
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 56.2
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 70.4
+      },
+      {
+        "slug": "clermont-ferrand",
+        "name": "Clermont-Ferrand",
+        "km": 105.6
+      },
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 108.8
+      },
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 121.3
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 146.7
+      }
+    ],
+    "content_seed": 6155
+  },
+  {
+    "slug": "le-havre",
+    "name": "Le Havre",
+    "insee": "76351",
+    "postal_codes": [
+      "76600",
+      "76610",
+      "76620"
+    ],
+    "population": 166687,
+    "department": {
+      "code": "76",
+      "name": "Seine-Maritime",
+      "slug": "seine-maritime"
+    },
+    "region": {
+      "name": "Normandie",
+      "slug": "normandie"
+    },
+    "lat": 49.4958,
+    "lng": 0.1312,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "caen",
+        "name": "Caen",
+        "km": 50.3
+      },
+      {
+        "slug": "rouen",
+        "name": "Rouen",
+        "km": 69.6
+      },
+      {
+        "slug": "cherbourg-en-cotentin",
+        "name": "Cherbourg-en-Cotentin",
+        "km": 128.3
+      },
+      {
+        "slug": "cergy",
+        "name": "Cergy",
+        "km": 148
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 161.2
+      },
+      {
+        "slug": "versailles",
+        "name": "Versailles",
+        "km": 163.8
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 164.3
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 164.5
+      }
+    ],
+    "content_seed": 973
+  },
+  {
+    "slug": "villeurbanne",
+    "name": "Villeurbanne",
+    "insee": "69266",
+    "postal_codes": [
+      "69100"
+    ],
+    "population": 163684,
+    "department": {
+      "code": "69",
+      "name": "Rhône",
+      "slug": "rhone"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.7719,
+    "lng": 4.8898,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 4.5
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 7.9
+      },
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 56.2
+      },
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 81.7
+      },
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 91.7
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 94.4
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 96.9
+      },
+      {
+        "slug": "clermont-ferrand",
+        "name": "Clermont-Ferrand",
+        "km": 137.8
+      }
+    ],
+    "content_seed": 8869
+  },
+  {
+    "slug": "dijon",
+    "name": "Dijon",
+    "insee": "21231",
+    "postal_codes": [
+      "21000"
+    ],
+    "population": 161830,
+    "department": {
+      "code": "21",
+      "name": "Côte-d'Or",
+      "slug": "cote-d-or"
+    },
+    "region": {
+      "name": "Bourgogne-Franche-Comté",
+      "slug": "bourgogne-franche-comte"
+    },
+    "lat": 47.3319,
+    "lng": 5.0322,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 74.3
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 128.5
+      },
+      {
+        "slug": "nancy",
+        "name": "Nancy",
+        "km": 173.1
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 173.8
+      },
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 175.7
+      },
+      {
+        "slug": "mulhouse",
+        "name": "Mulhouse",
+        "km": 178.4
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 179.6
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 181.7
+      }
+    ],
+    "content_seed": 8188
+  },
+  {
+    "slug": "angers",
+    "name": "Angers",
+    "insee": "49007",
+    "postal_codes": [
+      "49000",
+      "49100"
+    ],
+    "population": 159022,
+    "department": {
+      "code": "49",
+      "name": "Maine-et-Loire",
+      "slug": "maine-et-loire"
+    },
+    "region": {
+      "name": "Pays de la Loire",
+      "slug": "pays-de-la-loire"
+    },
+    "lat": 47.4819,
+    "lng": -0.5629,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 79.4
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 79.9
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 95.1
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 109.7
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 122.3
+      },
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 128.3
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 128.6
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 154
+      }
+    ],
+    "content_seed": 300
+  },
+  {
+    "slug": "grenoble",
+    "name": "Grenoble",
+    "insee": "38185",
+    "postal_codes": [
+      "38000",
+      "38100"
+    ],
+    "population": 156140,
+    "department": {
+      "code": "38",
+      "name": "Isère",
+      "slug": "isere"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.1842,
+    "lng": 5.7155,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 46.7
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 69.1
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 86
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 86.9
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 91.7
+      },
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 93.7
+      },
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 108.8
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 154.8
+      }
+    ],
+    "content_seed": 3521
+  },
+  {
+    "slug": "saint-denis-974",
+    "name": "Saint-Denis",
+    "insee": "97411",
+    "postal_codes": [
+      "97400",
+      "97417",
+      "97490"
+    ],
+    "population": 155634,
+    "department": {
+      "code": "974",
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "region": {
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "lat": -20.9434,
+    "lng": 55.4444,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-paul",
+        "name": "Saint-Paul",
+        "km": 15
+      },
+      {
+        "slug": "le-tampon",
+        "name": "Le Tampon",
+        "km": 33.9
+      },
+      {
+        "slug": "saint-pierre",
+        "name": "Saint-Pierre",
+        "km": 41.1
+      },
+      {
+        "slug": "mamoudzou",
+        "name": "Mamoudzou",
+        "km": 1417.3
+      },
+      {
+        "slug": "ajaccio",
+        "name": "Ajaccio",
+        "km": 8480.4
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 8703.4
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 8704.3
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 8705.7
+      }
+    ],
+    "content_seed": 2102
+  },
+  {
+    "slug": "nimes",
+    "name": "Nîmes",
+    "insee": "30189",
+    "postal_codes": [
+      "30000",
+      "30900"
+    ],
+    "population": 151839,
+    "department": {
+      "code": "30",
+      "name": "Gard",
+      "slug": "gard"
+    },
+    "region": {
+      "name": "Occitanie",
+      "slug": "occitanie"
+    },
+    "lat": 43.8322,
+    "lng": 4.3429,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 41.1
+      },
+      {
+        "slug": "montpellier",
+        "name": "Montpellier",
+        "km": 45
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 90.3
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 103.7
+      },
+      {
+        "slug": "beziers",
+        "name": "Béziers",
+        "km": 104.3
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 129.6
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 149.3
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 149.8
+      }
+    ],
+    "content_seed": 3927
+  },
+  {
+    "slug": "aix-en-provence",
+    "name": "Aix-en-Provence",
+    "insee": "13001",
+    "postal_codes": [
+      "13080",
+      "13090",
+      "13100",
+      "13290",
+      "13540"
+    ],
+    "population": 149695,
+    "department": {
+      "code": "13",
+      "name": "Bouches-du-Rhône",
+      "slug": "bouches-du-rhone"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.536,
+    "lng": 5.3879,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 28.4
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 62.6
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 63.4
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 64.1
+      },
+      {
+        "slug": "nimes",
+        "name": "Nîmes",
+        "km": 90.3
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 113
+      },
+      {
+        "slug": "montpellier",
+        "name": "Montpellier",
+        "km": 122.2
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 131.2
+      }
+    ],
+    "content_seed": 6340
+  },
+  {
+    "slug": "saint-denis-93",
+    "name": "Saint-Denis",
+    "insee": "93066",
+    "postal_codes": [
+      "93200",
+      "93210",
+      "93380"
+    ],
+    "population": 149077,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9378,
+    "lng": 2.3657,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 3.2
+      },
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 5.2
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 5.7
+      },
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 5.9
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 5.9
+      },
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 6.7
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 7.5
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 8.7
+      }
+    ],
+    "content_seed": 7665
+  },
+  {
+    "slug": "clermont-ferrand",
+    "name": "Clermont-Ferrand",
+    "insee": "63113",
+    "postal_codes": [
+      "63000",
+      "63100"
+    ],
+    "population": 146351,
+    "department": {
+      "code": "63",
+      "name": "Puy-de-Dôme",
+      "slug": "puy-de-dome"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.787,
+    "lng": 3.1127,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 105.6
+      },
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 133.6
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 137.5
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 137.8
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 146.4
+      },
+      {
+        "slug": "bourges",
+        "name": "Bourges",
+        "km": 153.6
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 170.5
+      },
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 213.7
+      }
+    ],
+    "content_seed": 1011
+  },
+  {
+    "slug": "le-mans",
+    "name": "Le Mans",
+    "insee": "72181",
+    "postal_codes": [
+      "72000",
+      "72100"
+    ],
+    "population": 146249,
+    "department": {
+      "code": "72",
+      "name": "Sarthe",
+      "slug": "sarthe"
+    },
+    "region": {
+      "name": "Pays de la Loire",
+      "slug": "pays-de-la-loire"
+    },
+    "lat": 47.9819,
+    "lng": 0.1957,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 75.3
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 79.4
+      },
+      {
+        "slug": "orleans",
+        "name": "Orléans",
+        "km": 128.5
+      },
+      {
+        "slug": "caen",
+        "name": "Caen",
+        "km": 140.1
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 140.8
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 155.5
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 155.9
+      },
+      {
+        "slug": "le-havre",
+        "name": "Le Havre",
+        "km": 168.4
+      }
+    ],
+    "content_seed": 3197
+  },
+  {
+    "slug": "brest",
+    "name": "Brest",
+    "insee": "29019",
+    "postal_codes": [
+      "29200"
+    ],
+    "population": 142346,
+    "department": {
+      "code": "29",
+      "name": "Finistère",
+      "slug": "finistere"
+    },
+    "region": {
+      "name": "Bretagne",
+      "slug": "bretagne"
+    },
+    "lat": 48.4085,
+    "lng": -4.4996,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "quimper",
+        "name": "Quimper",
+        "km": 54.5
+      },
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 210.4
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 210.6
+      },
+      {
+        "slug": "cherbourg-en-cotentin",
+        "name": "Cherbourg-en-Cotentin",
+        "km": 249
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 255.1
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 310.7
+      },
+      {
+        "slug": "caen",
+        "name": "Caen",
+        "km": 314.4
+      },
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 351.2
+      }
+    ],
+    "content_seed": 2515
+  },
+  {
+    "slug": "tours",
+    "name": "Tours",
+    "insee": "37261",
+    "postal_codes": [
+      "37000",
+      "37100",
+      "37200"
+    ],
+    "population": 139259,
+    "department": {
+      "code": "37",
+      "name": "Indre-et-Loire",
+      "slug": "indre-et-loire"
+    },
+    "region": {
+      "name": "Centre-Val de Loire",
+      "slug": "centre-val-de-loire"
+    },
+    "lat": 47.3943,
+    "lng": 0.6949,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 75.3
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 93.3
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 95.1
+      },
+      {
+        "slug": "orleans",
+        "name": "Orléans",
+        "km": 105.6
+      },
+      {
+        "slug": "bourges",
+        "name": "Bourges",
+        "km": 133.3
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 147.7
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 170.9
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 175.7
+      }
+    ],
+    "content_seed": 5592
+  },
+  {
+    "slug": "amiens",
+    "name": "Amiens",
+    "insee": "80021",
+    "postal_codes": [
+      "80000",
+      "80080",
+      "80090"
+    ],
+    "population": 136449,
+    "department": {
+      "code": "80",
+      "name": "Somme",
+      "slug": "somme"
+    },
+    "region": {
+      "name": "Hauts-de-France",
+      "slug": "hauts-de-france"
+    },
+    "lat": 49.8987,
+    "lng": 2.2847,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "cergy",
+        "name": "Cergy",
+        "km": 97.3
+      },
+      {
+        "slug": "lille",
+        "name": "Lille",
+        "km": 97.8
+      },
+      {
+        "slug": "rouen",
+        "name": "Rouen",
+        "km": 99.8
+      },
+      {
+        "slug": "villeneuve-d-ascq",
+        "name": "Villeneuve-d'Ascq",
+        "km": 103
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 105.5
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 107
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 107
+      },
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 107.6
+      }
+    ],
+    "content_seed": 7680
+  },
+  {
+    "slug": "annecy",
+    "name": "Annecy",
+    "insee": "74010",
+    "postal_codes": [
+      "74000",
+      "74370",
+      "74600",
+      "74940",
+      "74960"
+    ],
+    "population": 132117,
+    "department": {
+      "code": "74",
+      "name": "Haute-Savoie",
+      "slug": "haute-savoie"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.9024,
+    "lng": 6.1264,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 39.5
+      },
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 86
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 96.9
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 99.1
+      },
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 101.3
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 144.1
+      },
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 146.7
+      },
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 151.2
+      }
+    ],
+    "content_seed": 9650
+  },
+  {
+    "slug": "limoges",
+    "name": "Limoges",
+    "insee": "87085",
+    "postal_codes": [
+      "87000",
+      "87100",
+      "87280"
+    ],
+    "population": 129937,
+    "department": {
+      "code": "87",
+      "name": "Haute-Vienne",
+      "slug": "haute-vienne"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 45.8567,
+    "lng": 1.226,
+    "tier": 1,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 104.3
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 140.2
+      },
+      {
+        "slug": "clermont-ferrand",
+        "name": "Clermont-Ferrand",
+        "km": 146.4
+      },
+      {
+        "slug": "bourges",
+        "name": "Bourges",
+        "km": 162.8
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 175.7
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 179.5
+      },
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 187.7
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 188.6
+      }
+    ],
+    "content_seed": 4051
+  },
+  {
+    "slug": "metz",
+    "name": "Metz",
+    "insee": "57463",
+    "postal_codes": [
+      "57000",
+      "57050",
+      "57070"
+    ],
+    "population": 122572,
+    "department": {
+      "code": "57",
+      "name": "Moselle",
+      "slug": "moselle"
+    },
+    "region": {
+      "name": "Grand Est",
+      "slug": "grand-est"
+    },
+    "lat": 49.1048,
+    "lng": 6.1962,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "nancy",
+        "name": "Nancy",
+        "km": 46.4
+      },
+      {
+        "slug": "strasbourg",
+        "name": "Strasbourg",
+        "km": 129.2
+      },
+      {
+        "slug": "colmar",
+        "name": "Colmar",
+        "km": 141.2
+      },
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 156.5
+      },
+      {
+        "slug": "mulhouse",
+        "name": "Mulhouse",
+        "km": 171.9
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 179.9
+      },
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 205.6
+      },
+      {
+        "slug": "dijon",
+        "name": "Dijon",
+        "km": 215.2
+      }
+    ],
+    "content_seed": 4838
+  },
+  {
+    "slug": "perpignan",
+    "name": "Perpignan",
+    "insee": "66136",
+    "postal_codes": [
+      "66000",
+      "66100"
+    ],
+    "population": 121616,
+    "department": {
+      "code": "66",
+      "name": "Pyrénées-Orientales",
+      "slug": "pyrenees-orientales"
+    },
+    "region": {
+      "name": "Occitanie",
+      "slug": "occitanie"
+    },
+    "lat": 42.699,
+    "lng": 2.9045,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "beziers",
+        "name": "Béziers",
+        "km": 77
+      },
+      {
+        "slug": "montpellier",
+        "name": "Montpellier",
+        "km": 128.3
+      },
+      {
+        "slug": "toulouse",
+        "name": "Toulouse",
+        "km": 155.9
+      },
+      {
+        "slug": "nimes",
+        "name": "Nîmes",
+        "km": 171.6
+      },
+      {
+        "slug": "montauban",
+        "name": "Montauban",
+        "km": 192.7
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 208.4
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 211.5
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 222
+      }
+    ],
+    "content_seed": 6599
+  },
+  {
+    "slug": "boulogne-billancourt",
+    "name": "Boulogne-Billancourt",
+    "insee": "92012",
+    "postal_codes": [
+      "92100"
+    ],
+    "population": 119019,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8375,
+    "lng": 2.2429,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 2.1
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 5.9
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 6.8
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 7.1
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 7.3
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 8
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 8.7
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 9.4
+      }
+    ],
+    "content_seed": 4847
+  },
+  {
+    "slug": "besancon",
+    "name": "Besançon",
+    "insee": "25056",
+    "postal_codes": [
+      "25000"
+    ],
+    "population": 118489,
+    "department": {
+      "code": "25",
+      "name": "Doubs",
+      "slug": "doubs"
+    },
+    "region": {
+      "name": "Bourgogne-Franche-Comté",
+      "slug": "bourgogne-franche-comte"
+    },
+    "lat": 47.2602,
+    "lng": 6.0123,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "dijon",
+        "name": "Dijon",
+        "km": 74.3
+      },
+      {
+        "slug": "mulhouse",
+        "name": "Mulhouse",
+        "km": 112.8
+      },
+      {
+        "slug": "colmar",
+        "name": "Colmar",
+        "km": 140.1
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 151.2
+      },
+      {
+        "slug": "nancy",
+        "name": "Nancy",
+        "km": 159.2
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 184.7
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 186.4
+      },
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 186.8
+      }
+    ],
+    "content_seed": 106
+  },
+  {
+    "slug": "rouen",
+    "name": "Rouen",
+    "insee": "76540",
+    "postal_codes": [
+      "76000",
+      "76100"
+    ],
+    "population": 117662,
+    "department": {
+      "code": "76",
+      "name": "Seine-Maritime",
+      "slug": "seine-maritime"
+    },
+    "region": {
+      "name": "Normandie",
+      "slug": "normandie"
+    },
+    "lat": 49.4412,
+    "lng": 1.0912,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-havre",
+        "name": "Le Havre",
+        "km": 69.6
+      },
+      {
+        "slug": "cergy",
+        "name": "Cergy",
+        "km": 82.6
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 99.8
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 100.2
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 100.9
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 101.4
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 101.9
+      },
+      {
+        "slug": "versailles",
+        "name": "Versailles",
+        "km": 103
+      }
+    ],
+    "content_seed": 3418
+  },
+  {
+    "slug": "orleans",
+    "name": "Orléans",
+    "insee": "45234",
+    "postal_codes": [
+      "45000",
+      "45100"
+    ],
+    "population": 116357,
+    "department": {
+      "code": "45",
+      "name": "Loiret",
+      "slug": "loiret"
+    },
+    "region": {
+      "name": "Centre-Val de Loire",
+      "slug": "centre-val-de-loire"
+    },
+    "lat": 47.8734,
+    "lng": 1.9122,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "evry-courcouronnes",
+        "name": "Évry-Courcouronnes",
+        "km": 92.4
+      },
+      {
+        "slug": "bourges",
+        "name": "Bourges",
+        "km": 95.7
+      },
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 101.6
+      },
+      {
+        "slug": "versailles",
+        "name": "Versailles",
+        "km": 104.6
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 105.6
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 107.5
+      },
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 107.9
+      },
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 108.8
+      }
+    ],
+    "content_seed": 7990
+  },
+  {
+    "slug": "montreuil",
+    "name": "Montreuil",
+    "insee": "93048",
+    "postal_codes": [
+      "93100"
+    ],
+    "population": 111934,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8637,
+    "lng": 2.4491,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 5.1
+      },
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 6.8
+      },
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 7
+      },
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 7.3
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 7.3
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 7.5
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 7.8
+      },
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 8.2
+      }
+    ],
+    "content_seed": 3994
+  },
+  {
+    "slug": "caen",
+    "name": "Caen",
+    "insee": "14118",
+    "postal_codes": [
+      "14000"
+    ],
+    "population": 109400,
+    "department": {
+      "code": "14",
+      "name": "Calvados",
+      "slug": "calvados"
+    },
+    "region": {
+      "name": "Normandie",
+      "slug": "normandie"
+    },
+    "lat": 49.1846,
+    "lng": -0.3722,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-havre",
+        "name": "Le Havre",
+        "km": 50.3
+      },
+      {
+        "slug": "cherbourg-en-cotentin",
+        "name": "Cherbourg-en-Cotentin",
+        "km": 103.8
+      },
+      {
+        "slug": "rouen",
+        "name": "Rouen",
+        "km": 109.9
+      },
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 140.1
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 153.2
+      },
+      {
+        "slug": "cergy",
+        "name": "Cergy",
+        "km": 176.7
+      },
+      {
+        "slug": "versailles",
+        "name": "Versailles",
+        "km": 186.6
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 189.3
+      }
+    ],
+    "content_seed": 359
+  },
+  {
+    "slug": "saint-paul",
+    "name": "Saint-Paul",
+    "insee": "97415",
+    "postal_codes": [
+      "97411",
+      "97422",
+      "97423",
+      "97434",
+      "97435",
+      "97460"
+    ],
+    "population": 108088,
+    "department": {
+      "code": "974",
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "region": {
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "lat": -21.0366,
+    "lng": 55.3402,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-denis-974",
+        "name": "Saint-Denis",
+        "km": 15
+      },
+      {
+        "slug": "le-tampon",
+        "name": "Le Tampon",
+        "km": 31.7
+      },
+      {
+        "slug": "saint-pierre",
+        "name": "Saint-Pierre",
+        "km": 34.7
+      },
+      {
+        "slug": "mamoudzou",
+        "name": "Mamoudzou",
+        "km": 1415.3
+      },
+      {
+        "slug": "ajaccio",
+        "name": "Ajaccio",
+        "km": 8483
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 8706
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 8707.1
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 8708.3
+      }
+    ],
+    "content_seed": 5480
+  },
+  {
+    "slug": "argenteuil",
+    "name": "Argenteuil",
+    "insee": "95018",
+    "postal_codes": [
+      "95100"
+    ],
+    "population": 106130,
+    "department": {
+      "code": "95",
+      "name": "Val-d'Oise",
+      "slug": "val-d-oise"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9501,
+    "lng": 2.2478,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 3.1
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 4.9
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 5.9
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 6.6
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 6.8
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 6.8
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 8.7
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 10
+      }
+    ],
+    "content_seed": 6544
+  },
+  {
+    "slug": "mulhouse",
+    "name": "Mulhouse",
+    "insee": "68224",
+    "postal_codes": [
+      "68100",
+      "68200"
+    ],
+    "population": 104978,
+    "department": {
+      "code": "68",
+      "name": "Haut-Rhin",
+      "slug": "haut-rhin"
+    },
+    "region": {
+      "name": "Grand Est",
+      "slug": "grand-est"
+    },
+    "lat": 47.7526,
+    "lng": 7.3255,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "colmar",
+        "name": "Colmar",
+        "km": 40.2
+      },
+      {
+        "slug": "strasbourg",
+        "name": "Strasbourg",
+        "km": 96.4
+      },
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 112.8
+      },
+      {
+        "slug": "nancy",
+        "name": "Nancy",
+        "km": 134.6
+      },
+      {
+        "slug": "metz",
+        "name": "Metz",
+        "km": 171.9
+      },
+      {
+        "slug": "dijon",
+        "name": "Dijon",
+        "km": 178.4
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 225
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 249
+      }
+    ],
+    "content_seed": 9063
+  },
+  {
+    "slug": "nancy",
+    "name": "Nancy",
+    "insee": "54395",
+    "postal_codes": [
+      "54000",
+      "54100"
+    ],
+    "population": 103671,
+    "department": {
+      "code": "54",
+      "name": "Meurthe-et-Moselle",
+      "slug": "meurthe-et-moselle"
+    },
+    "region": {
+      "name": "Grand Est",
+      "slug": "grand-est"
+    },
+    "lat": 48.6881,
+    "lng": 6.1734,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "metz",
+        "name": "Metz",
+        "km": 46.4
+      },
+      {
+        "slug": "colmar",
+        "name": "Colmar",
+        "km": 110.5
+      },
+      {
+        "slug": "strasbourg",
+        "name": "Strasbourg",
+        "km": 117.5
+      },
+      {
+        "slug": "mulhouse",
+        "name": "Mulhouse",
+        "km": 134.6
+      },
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 159.2
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 160.7
+      },
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 166.9
+      },
+      {
+        "slug": "dijon",
+        "name": "Dijon",
+        "km": 173.1
+      }
+    ],
+    "content_seed": 4176
+  },
+  {
+    "slug": "tourcoing",
+    "name": "Tourcoing",
+    "insee": "59599",
+    "postal_codes": [
+      "59200"
+    ],
+    "population": 98772,
+    "department": {
+      "code": "59",
+      "name": "Nord",
+      "slug": "nord"
+    },
+    "region": {
+      "name": "Hauts-de-France",
+      "slug": "hauts-de-france"
+    },
+    "lat": 50.721,
+    "lng": 3.1577,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "roubaix",
+        "name": "Roubaix",
+        "km": 4.1
+      },
+      {
+        "slug": "villeneuve-d-ascq",
+        "name": "Villeneuve-d'Ascq",
+        "km": 9.4
+      },
+      {
+        "slug": "lille",
+        "name": "Lille",
+        "km": 12.7
+      },
+      {
+        "slug": "dunkerque",
+        "name": "Dunkerque",
+        "km": 66
+      },
+      {
+        "slug": "calais",
+        "name": "Calais",
+        "km": 94.1
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 110.5
+      },
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 175.3
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 203.1
+      }
+    ],
+    "content_seed": 4512
+  },
+  {
+    "slug": "roubaix",
+    "name": "Roubaix",
+    "insee": "59512",
+    "postal_codes": [
+      "59100"
+    ],
+    "population": 98286,
+    "department": {
+      "code": "59",
+      "name": "Nord",
+      "slug": "nord"
+    },
+    "region": {
+      "name": "Hauts-de-France",
+      "slug": "hauts-de-france"
+    },
+    "lat": 50.6887,
+    "lng": 3.1843,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "tourcoing",
+        "name": "Tourcoing",
+        "km": 4.1
+      },
+      {
+        "slug": "villeneuve-d-ascq",
+        "name": "Villeneuve-d'Ascq",
+        "km": 6
+      },
+      {
+        "slug": "lille",
+        "name": "Lille",
+        "km": 11.6
+      },
+      {
+        "slug": "dunkerque",
+        "name": "Dunkerque",
+        "km": 69.5
+      },
+      {
+        "slug": "calais",
+        "name": "Calais",
+        "km": 96.9
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 108.6
+      },
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 171.3
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 200.1
+      }
+    ],
+    "content_seed": 5024
+  },
+  {
+    "slug": "nanterre",
+    "name": "Nanterre",
+    "insee": "92050",
+    "postal_codes": [
+      "92000"
+    ],
+    "population": 97783,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8974,
+    "lng": 2.2018,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 3.3
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 4.1
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 4.3
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 6.3
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 6.8
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 7.1
+      },
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 7.3
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 7.5
+      }
+    ],
+    "content_seed": 2056
+  },
+  {
+    "slug": "vitry-sur-seine",
+    "name": "Vitry-sur-Seine",
+    "insee": "94081",
+    "postal_codes": [
+      "94400"
+    ],
+    "population": 93963,
+    "department": {
+      "code": "94",
+      "name": "Val-de-Marne",
+      "slug": "val-de-marne"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.7893,
+    "lng": 2.3951,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 2.6
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 2.6
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 4.2
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 7.2
+      },
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 8.3
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 8.5
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 9.2
+      },
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 9.7
+      }
+    ],
+    "content_seed": 6027
+  },
+  {
+    "slug": "asnieres-sur-seine",
+    "name": "Asnières-sur-Seine",
+    "insee": "92004",
+    "postal_codes": [
+      "92600"
+    ],
+    "population": 93941,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9181,
+    "lng": 2.2935,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 1.7
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 2.7
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 3.4
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 3.5
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 4.9
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 5.7
+      },
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 7
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 7.1
+      }
+    ],
+    "content_seed": 8053
+  },
+  {
+    "slug": "creteil",
+    "name": "Créteil",
+    "insee": "94028",
+    "postal_codes": [
+      "94000"
+    ],
+    "population": 93397,
+    "department": {
+      "code": "94",
+      "name": "Val-de-Marne",
+      "slug": "val-de-marne"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.7845,
+    "lng": 2.4523,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 3.4
+      },
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 4.2
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 5.7
+      },
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 6.2
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 6.8
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 8.8
+      },
+      {
+        "slug": "noisy-le-grand",
+        "name": "Noisy-le-Grand",
+        "km": 9.3
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 11.3
+      }
+    ],
+    "content_seed": 6734
+  },
+  {
+    "slug": "avignon",
+    "name": "Avignon",
+    "insee": "84007",
+    "postal_codes": [
+      "84000",
+      "84140"
+    ],
+    "population": 92188,
+    "department": {
+      "code": "84",
+      "name": "Vaucluse",
+      "slug": "vaucluse"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.9416,
+    "lng": 4.8333,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "nimes",
+        "name": "Nîmes",
+        "km": 41.1
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 63.4
+      },
+      {
+        "slug": "montpellier",
+        "name": "Montpellier",
+        "km": 85.4
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 85.7
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 109.4
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 126
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 127.3
+      },
+      {
+        "slug": "beziers",
+        "name": "Béziers",
+        "km": 144.6
+      }
+    ],
+    "content_seed": 5559
+  },
+  {
+    "slug": "colombes",
+    "name": "Colombes",
+    "insee": "92025",
+    "postal_codes": [
+      "92700"
+    ],
+    "population": 91053,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9218,
+    "lng": 2.2469,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 2.8
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 3.1
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 3.4
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 4.2
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 4.3
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 4.6
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 7.4
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 8.9
+      }
+    ],
+    "content_seed": 6958
+  },
+  {
+    "slug": "poitiers",
+    "name": "Poitiers",
+    "insee": "86194",
+    "postal_codes": [
+      "86000"
+    ],
+    "population": 89916,
+    "department": {
+      "code": "86",
+      "name": "Vienne",
+      "slug": "vienne"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 46.5846,
+    "lng": 0.3715,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 69.9
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 93.3
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 104.3
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 122.3
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 127.7
+      },
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 155.9
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 163.7
+      },
+      {
+        "slug": "bourges",
+        "name": "Bourges",
+        "km": 163.7
+      }
+    ],
+    "content_seed": 9463
+  },
+  {
+    "slug": "aubervilliers",
+    "name": "Aubervilliers",
+    "insee": "93001",
+    "postal_codes": [
+      "93300"
+    ],
+    "population": 88365,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9128,
+    "lng": 2.3886,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 2
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 3.2
+      },
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 4.3
+      },
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 5.7
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 6.3
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 6.7
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 7
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 7
+      }
+    ],
+    "content_seed": 6115
+  },
+  {
+    "slug": "aulnay-sous-bois",
+    "name": "Aulnay-sous-Bois",
+    "insee": "93005",
+    "postal_codes": [
+      "93600"
+    ],
+    "population": 87599,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9457,
+    "lng": 2.4918,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 2.7
+      },
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 4.1
+      },
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 7.9
+      },
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 8.4
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 9.3
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 9.6
+      },
+      {
+        "slug": "noisy-le-grand",
+        "name": "Noisy-le-Grand",
+        "km": 13.4
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 14.3
+      }
+    ],
+    "content_seed": 9077
+  },
+  {
+    "slug": "dunkerque",
+    "name": "Dunkerque",
+    "insee": "59183",
+    "postal_codes": [
+      "59140",
+      "59240",
+      "59279",
+      "59430",
+      "59640"
+    ],
+    "population": 86263,
+    "department": {
+      "code": "59",
+      "name": "Nord",
+      "slug": "nord"
+    },
+    "region": {
+      "name": "Hauts-de-France",
+      "slug": "hauts-de-france"
+    },
+    "lat": 51.0183,
+    "lng": 2.3431,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "calais",
+        "name": "Calais",
+        "km": 34
+      },
+      {
+        "slug": "lille",
+        "name": "Lille",
+        "km": 65.6
+      },
+      {
+        "slug": "tourcoing",
+        "name": "Tourcoing",
+        "km": 66
+      },
+      {
+        "slug": "roubaix",
+        "name": "Roubaix",
+        "km": 69.5
+      },
+      {
+        "slug": "villeneuve-d-ascq",
+        "name": "Villeneuve-d'Ascq",
+        "km": 71.5
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 124.6
+      },
+      {
+        "slug": "rouen",
+        "name": "Rouen",
+        "km": 196.7
+      },
+      {
+        "slug": "cergy",
+        "name": "Cergy",
+        "km": 221.3
+      }
+    ],
+    "content_seed": 5593
+  },
+  {
+    "slug": "noumea",
+    "name": "Nouméa",
+    "insee": "98818",
+    "postal_codes": [
+      "98800"
+    ],
+    "population": 85976,
+    "department": {
+      "code": "988",
+      "name": "Nouvelle-Calédonie",
+      "slug": "nouvelle-caledonie"
+    },
+    "region": {
+      "name": "Nouvelle-Calédonie",
+      "slug": "nouvelle-caledonie"
+    },
+    "lat": -22.3363,
+    "lng": 166.4076,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-tampon",
+        "name": "Le Tampon",
+        "km": 11090.2
+      },
+      {
+        "slug": "saint-pierre",
+        "name": "Saint-Pierre",
+        "km": 11091.7
+      },
+      {
+        "slug": "saint-denis-974",
+        "name": "Saint-Denis",
+        "km": 11116.7
+      },
+      {
+        "slug": "saint-paul",
+        "name": "Saint-Paul",
+        "km": 11121.2
+      },
+      {
+        "slug": "mamoudzou",
+        "name": "Mamoudzou",
+        "km": 12513.7
+      },
+      {
+        "slug": "fort-de-france",
+        "name": "Fort-de-France",
+        "km": 14956.3
+      },
+      {
+        "slug": "cayenne",
+        "name": "Cayenne",
+        "km": 15425.6
+      },
+      {
+        "slug": "tourcoing",
+        "name": "Tourcoing",
+        "km": 16540.5
+      }
+    ],
+    "content_seed": 4295
+  },
+  {
+    "slug": "saint-pierre",
+    "name": "Saint-Pierre",
+    "insee": "97416",
+    "postal_codes": [
+      "97410",
+      "97432"
+    ],
+    "population": 85038,
+    "department": {
+      "code": "974",
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "region": {
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "lat": -21.309,
+    "lng": 55.5044,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-tampon",
+        "name": "Le Tampon",
+        "km": 11.6
+      },
+      {
+        "slug": "saint-paul",
+        "name": "Saint-Paul",
+        "km": 34.7
+      },
+      {
+        "slug": "saint-denis-974",
+        "name": "Saint-Denis",
+        "km": 41.1
+      },
+      {
+        "slug": "mamoudzou",
+        "name": "Mamoudzou",
+        "km": 1447.6
+      },
+      {
+        "slug": "ajaccio",
+        "name": "Ajaccio",
+        "km": 8517.7
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 8740.7
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 8741.7
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 8743
+      }
+    ],
+    "content_seed": 8169
+  },
+  {
+    "slug": "versailles",
+    "name": "Versailles",
+    "insee": "78646",
+    "postal_codes": [
+      "78000"
+    ],
+    "population": 84095,
+    "department": {
+      "code": "78",
+      "name": "Yvelines",
+      "slug": "yvelines"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8039,
+    "lng": 2.1191,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 8.8
+      },
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 9.8
+      },
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 10.8
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 12
+      },
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 14.4
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 14.5
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 15.9
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 16.1
+      }
+    ],
+    "content_seed": 5940
+  },
+  {
+    "slug": "courbevoie",
+    "name": "Courbevoie",
+    "insee": "92026",
+    "postal_codes": [
+      "92400"
+    ],
+    "population": 82902,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8976,
+    "lng": 2.2574,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 2.2
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 2.8
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 3.5
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 3.5
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 4.1
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 5.9
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 6.3
+      },
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 6.8
+      }
+    ],
+    "content_seed": 2979
+  },
+  {
+    "slug": "rueil-malmaison",
+    "name": "Rueil-Malmaison",
+    "insee": "92063",
+    "postal_codes": [
+      "92500"
+    ],
+    "population": 82874,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8717,
+    "lng": 2.1806,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 3.3
+      },
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 5.9
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 6.3
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 7.4
+      },
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 8
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 8.2
+      },
+      {
+        "slug": "versailles",
+        "name": "Versailles",
+        "km": 8.8
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 9.7
+      }
+    ],
+    "content_seed": 3106
+  },
+  {
+    "slug": "le-tampon",
+    "name": "Le Tampon",
+    "insee": "97422",
+    "postal_codes": [
+      "97418",
+      "97430"
+    ],
+    "population": 82579,
+    "department": {
+      "code": "974",
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "region": {
+      "name": "La Réunion",
+      "slug": "la-reunion"
+    },
+    "lat": -21.225,
+    "lng": 55.5701,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-pierre",
+        "name": "Saint-Pierre",
+        "km": 11.6
+      },
+      {
+        "slug": "saint-paul",
+        "name": "Saint-Paul",
+        "km": 31.7
+      },
+      {
+        "slug": "saint-denis-974",
+        "name": "Saint-Denis",
+        "km": 33.9
+      },
+      {
+        "slug": "mamoudzou",
+        "name": "Mamoudzou",
+        "km": 1447
+      },
+      {
+        "slug": "ajaccio",
+        "name": "Ajaccio",
+        "km": 8513.7
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 8736.7
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 8737.7
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 8738.9
+      }
+    ],
+    "content_seed": 2425
+  },
+  {
+    "slug": "beziers",
+    "name": "Béziers",
+    "insee": "34032",
+    "postal_codes": [
+      "34500"
+    ],
+    "population": 81545,
+    "department": {
+      "code": "34",
+      "name": "Hérault",
+      "slug": "herault"
+    },
+    "region": {
+      "name": "Occitanie",
+      "slug": "occitanie"
+    },
+    "lat": 43.3481,
+    "lng": 3.2342,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "montpellier",
+        "name": "Montpellier",
+        "km": 59.3
+      },
+      {
+        "slug": "perpignan",
+        "name": "Perpignan",
+        "km": 77
+      },
+      {
+        "slug": "nimes",
+        "name": "Nîmes",
+        "km": 104.3
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 144.6
+      },
+      {
+        "slug": "toulouse",
+        "name": "Toulouse",
+        "km": 148
+      },
+      {
+        "slug": "montauban",
+        "name": "Montauban",
+        "km": 168
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 173.8
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 175.1
+      }
+    ],
+    "content_seed": 2268
+  },
+  {
+    "slug": "pau",
+    "name": "Pau",
+    "insee": "64445",
+    "postal_codes": [
+      "64000"
+    ],
+    "population": 80441,
+    "department": {
+      "code": "64",
+      "name": "Pyrénées-Atlantiques",
+      "slug": "pyrenees-atlantiques"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 43.3219,
+    "lng": -0.3435,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "toulouse",
+        "name": "Toulouse",
+        "km": 146.7
+      },
+      {
+        "slug": "montauban",
+        "name": "Montauban",
+        "km": 157.9
+      },
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 165
+      },
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 170
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 172.4
+      },
+      {
+        "slug": "perpignan",
+        "name": "Perpignan",
+        "km": 273
+      },
+      {
+        "slug": "beziers",
+        "name": "Béziers",
+        "km": 289.3
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 308
+      }
+    ],
+    "content_seed": 1508
+  },
+  {
+    "slug": "la-rochelle",
+    "name": "La Rochelle",
+    "insee": "17300",
+    "postal_codes": [
+      "17000"
+    ],
+    "population": 79851,
+    "department": {
+      "code": "17",
+      "name": "Charente-Maritime",
+      "slug": "charente-maritime"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 46.162,
+    "lng": -1.1765,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 58
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 123.2
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 127.7
+      },
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 148.1
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 151.7
+      },
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 152.9
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 154
+      },
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 157.8
+      }
+    ],
+    "content_seed": 9659
+  },
+  {
+    "slug": "cherbourg-en-cotentin",
+    "name": "Cherbourg-en-Cotentin",
+    "insee": "50129",
+    "postal_codes": [
+      "50100",
+      "50110",
+      "50120",
+      "50130",
+      "50460",
+      "50470"
+    ],
+    "population": 78258,
+    "department": {
+      "code": "50",
+      "name": "Manche",
+      "slug": "manche"
+    },
+    "region": {
+      "name": "Normandie",
+      "slug": "normandie"
+    },
+    "lat": 49.6277,
+    "lng": -1.6356,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "caen",
+        "name": "Caen",
+        "km": 103.8
+      },
+      {
+        "slug": "le-havre",
+        "name": "Le Havre",
+        "km": 128.3
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 168.1
+      },
+      {
+        "slug": "rouen",
+        "name": "Rouen",
+        "km": 197.9
+      },
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 226.9
+      },
+      {
+        "slug": "brest",
+        "name": "Brest",
+        "km": 249
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 251.3
+      },
+      {
+        "slug": "quimper",
+        "name": "Quimper",
+        "km": 255.6
+      }
+    ],
+    "content_seed": 2617
+  },
+  {
+    "slug": "merignac",
+    "name": "Mérignac",
+    "insee": "33281",
+    "postal_codes": [
+      "33700"
+    ],
+    "population": 78090,
+    "department": {
+      "code": "33",
+      "name": "Gironde",
+      "slug": "gironde"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 44.8313,
+    "lng": -0.682,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 5
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 8.4
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 152.9
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 167.2
+      },
+      {
+        "slug": "pau",
+        "name": "Pau",
+        "km": 170
+      },
+      {
+        "slug": "montauban",
+        "name": "Montauban",
+        "km": 185.8
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 187.7
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 211.4
+      }
+    ],
+    "content_seed": 7812
+  },
+  {
+    "slug": "champigny-sur-marne",
+    "name": "Champigny-sur-Marne",
+    "insee": "94017",
+    "postal_codes": [
+      "94500"
+    ],
+    "population": 78072,
+    "department": {
+      "code": "94",
+      "name": "Val-de-Marne",
+      "slug": "val-de-marne"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8173,
+    "lng": 2.5206,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 2.8
+      },
+      {
+        "slug": "noisy-le-grand",
+        "name": "Noisy-le-Grand",
+        "km": 3.1
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 6.2
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 7.3
+      },
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 9.7
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 9.8
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 12
+      },
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 12.4
+      }
+    ],
+    "content_seed": 5393
+  },
+  {
+    "slug": "antibes",
+    "name": "Antibes",
+    "insee": "06004",
+    "postal_codes": [
+      "06160",
+      "06600"
+    ],
+    "population": 77637,
+    "department": {
+      "code": "06",
+      "name": "Alpes-Maritimes",
+      "slug": "alpes-maritimes"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.5823,
+    "lng": 7.1048,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 8.3
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 18
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 29.4
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 106.9
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 113.6
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 138.4
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 143.2
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 186.7
+      }
+    ],
+    "content_seed": 5792
+  },
+  {
+    "slug": "saint-maur-des-fosses",
+    "name": "Saint-Maur-des-Fossés",
+    "insee": "94068",
+    "postal_codes": [
+      "94100",
+      "94210"
+    ],
+    "population": 76572,
+    "department": {
+      "code": "94",
+      "name": "Val-de-Marne",
+      "slug": "val-de-marne"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.7999,
+    "lng": 2.4921,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 2.8
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 3.4
+      },
+      {
+        "slug": "noisy-le-grand",
+        "name": "Noisy-le-Grand",
+        "km": 5.9
+      },
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 7.2
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 7.8
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 7.8
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 9.7
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 12.5
+      }
+    ],
+    "content_seed": 3033
+  },
+  {
+    "slug": "ajaccio",
+    "name": "Ajaccio",
+    "insee": "2A004",
+    "postal_codes": [
+      "20000",
+      "20090",
+      "20167"
+    ],
+    "population": 76320,
+    "department": {
+      "code": "2A",
+      "name": "Corse-du-Sud",
+      "slug": "corse-du-sud"
+    },
+    "region": {
+      "name": "Corse",
+      "slug": "corse"
+    },
+    "lat": 41.9228,
+    "lng": 8.7058,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 226.1
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 227.2
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 230.7
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 231.7
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 264.2
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 265.2
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 311.2
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 325
+      }
+    ],
+    "content_seed": 7862
+  },
+  {
+    "slug": "fort-de-france",
+    "name": "Fort-de-France",
+    "insee": "97209",
+    "postal_codes": [
+      "97200",
+      "97234"
+    ],
+    "population": 75506,
+    "department": {
+      "code": "972",
+      "name": "Martinique",
+      "slug": "martinique"
+    },
+    "region": {
+      "name": "Martinique",
+      "slug": "martinique"
+    },
+    "lat": 14.6492,
+    "lng": -61.0686,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "cayenne",
+        "name": "Cayenne",
+        "km": 1441.5
+      },
+      {
+        "slug": "brest",
+        "name": "Brest",
+        "km": 6350.8
+      },
+      {
+        "slug": "quimper",
+        "name": "Quimper",
+        "km": 6367.2
+      },
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 6482.2
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 6531.1
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 6534.3
+      },
+      {
+        "slug": "pau",
+        "name": "Pau",
+        "km": 6540.7
+      },
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 6542.5
+      }
+    ],
+    "content_seed": 3564
+  },
+  {
+    "slug": "saint-nazaire",
+    "name": "Saint-Nazaire",
+    "insee": "44184",
+    "postal_codes": [
+      "44600"
+    ],
+    "population": 74568,
+    "department": {
+      "code": "44",
+      "name": "Loire-Atlantique",
+      "slug": "loire-atlantique"
+    },
+    "region": {
+      "name": "Pays de la Loire",
+      "slug": "pays-de-la-loire"
+    },
+    "lat": 47.2768,
+    "lng": -2.2392,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 51.4
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 102
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 128.3
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 148.1
+      },
+      {
+        "slug": "quimper",
+        "name": "Quimper",
+        "km": 160.7
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 171.6
+      },
+      {
+        "slug": "le-mans",
+        "name": "Le Mans",
+        "km": 198.6
+      },
+      {
+        "slug": "brest",
+        "name": "Brest",
+        "km": 210.4
+      }
+    ],
+    "content_seed": 5587
+  },
+  {
+    "slug": "cannes",
+    "name": "Cannes",
+    "insee": "06029",
+    "postal_codes": [
+      "06150",
+      "06400"
+    ],
+    "population": 74350,
+    "department": {
+      "code": "06",
+      "name": "Alpes-Maritimes",
+      "slug": "alpes-maritimes"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.5454,
+    "lng": 7.0152,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 8.3
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 21.1
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 26
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 98.6
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 105.3
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 131.2
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 135.3
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 180.7
+      }
+    ],
+    "content_seed": 3505
+  },
+  {
+    "slug": "noisy-le-grand",
+    "name": "Noisy-le-Grand",
+    "insee": "93051",
+    "postal_codes": [
+      "93160"
+    ],
+    "population": 72978,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8327,
+    "lng": 2.556,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 3.1
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 5.9
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 8.5
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 9.3
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 12.6
+      },
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 12.7
+      },
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 13.1
+      },
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 13.2
+      }
+    ],
+    "content_seed": 7841
+  },
+  {
+    "slug": "drancy",
+    "name": "Drancy",
+    "insee": "93029",
+    "postal_codes": [
+      "93700"
+    ],
+    "population": 72390,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.925,
+    "lng": 2.4446,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 1.7
+      },
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 3.8
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 4.1
+      },
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 4.3
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 5.9
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 6.8
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 10.2
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 10.5
+      }
+    ],
+    "content_seed": 1533
+  },
+  {
+    "slug": "mamoudzou",
+    "name": "Mamoudzou",
+    "insee": "97611",
+    "postal_codes": [
+      "97600",
+      "97605"
+    ],
+    "population": 71437,
+    "department": {
+      "code": "976",
+      "name": "Mayotte",
+      "slug": "mayotte"
+    },
+    "region": {
+      "name": "Mayotte",
+      "slug": "mayotte"
+    },
+    "lat": -12.7875,
+    "lng": 45.1964,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "saint-paul",
+        "name": "Saint-Paul",
+        "km": 1415.3
+      },
+      {
+        "slug": "saint-denis-974",
+        "name": "Saint-Denis",
+        "km": 1417.3
+      },
+      {
+        "slug": "le-tampon",
+        "name": "Le Tampon",
+        "km": 1447
+      },
+      {
+        "slug": "saint-pierre",
+        "name": "Saint-Pierre",
+        "km": 1447.6
+      },
+      {
+        "slug": "ajaccio",
+        "name": "Ajaccio",
+        "km": 7137.1
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 7362.2
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 7363.9
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 7364.6
+      }
+    ],
+    "content_seed": 5062
+  },
+  {
+    "slug": "cergy",
+    "name": "Cergy",
+    "insee": "95127",
+    "postal_codes": [
+      "95000",
+      "95800"
+    ],
+    "population": 70906,
+    "department": {
+      "code": "95",
+      "name": "Val-d'Oise",
+      "slug": "val-d-oise"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 49.0373,
+    "lng": 2.0455,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 17.7
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 19.3
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 19.5
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 20.9
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 21.9
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 22.4
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 23.7
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 24
+      }
+    ],
+    "content_seed": 5794
+  },
+  {
+    "slug": "levallois-perret",
+    "name": "Levallois-Perret",
+    "insee": "92044",
+    "postal_codes": [
+      "92300"
+    ],
+    "population": 68092,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8946,
+    "lng": 2.2874,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 1.6
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 2.2
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 2.7
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 4.2
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 5.9
+      },
+      {
+        "slug": "nanterre",
+        "name": "Nanterre",
+        "km": 6.3
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 6.8
+      },
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 7.1
+      }
+    ],
+    "content_seed": 7746
+  },
+  {
+    "slug": "issy-les-moulineaux",
+    "name": "Issy-les-Moulineaux",
+    "insee": "92040",
+    "postal_codes": [
+      "92130"
+    ],
+    "population": 67669,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.824,
+    "lng": 2.2628,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 2.1
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 7.3
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 7.9
+      },
+      {
+        "slug": "rueil-malmaison",
+        "name": "Rueil-Malmaison",
+        "km": 8
+      },
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 8.1
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 8.2
+      },
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 8.5
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 9.2
+      }
+    ],
+    "content_seed": 755
+  },
+  {
+    "slug": "calais",
+    "name": "Calais",
+    "insee": "62193",
+    "postal_codes": [
+      "62100"
+    ],
+    "population": 67571,
+    "department": {
+      "code": "62",
+      "name": "Pas-de-Calais",
+      "slug": "pas-de-calais"
+    },
+    "region": {
+      "name": "Hauts-de-France",
+      "slug": "hauts-de-france"
+    },
+    "lat": 50.9523,
+    "lng": 1.869,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "dunkerque",
+        "name": "Dunkerque",
+        "km": 34
+      },
+      {
+        "slug": "lille",
+        "name": "Lille",
+        "km": 90.2
+      },
+      {
+        "slug": "tourcoing",
+        "name": "Tourcoing",
+        "km": 94.1
+      },
+      {
+        "slug": "roubaix",
+        "name": "Roubaix",
+        "km": 96.9
+      },
+      {
+        "slug": "villeneuve-d-ascq",
+        "name": "Villeneuve-d'Ascq",
+        "km": 97.4
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 120.8
+      },
+      {
+        "slug": "rouen",
+        "name": "Rouen",
+        "km": 176.9
+      },
+      {
+        "slug": "le-havre",
+        "name": "Le Havre",
+        "km": 203.7
+      }
+    ],
+    "content_seed": 1870
+  },
+  {
+    "slug": "pessac",
+    "name": "Pessac",
+    "insee": "33318",
+    "postal_codes": [
+      "33600"
+    ],
+    "population": 67339,
+    "department": {
+      "code": "33",
+      "name": "Gironde",
+      "slug": "gironde"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 44.786,
+    "lng": -0.681,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 5
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 11.4
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 157.8
+      },
+      {
+        "slug": "pau",
+        "name": "Pau",
+        "km": 165
+      },
+      {
+        "slug": "niort",
+        "name": "Niort",
+        "km": 172.2
+      },
+      {
+        "slug": "montauban",
+        "name": "Montauban",
+        "km": 183.4
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 190.8
+      },
+      {
+        "slug": "toulouse",
+        "name": "Toulouse",
+        "km": 213.9
+      }
+    ],
+    "content_seed": 2446
+  },
+  {
+    "slug": "colmar",
+    "name": "Colmar",
+    "insee": "68066",
+    "postal_codes": [
+      "68000"
+    ],
+    "population": 66970,
+    "department": {
+      "code": "68",
+      "name": "Haut-Rhin",
+      "slug": "haut-rhin"
+    },
+    "region": {
+      "name": "Grand Est",
+      "slug": "grand-est"
+    },
+    "lat": 48.1115,
+    "lng": 7.3924,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "mulhouse",
+        "name": "Mulhouse",
+        "km": 40.2
+      },
+      {
+        "slug": "strasbourg",
+        "name": "Strasbourg",
+        "km": 57.8
+      },
+      {
+        "slug": "nancy",
+        "name": "Nancy",
+        "km": 110.5
+      },
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 140.1
+      },
+      {
+        "slug": "metz",
+        "name": "Metz",
+        "km": 141.2
+      },
+      {
+        "slug": "dijon",
+        "name": "Dijon",
+        "km": 196.7
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 246.6
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 263.7
+      }
+    ],
+    "content_seed": 3873
+  },
+  {
+    "slug": "evry-courcouronnes",
+    "name": "Évry-Courcouronnes",
+    "insee": "91228",
+    "postal_codes": [
+      "91000",
+      "91080"
+    ],
+    "population": 66919,
+    "department": {
+      "code": "91",
+      "name": "Essonne",
+      "slug": "essonne"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.6287,
+    "lng": 2.4313,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 16.7
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 17.4
+      },
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 18.1
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 19
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 19.6
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 20.7
+      },
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 22
+      },
+      {
+        "slug": "noisy-le-grand",
+        "name": "Noisy-le-Grand",
+        "km": 24.5
+      }
+    ],
+    "content_seed": 4125
+  },
+  {
+    "slug": "venissieux",
+    "name": "Vénissieux",
+    "insee": "69259",
+    "postal_codes": [
+      "69200"
+    ],
+    "population": 65502,
+    "department": {
+      "code": "69",
+      "name": "Rhône",
+      "slug": "rhone"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.7012,
+    "lng": 4.8805,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 7.2
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 7.9
+      },
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 50.5
+      },
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 80.8
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 86.5
+      },
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 86.9
+      },
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 99.1
+      },
+      {
+        "slug": "clermont-ferrand",
+        "name": "Clermont-Ferrand",
+        "km": 137.5
+      }
+    ],
+    "content_seed": 2405
+  },
+  {
+    "slug": "ivry-sur-seine",
+    "name": "Ivry-sur-Seine",
+    "insee": "94041",
+    "postal_codes": [
+      "94200"
+    ],
+    "population": 65064,
+    "department": {
+      "code": "94",
+      "name": "Val-de-Marne",
+      "slug": "val-de-marne"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.8125,
+    "lng": 2.3872,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 2.6
+      },
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 2.9
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 5.7
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 5.9
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 7.3
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 7.8
+      },
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 9.2
+      },
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 9.5
+      }
+    ],
+    "content_seed": 2985
+  },
+  {
+    "slug": "valence",
+    "name": "Valence",
+    "insee": "26362",
+    "postal_codes": [
+      "26000"
+    ],
+    "population": 64458,
+    "department": {
+      "code": "26",
+      "name": "Drôme",
+      "slug": "drome"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 44.9234,
+    "lng": 4.9164,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 69.1
+      },
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 70.4
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 86.5
+      },
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 93
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 94.4
+      },
+      {
+        "slug": "chambery",
+        "name": "Chambéry",
+        "km": 106.6
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 109.4
+      },
+      {
+        "slug": "nimes",
+        "name": "Nîmes",
+        "km": 129.6
+      }
+    ],
+    "content_seed": 8358
+  },
+  {
+    "slug": "clichy",
+    "name": "Clichy",
+    "insee": "92024",
+    "postal_codes": [
+      "92110"
+    ],
+    "population": 64410,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9041,
+    "lng": 2.3041,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "levallois-perret",
+        "name": "Levallois-Perret",
+        "km": 1.6
+      },
+      {
+        "slug": "asnieres-sur-seine",
+        "name": "Asnières-sur-Seine",
+        "km": 1.7
+      },
+      {
+        "slug": "courbevoie",
+        "name": "Courbevoie",
+        "km": 3.5
+      },
+      {
+        "slug": "colombes",
+        "name": "Colombes",
+        "km": 4.6
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 5.9
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 5.9
+      },
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 6.3
+      },
+      {
+        "slug": "argenteuil",
+        "name": "Argenteuil",
+        "km": 6.6
+      }
+    ],
+    "content_seed": 1418
+  },
+  {
+    "slug": "quimper",
+    "name": "Quimper",
+    "insee": "29232",
+    "postal_codes": [
+      "29000"
+    ],
+    "population": 64385,
+    "department": {
+      "code": "29",
+      "name": "Finistère",
+      "slug": "finistere"
+    },
+    "region": {
+      "name": "Bretagne",
+      "slug": "bretagne"
+    },
+    "lat": 47.9982,
+    "lng": -4.0972,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "brest",
+        "name": "Brest",
+        "km": 54.5
+      },
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 160.7
+      },
+      {
+        "slug": "rennes",
+        "name": "Rennes",
+        "km": 179.5
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 208.1
+      },
+      {
+        "slug": "cherbourg-en-cotentin",
+        "name": "Cherbourg-en-Cotentin",
+        "km": 255.6
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 270.4
+      },
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 301
+      },
+      {
+        "slug": "caen",
+        "name": "Caen",
+        "km": 304
+      }
+    ],
+    "content_seed": 6784
+  },
+  {
+    "slug": "antony",
+    "name": "Antony",
+    "insee": "92002",
+    "postal_codes": [
+      "92160"
+    ],
+    "population": 64263,
+    "department": {
+      "code": "92",
+      "name": "Hauts-de-Seine",
+      "slug": "hauts-de-seine"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.7507,
+    "lng": 2.2976,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "villejuif",
+        "name": "Villejuif",
+        "km": 6.6
+      },
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 8.3
+      },
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 8.5
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 9.5
+      },
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 10.5
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 11.9
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 12.6
+      },
+      {
+        "slug": "versailles",
+        "name": "Versailles",
+        "km": 14.4
+      }
+    ],
+    "content_seed": 3569
+  },
+  {
+    "slug": "bourges",
+    "name": "Bourges",
+    "insee": "18033",
+    "postal_codes": [
+      "18000"
+    ],
+    "population": 64186,
+    "department": {
+      "code": "18",
+      "name": "Cher",
+      "slug": "cher"
+    },
+    "region": {
+      "name": "Centre-Val de Loire",
+      "slug": "centre-val-de-loire"
+    },
+    "lat": 47.078,
+    "lng": 2.3983,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "orleans",
+        "name": "Orléans",
+        "km": 95.7
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 133.3
+      },
+      {
+        "slug": "clermont-ferrand",
+        "name": "Clermont-Ferrand",
+        "km": 153.6
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 162.8
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 163.7
+      },
+      {
+        "slug": "evry-courcouronnes",
+        "name": "Évry-Courcouronnes",
+        "km": 172.4
+      },
+      {
+        "slug": "troyes",
+        "name": "Troyes",
+        "km": 184.4
+      },
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 186.1
+      }
+    ],
+    "content_seed": 9637
+  },
+  {
+    "slug": "la-seyne-sur-mer",
+    "name": "La Seyne-sur-Mer",
+    "insee": "83126",
+    "postal_codes": [
+      "83500"
+    ],
+    "population": 63732,
+    "department": {
+      "code": "83",
+      "name": "Var",
+      "slug": "var"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.0837,
+    "lng": 5.8789,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 7.3
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 45.9
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 64.1
+      },
+      {
+        "slug": "frejus",
+        "name": "Fréjus",
+        "km": 84.2
+      },
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 105.3
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 113.6
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 127.3
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 130.6
+      }
+    ],
+    "content_seed": 9394
+  },
+  {
+    "slug": "montauban",
+    "name": "Montauban",
+    "insee": "82121",
+    "postal_codes": [
+      "82000"
+    ],
+    "population": 62945,
+    "department": {
+      "code": "82",
+      "name": "Tarn-et-Garonne",
+      "slug": "tarn-et-garonne"
+    },
+    "region": {
+      "name": "Occitanie",
+      "slug": "occitanie"
+    },
+    "lat": 44.0217,
+    "lng": 1.3646,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "toulouse",
+        "name": "Toulouse",
+        "km": 47.1
+      },
+      {
+        "slug": "pau",
+        "name": "Pau",
+        "km": 157.9
+      },
+      {
+        "slug": "beziers",
+        "name": "Béziers",
+        "km": 168
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 180.8
+      },
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 183.4
+      },
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 185.8
+      },
+      {
+        "slug": "perpignan",
+        "name": "Perpignan",
+        "km": 192.7
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 204.3
+      }
+    ],
+    "content_seed": 9901
+  },
+  {
+    "slug": "villeneuve-d-ascq",
+    "name": "Villeneuve-d'Ascq",
+    "insee": "59009",
+    "postal_codes": [
+      "59491",
+      "59493",
+      "59650"
+    ],
+    "population": 62868,
+    "department": {
+      "code": "59",
+      "name": "Nord",
+      "slug": "nord"
+    },
+    "region": {
+      "name": "Hauts-de-France",
+      "slug": "hauts-de-france"
+    },
+    "lat": 50.6362,
+    "lng": 3.1619,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "roubaix",
+        "name": "Roubaix",
+        "km": 6
+      },
+      {
+        "slug": "lille",
+        "name": "Lille",
+        "km": 8.1
+      },
+      {
+        "slug": "tourcoing",
+        "name": "Tourcoing",
+        "km": 9.4
+      },
+      {
+        "slug": "dunkerque",
+        "name": "Dunkerque",
+        "km": 71.5
+      },
+      {
+        "slug": "calais",
+        "name": "Calais",
+        "km": 97.4
+      },
+      {
+        "slug": "amiens",
+        "name": "Amiens",
+        "km": 103
+      },
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 166.5
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 194
+      }
+    ],
+    "content_seed": 2476
+  },
+  {
+    "slug": "cayenne",
+    "name": "Cayenne",
+    "insee": "97302",
+    "postal_codes": [
+      "97300"
+    ],
+    "population": 62675,
+    "department": {
+      "code": "973",
+      "name": "Guyane",
+      "slug": "guyane"
+    },
+    "region": {
+      "name": "Guyane",
+      "slug": "guyane"
+    },
+    "lat": 4.9464,
+    "lng": -52.3319,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "fort-de-france",
+        "name": "Fort-de-France",
+        "km": 1441.5
+      },
+      {
+        "slug": "brest",
+        "name": "Brest",
+        "km": 6609.4
+      },
+      {
+        "slug": "quimper",
+        "name": "Quimper",
+        "km": 6611.8
+      },
+      {
+        "slug": "pau",
+        "name": "Pau",
+        "km": 6631.1
+      },
+      {
+        "slug": "pessac",
+        "name": "Pessac",
+        "km": 6675.7
+      },
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 6677.8
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 6686.2
+      },
+      {
+        "slug": "saint-nazaire",
+        "name": "Saint-Nazaire",
+        "km": 6693.9
+      }
+    ],
+    "content_seed": 1798
+  },
+  {
+    "slug": "le-blanc-mesnil",
+    "name": "Le Blanc-Mesnil",
+    "insee": "93007",
+    "postal_codes": [
+      "93150"
+    ],
+    "population": 62376,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9372,
+    "lng": 2.4576,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 1.7
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 2.7
+      },
+      {
+        "slug": "pantin",
+        "name": "Pantin",
+        "km": 5.4
+      },
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 5.7
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 6.7
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 8.2
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 11.8
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 11.9
+      }
+    ],
+    "content_seed": 3298
+  },
+  {
+    "slug": "troyes",
+    "name": "Troyes",
+    "insee": "10387",
+    "postal_codes": [
+      "10000"
+    ],
+    "population": 62088,
+    "department": {
+      "code": "10",
+      "name": "Aube",
+      "slug": "aube"
+    },
+    "region": {
+      "name": "Grand Est",
+      "slug": "grand-est"
+    },
+    "lat": 48.2924,
+    "lng": 4.0761,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "reims",
+        "name": "Reims",
+        "km": 106.9
+      },
+      {
+        "slug": "evry-courcouronnes",
+        "name": "Évry-Courcouronnes",
+        "km": 126.9
+      },
+      {
+        "slug": "noisy-le-grand",
+        "name": "Noisy-le-Grand",
+        "km": 127
+      },
+      {
+        "slug": "dijon",
+        "name": "Dijon",
+        "km": 128.5
+      },
+      {
+        "slug": "champigny-sur-marne",
+        "name": "Champigny-sur-Marne",
+        "km": 128.5
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 129.5
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 131.5
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 135.5
+      }
+    ],
+    "content_seed": 3472
+  },
+  {
+    "slug": "pantin",
+    "name": "Pantin",
+    "insee": "93055",
+    "postal_codes": [
+      "93500"
+    ],
+    "population": 61929,
+    "department": {
+      "code": "93",
+      "name": "Seine-Saint-Denis",
+      "slug": "seine-saint-denis"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.9006,
+    "lng": 2.4085,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "aubervilliers",
+        "name": "Aubervilliers",
+        "km": 2
+      },
+      {
+        "slug": "drancy",
+        "name": "Drancy",
+        "km": 3.8
+      },
+      {
+        "slug": "montreuil",
+        "name": "Montreuil",
+        "km": 5.1
+      },
+      {
+        "slug": "saint-denis-93",
+        "name": "Saint-Denis",
+        "km": 5.2
+      },
+      {
+        "slug": "le-blanc-mesnil",
+        "name": "Le Blanc-Mesnil",
+        "km": 5.4
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 6.5
+      },
+      {
+        "slug": "clichy",
+        "name": "Clichy",
+        "km": 7.6
+      },
+      {
+        "slug": "aulnay-sous-bois",
+        "name": "Aulnay-sous-Bois",
+        "km": 7.9
+      }
+    ],
+    "content_seed": 1476
+  },
+  {
+    "slug": "villejuif",
+    "name": "Villejuif",
+    "insee": "94076",
+    "postal_codes": [
+      "94800"
+    ],
+    "population": 60183,
+    "department": {
+      "code": "94",
+      "name": "Val-de-Marne",
+      "slug": "val-de-marne"
+    },
+    "region": {
+      "name": "Île-de-France",
+      "slug": "ile-de-france"
+    },
+    "lat": 48.7934,
+    "lng": 2.3603,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "vitry-sur-seine",
+        "name": "Vitry-sur-Seine",
+        "km": 2.6
+      },
+      {
+        "slug": "ivry-sur-seine",
+        "name": "Ivry-sur-Seine",
+        "km": 2.9
+      },
+      {
+        "slug": "antony",
+        "name": "Antony",
+        "km": 6.6
+      },
+      {
+        "slug": "creteil",
+        "name": "Créteil",
+        "km": 6.8
+      },
+      {
+        "slug": "paris",
+        "name": "Paris",
+        "km": 7.3
+      },
+      {
+        "slug": "issy-les-moulineaux",
+        "name": "Issy-les-Moulineaux",
+        "km": 7.9
+      },
+      {
+        "slug": "saint-maur-des-fosses",
+        "name": "Saint-Maur-des-Fossés",
+        "km": 9.7
+      },
+      {
+        "slug": "boulogne-billancourt",
+        "name": "Boulogne-Billancourt",
+        "km": 9.9
+      }
+    ],
+    "content_seed": 3659
+  },
+  {
+    "slug": "chambery",
+    "name": "Chambéry",
+    "insee": "73065",
+    "postal_codes": [
+      "73000"
+    ],
+    "population": 59964,
+    "department": {
+      "code": "73",
+      "name": "Savoie",
+      "slug": "savoie"
+    },
+    "region": {
+      "name": "Auvergne-Rhône-Alpes",
+      "slug": "auvergne-rhone-alpes"
+    },
+    "lat": 45.5822,
+    "lng": 5.9064,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "annecy",
+        "name": "Annecy",
+        "km": 39.5
+      },
+      {
+        "slug": "grenoble",
+        "name": "Grenoble",
+        "km": 46.7
+      },
+      {
+        "slug": "venissieux",
+        "name": "Vénissieux",
+        "km": 80.8
+      },
+      {
+        "slug": "villeurbanne",
+        "name": "Villeurbanne",
+        "km": 81.7
+      },
+      {
+        "slug": "lyon",
+        "name": "Lyon",
+        "km": 85.5
+      },
+      {
+        "slug": "valence",
+        "name": "Valence",
+        "km": 106.6
+      },
+      {
+        "slug": "saint-etienne",
+        "name": "Saint-Étienne",
+        "km": 121.3
+      },
+      {
+        "slug": "besancon",
+        "name": "Besançon",
+        "km": 186.8
+      }
+    ],
+    "content_seed": 1678
+  },
+  {
+    "slug": "niort",
+    "name": "Niort",
+    "insee": "79191",
+    "postal_codes": [
+      "79000"
+    ],
+    "population": 59854,
+    "department": {
+      "code": "79",
+      "name": "Deux-Sèvres",
+      "slug": "deux-sevres"
+    },
+    "region": {
+      "name": "Nouvelle-Aquitaine",
+      "slug": "nouvelle-aquitaine"
+    },
+    "lat": 46.3274,
+    "lng": -0.4613,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "la-rochelle",
+        "name": "La Rochelle",
+        "km": 58
+      },
+      {
+        "slug": "poitiers",
+        "name": "Poitiers",
+        "km": 69.9
+      },
+      {
+        "slug": "angers",
+        "name": "Angers",
+        "km": 128.6
+      },
+      {
+        "slug": "nantes",
+        "name": "Nantes",
+        "km": 131.4
+      },
+      {
+        "slug": "limoges",
+        "name": "Limoges",
+        "km": 140.2
+      },
+      {
+        "slug": "tours",
+        "name": "Tours",
+        "km": 147.7
+      },
+      {
+        "slug": "bordeaux",
+        "name": "Bordeaux",
+        "km": 163.2
+      },
+      {
+        "slug": "merignac",
+        "name": "Mérignac",
+        "km": 167.2
+      }
+    ],
+    "content_seed": 5542
+  },
+  {
+    "slug": "frejus",
+    "name": "Fréjus",
+    "insee": "83061",
+    "postal_codes": [
+      "83370",
+      "83600"
+    ],
+    "population": 59719,
+    "department": {
+      "code": "83",
+      "name": "Var",
+      "slug": "var"
+    },
+    "region": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "slug": "provence-alpes-cote-d-azur"
+    },
+    "lat": 43.4553,
+    "lng": 6.7848,
+    "tier": 2,
+    "nearest_partner": null,
+    "local_merchants": [],
+    "nearby_cities": [
+      {
+        "slug": "cannes",
+        "name": "Cannes",
+        "km": 21.1
+      },
+      {
+        "slug": "antibes",
+        "name": "Antibes",
+        "km": 29.4
+      },
+      {
+        "slug": "nice",
+        "name": "Nice",
+        "km": 46.7
+      },
+      {
+        "slug": "toulon",
+        "name": "Toulon",
+        "km": 77.5
+      },
+      {
+        "slug": "la-seyne-sur-mer",
+        "name": "La Seyne-sur-Mer",
+        "km": 84.2
+      },
+      {
+        "slug": "aix-en-provence",
+        "name": "Aix-en-Provence",
+        "km": 113
+      },
+      {
+        "slug": "marseille",
+        "name": "Marseille",
+        "km": 115.2
+      },
+      {
+        "slug": "avignon",
+        "name": "Avignon",
+        "km": 165.9
+      }
+    ],
+    "content_seed": 8674
+  }
+]

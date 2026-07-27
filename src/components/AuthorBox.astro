@@ -1,0 +1,47 @@
+---
+// Bloc auteur E-E-A-T — personne physique non définie (cf. brief §22, point 3).
+// Placeholder explicite : ne pas inventer de nom, bio ou photo tant que ce n'est pas fourni.
+---
+
+<div class="author-box">
+  <div class="avatar" aria-hidden="true"></div>
+  <div>
+    <p class="name">Auteur à définir</p>
+    <p class="bio">
+      Bloc auteur en attente (nom, bio, photo, lien LinkedIn) — requis avant mise en ligne pour
+      l'E-E-A-T sur un site YMYL financier.
+    </p>
+  </div>
+</div>
+
+<style>
+  .author-box {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.2rem;
+    border: 1px dashed var(--filet-fort);
+    max-width: var(--mesure);
+    margin: 1.6rem 0;
+  }
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--noir-surface);
+    border: 1px solid var(--filet);
+    flex: none;
+  }
+  .name {
+    margin: 0 0 0.2rem;
+    font-family: var(--font-heading);
+    color: var(--eclat);
+    font-size: 0.95rem;
+  }
+  .bio {
+    margin: 0;
+    font-size: 0.78rem;
+    color: var(--gris-sourd);
+    max-width: none;
+  }
+</style>

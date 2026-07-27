@@ -1,0 +1,66 @@
+---
+// Barre GEO/AEO — deep-links de résumé IA + lien vers le miroir Markdown (brief §15)
+interface Props {
+  pageUrl: string;
+  mdUrl: string;
+}
+const { pageUrl, mdUrl } = Astro.props;
+
+const prompt = `Résume cette page : ${pageUrl}`;
+const encoded = encodeURIComponent(prompt);
+
+const engines = [
+  { name: 'ChatGPT', href: `https://chatgpt.com/?q=${encoded}` },
+  { name: 'Perplexity', href: `https://www.perplexity.ai/search?q=${encoded}` },
+  { name: 'Claude', href: `https://claude.ai/new?q=${encoded}` },
+  { name: 'Gemini', href: `https://gemini.google.com/app?q=${encoded}` },
+  { name: 'Mistral', href: `https://chat.mistral.ai/chat?q=${encoded}` },
+  { name: 'Grok', href: `https://grok.com/?q=${encoded}` },
+];
+---
+
+<div class="geobar">
+  <span class="label">Résumer cette page avec</span>
+  <div class="links">
+    {engines.map((e) => (
+      <a href={e.href} target="_blank" rel="noopener noreferrer">{e.name}</a>
+    ))}
+    <a href={mdUrl} class="md-link">Version .md</a>
+  </div>
+</div>
+
+<style>
+  .geobar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--filet);
+    border-bottom: 1px solid var(--filet);
+    margin: 1.6rem 0;
+  }
+  .label {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gris-sourd);
+    flex: none;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+  .links a {
+    font-size: 0.78rem;
+    color: var(--platine);
+    border-bottom: 1px solid var(--filet-fort);
+  }
+  .links a:hover {
+    color: var(--eclat);
+  }
+  .md-link {
+    color: var(--accent) !important;
+  }
+</style>

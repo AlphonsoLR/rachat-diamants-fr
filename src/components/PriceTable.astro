@@ -1,0 +1,35 @@
+---
+interface Row {
+  carat: string;
+  retail: string;
+  rachat: string;
+  delai: string;
+}
+interface Props {
+  rows: Row[];
+}
+const { rows } = Astro.props;
+---
+
+<div class="tbl-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Carat</th>
+        <th class="num">Estimation retail</th>
+        <th class="num">Fourchette de rachat</th>
+        <th>Délai</th>
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td>{r.carat}</td>
+          <td class="num">{r.retail}</td>
+          <td class="num">{r.rachat}</td>
+          <td>{r.delai}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

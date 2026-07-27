@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "rond-brillant",
+    "name": "Rond brillant",
+    "ratio_ideal": "1.00",
+    "facets": 57,
+    "price_factor": 1.0,
+    "popularity_rank": 1,
+    "description_long": "La taille la plus répandue (environ deux tiers des diamants vendus dans le monde). Ses 57 ou 58 facettes optimisent le retour de lumière, ce qui en fait la référence pour le feu et la brillance. C'est aussi la taille qui offre le meilleur rendement de coupe à partir d'un brut, ce qui explique sa prime au carat plus élevée."
+  },
+  {
+    "slug": "princesse",
+    "name": "Princesse",
+    "ratio_ideal": "1.00–1.05",
+    "facets": 58,
+    "price_factor": 0.92,
+    "popularity_rank": 2,
+    "description_long": "Coupe carrée à angles vifs, née dans les années 1980. Bon compromis entre rendement de coupe (moins de perte de brut que le rond) et éclat. Les coins sont fragiles et nécessitent un sertissage protecteur (griffes ou chaton)."
+  },
+  {
+    "slug": "ovale",
+    "name": "Ovale",
+    "ratio_ideal": "1.35–1.50",
+    "facets": 56,
+    "price_factor": 0.9,
+    "popularity_rank": 3,
+    "description_long": "Silhouette allongée qui donne une impression de taille supérieure au poids réel. Tendance forte depuis quelques années sur le marché des bagues de fiançailles. Attention à l'effet « nœud papillon » (zone plus sombre au centre) sur les tailles mal proportionnées."
+  },
+  {
+    "slug": "coussin",
+    "name": "Coussin",
+    "ratio_ideal": "1.00–1.15",
+    "facets": 58,
+    "price_factor": 0.85,
+    "popularity_rank": 4,
+    "description_long": "Carré ou rectangle aux angles arrondis, facettes plus larges rappelant la taille ancienne. Look vintage très recherché en pièces de succession et en rééditions contemporaines."
+  },
+  {
+    "slug": "emeraude",
+    "name": "Émeraude",
+    "ratio_ideal": "1.30–1.50",
+    "facets": 50,
+    "price_factor": 0.82,
+    "popularity_rank": 5,
+    "description_long": "Taille « en escalier » (facettes rectangulaires parallèles) plutôt qu'en brillant. Met en valeur la pureté du diamant plutôt que son feu : les inclusions y sont plus visibles, ce qui impose d'être exigeant sur le grade de pureté."
+  },
+  {
+    "slug": "poire",
+    "name": "Poire",
+    "ratio_ideal": "1.50–1.70",
+    "facets": 58,
+    "price_factor": 0.83,
+    "popularity_rank": 6,
+    "description_long": "Forme en goutte d'eau, hybride entre le rond et le marquise. Se porte pointe vers l'extérieur en pendentif, pointe vers l'ongle en bague. Comme l'ovale, sensible à l'effet nœud papillon."
+  },
+  {
+    "slug": "radiant",
+    "name": "Radiant",
+    "ratio_ideal": "1.00–1.50",
+    "facets": 70,
+    "price_factor": 0.8,
+    "popularity_rank": 7,
+    "description_long": "Coins coupés façon émeraude, mais facettage en brillant : combine la silhouette anguleuse de la taille étagée avec l'éclat d'une taille brillant."
+  },
+  {
+    "slug": "asscher",
+    "name": "Asscher",
+    "ratio_ideal": "1.00–1.05",
+    "facets": 58,
+    "price_factor": 0.78,
+    "popularity_rank": 8,
+    "description_long": "Version carrée de la taille émeraude, facettes en escalier concentriques. Créée en 1902 par la maison Asscher, elle connaît un regain d'intérêt sur le marché du vintage/rétro."
+  },
+  {
+    "slug": "marquise",
+    "name": "Marquise",
+    "ratio_ideal": "1.75–2.25",
+    "facets": 58,
+    "price_factor": 0.76,
+    "popularity_rank": 9,
+    "description_long": "Silhouette allongée à pointes effilées aux deux extrémités. Maximise l'effet de taille apparente par carat. Pointes fragiles, sertissage à surveiller."
+  },
+  {
+    "slug": "coeur",
+    "name": "Cœur",
+    "ratio_ideal": "0.90–1.10",
+    "facets": 59,
+    "price_factor": 0.74,
+    "popularity_rank": 10,
+    "description_long": "Taille la plus technique à exécuter (symétrie exigeante), généralement réservée aux carats plus élevés où la forme reste lisible. Fort ancrage sentimental, mais liquidité de revente plus faible que les tailles classiques."
+  }
+]

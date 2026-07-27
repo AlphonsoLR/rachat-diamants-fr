@@ -1,0 +1,9 @@
+[
+  { "slug": "if", "grade": "IF", "label": "Internally Flawless", "description": "Aucune inclusion visible à 10x, tout au plus des défauts de surface mineurs et polissables." },
+  { "slug": "vvs1", "grade": "VVS1", "label": "Very Very Slightly Included 1", "description": "Inclusions extrêmement difficiles à voir à 10x, même pour un gemmologue entraîné." },
+  { "slug": "vvs2", "grade": "VVS2", "label": "Very Very Slightly Included 2", "description": "Inclusions très difficiles à voir à 10x." },
+  { "slug": "vs1", "grade": "VS1", "label": "Very Slightly Included 1", "description": "Inclusions mineures, difficiles à voir à 10x." },
+  { "slug": "vs2", "grade": "VS2", "label": "Very Slightly Included 2", "description": "Inclusions mineures, visibles avec un peu plus d'effort à 10x." },
+  { "slug": "si1", "grade": "SI1", "label": "Slightly Included 1", "description": "Inclusions visibles à 10x, généralement invisibles à l'œil nu." },
+  { "slug": "si2", "grade": "SI2", "label": "Slightly Included 2", "description": "Inclusions visibles à 10x, parfois perceptibles à l'œil nu selon la position." }
+]

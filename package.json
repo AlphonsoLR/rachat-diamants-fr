@@ -1,0 +1,20 @@
+{
+  "name": "rachat-diamants-fr",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=18.20.8"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate:data && astro build && node scripts/generate-sitemap.mjs",
+    "preview": "astro preview",
+    "astro": "astro",
+    "validate:data": "node scripts/validate-data.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.18.2",
+    "sharp": "^0.33.5",
+    "zod": "^3.24.1"
+  }
+}

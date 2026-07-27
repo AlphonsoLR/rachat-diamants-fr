@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import shapes from '../../../../data/shapes.json';
+---
+
+<BaseLayout
+  title="Formes de diamants : guide et prix par taille"
+  description="Les 10 formes de diamants les plus courantes : ratio idéal, facettes, impact sur le prix de rachat."
+>
+  <div class="wrap page-head">
+    <h1>Formes de diamants</h1>
+    <p class="chapo">Chaque forme influence différemment l'éclat, le rendement de coupe et la valeur de rachat.</p>
+  </div>
+  <section>
+    <div class="wrap">
+      <div class="grid">
+        {shapes.map((s) => (
+          <ProductCard href={`/diamant/forme/${s.slug}/`} title={s.name} subtitle={s.ratio_ideal} shape={s.slug} />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-top: 2.5rem; }
+  .chapo { max-width: 60ch; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+  }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>

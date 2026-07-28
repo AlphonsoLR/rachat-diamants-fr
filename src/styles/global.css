@@ -1,18 +1,18 @@
-/* Design system — rachat-diamants.fr, version claire (reflets bleu/violet), plus lisible que la V1 sombre */
+/* Design system — rachat-diamants.fr, palette alignée sur le logo (navy + or) */
 :root {
   --noir-profond: #ffffff; /* fond de page */
-  --noir-carbone: #f5f6fc; /* cartes / en-têtes de tableau */
-  --noir-surface: #eef0fa; /* surface secondaire */
-  --blanc-diamant: #14162b; /* texte principal (nom conservé pour compat composants) */
-  --gris-fume: #6b7089; /* texte atténué */
-  --gris-sourd: #9296ad; /* labels très atténués */
-  --platine: #383c55; /* paragraphes, liens */
-  --eclat: #101223; /* titres, emphase forte */
-  --accent: #5b6ef5; /* bleu */
-  --accent-2: #9b6bff; /* violet */
-  --alerte: #d3592f;
-  --filet: rgba(20, 22, 60, 0.08);
-  --filet-fort: rgba(20, 22, 60, 0.16);
+  --noir-carbone: #f5f6fa; /* cartes / en-têtes de tableau */
+  --noir-surface: #eef0f7; /* surface secondaire */
+  --blanc-diamant: #14182a; /* texte principal (nom conservé pour compat composants) */
+  --gris-fume: #5b6479; /* texte atténué */
+  --gris-sourd: #8890a3; /* labels très atténués */
+  --platine: #313a52; /* paragraphes, liens */
+  --eclat: #0d1d3a; /* titres, emphase forte — navy du logo */
+  --accent: #a67c2e; /* or profond — liens, CTA */
+  --accent-2: #d9b45c; /* or clair — reflets, dégradés */
+  --alerte: #c4703f;
+  --filet: rgba(13, 29, 58, 0.08);
+  --filet-fort: rgba(13, 29, 58, 0.16);
   --mesure: 68ch;
   --font-heading: 'Fraunces', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
@@ -197,7 +197,7 @@ th.num {
   align-items: center;
   gap: 0.5rem;
   background: var(--gradient-sparkle);
-  color: #ffffff;
+  color: var(--eclat);
   border: none;
   border-radius: 999px;
   padding: 0.85rem 1.6rem;

@@ -7,6 +7,8 @@ import ProductCard from '../../components/ProductCard.astro';
 import ColorScale from '../../components/ColorScale.astro';
 import ClarityScale from '../../components/ClarityScale.astro';
 import AuthorBox from '../../components/AuthorBox.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../../assets/images/pexels-1927266.jpg';
 import cities from '../../../data/cities.json';
 import shapes from '../../../data/shapes.json';
 import carats from '../../../data/carats.json';
@@ -82,15 +84,20 @@ const breadcrumbSchema = {
       <a href="/">Accueil</a> › <a href="/rachat-diamant/">Rachat de diamant</a> ›
       {city.region.name} › {city.name}
     </nav>
-    <h1>Rachat, achat et vente de diamants à {city.name}</h1>
-    <p class="authority">Barème révisé le {pricingMatrix.last_review} · Lecture 6 min</p>
-    <p class="chapo">
-      À {city.name} ({city.department.name}), la valeur de rachat d'un diamant dépend d'abord de
-      son certificat, puis de ses 4C. Voici nos fourchettes de référence et la méthode complète.
-    </p>
-    <div class="cta-row">
-      <a class="btn" href="/estimation/">Estimer mon diamant</a>
-      <a class="btn btn-ghost" href="#bareme">Voir le barème</a>
+    <div class="head-grid">
+      <div>
+        <h1>Rachat, achat et vente de diamants à {city.name}</h1>
+        <p class="authority">Barème révisé le {pricingMatrix.last_review} · Lecture 6 min</p>
+        <p class="chapo">
+          À {city.name} ({city.department.name}), la valeur de rachat d'un diamant dépend d'abord de
+          son certificat, puis de ses 4C. Voici nos fourchettes de référence et la méthode complète.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="/estimation/">Estimer mon diamant</a>
+          <a class="btn btn-ghost" href="#bareme">Voir le barème</a>
+        </div>
+      </div>
+      <Image src={heroImage} alt="Bague en diamant, gros plan" width={480} height={560} loading="eager" class="head-visual" />
     </div>
 
     <GeoBar pageUrl={pageUrl} mdUrl={`${pageUrl}.md`} />
@@ -242,6 +249,24 @@ const breadcrumbSchema = {
 <style>
   .page-head {
     padding-top: 2.5rem;
+  }
+  .head-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: clamp(2rem, 5vw, 3.5rem);
+    align-items: center;
+  }
+  .head-grid :global(.head-visual) {
+    width: 100%;
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 24px 50px -20px rgba(20, 22, 60, 0.22);
+  }
+  @media (max-width: 800px) {
+    .head-grid {
+      grid-template-columns: 1fr;
+    }
   }
   .breadcrumb {
     font-size: 0.78rem;

@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProductCard from '../components/ProductCard.astro';
+import { Image } from 'astro:assets';
 import shapes from '../../data/shapes.json';
 import cities from '../../data/cities.json';
+import heroImage from '../assets/images/pexels-3091638.jpg';
+import syntheseImage from '../assets/images/pexels-2735981.jpg';
 
 const t1Cities = cities.filter((c) => c.tier === 1).slice(0, 12);
 ---
@@ -12,17 +15,22 @@ const t1Cities = cities.filter((c) => c.tier === 1).slice(0, 12);
   description="Barème de rachat transparent, estimation gratuite et guides pour vendre ou acheter un diamant partout en France."
 >
   <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow"><span class="mark"></span> Barème indicatif · révisé juillet 2026</p>
-      <h1>Le premier barème de rachat <em>transparent</em> pour vos diamants</h1>
-      <p class="dek">
-        Contrairement à l'or, le diamant n'a pas de cours public. Nous publions notre méthode de
-        calcul, fourchette par fourchette, ville par ville — sans promesse de prix ferme avant
-        examen physique.
-      </p>
-      <div class="cta-row">
-        <a class="btn" href="/estimation/">Estimer mon diamant</a>
-        <a class="btn btn-ghost" href="/bareme-rachat-diamant/">Voir le barème</a>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow"><span class="mark"></span> Barème indicatif · révisé juillet 2026</p>
+        <h1>Le premier barème de rachat <em>transparent</em> pour vos diamants</h1>
+        <p class="dek">
+          Contrairement à l'or, le diamant n'a pas de cours public. Nous publions notre méthode de
+          calcul, fourchette par fourchette, ville par ville — sans promesse de prix ferme avant
+          examen physique.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="/estimation/">Estimer mon diamant</a>
+          <a class="btn btn-ghost" href="/bareme-rachat-diamant/">Voir le barème</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <Image src={heroImage} alt="Bague sertie d'un diamant, gros plan macro" width={640} height={800} loading="eager" />
       </div>
     </div>
   </section>
@@ -53,20 +61,57 @@ const t1Cities = cities.filter((c) => c.tier === 1).slice(0, 12);
   </section>
 
   <section class="synthese">
-    <div class="wrap">
-      <h2>Naturel ou synthèse ?</h2>
-      <p class="dek">
-        Un diamant de synthèse (laboratoire) n'a pas la même valeur de revente qu'un diamant
-        naturel — un écart que nous assumons de dire clairement, plutôt que de le maquiller.
-      </p>
-      <a class="btn btn-ghost" href="/diamant-synthese-lab-grown/">Comprendre la différence →</a>
+    <div class="wrap synthese-grid">
+      <Image src={syntheseImage} alt="Gros plan sur une bague en diamant" width={520} height={640} loading="lazy" />
+      <div>
+        <h2>Naturel ou synthèse ?</h2>
+        <p class="dek">
+          Un diamant de synthèse (laboratoire) n'a pas la même valeur de revente qu'un diamant
+          naturel — un écart que nous assumons de dire clairement, plutôt que de le maquiller.
+        </p>
+        <a class="btn btn-ghost" href="/diamant-synthese-lab-grown/">Comprendre la différence →</a>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
   .hero {
-    padding: clamp(4rem, 10vw, 8rem) 0 clamp(3rem, 6vw, 5rem);
+    padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 5rem);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+  }
+  .hero-visual :global(img) {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px -20px rgba(20, 22, 60, 0.25);
+  }
+  .synthese-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: clamp(2rem, 5vw, 3.5rem);
+    align-items: center;
+  }
+  .synthese-grid :global(img) {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  @media (max-width: 800px) {
+    .hero-grid,
+    .synthese-grid {
+      grid-template-columns: 1fr;
+    }
+    .synthese-grid {
+      direction: ltr;
+    }
   }
   .dek {
     color: var(--gris-fume);

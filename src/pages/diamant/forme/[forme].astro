@@ -4,6 +4,8 @@ import DiamondShapeIcon from '../../../components/DiamondShapeIcon.astro';
 import PriceTable from '../../../components/PriceTable.astro';
 import ProductCard from '../../../components/ProductCard.astro';
 import GeoBar from '../../../components/GeoBar.astro';
+import { Image } from 'astro:assets';
+import ambianceImage from '../../../assets/images/pexels-2799863.jpg';
 import shapes from '../../../../data/shapes.json';
 import carats from '../../../../data/carats.json';
 import cities from '../../../../data/cities.json';
@@ -51,6 +53,10 @@ const topCities = [...cities].filter((c) => c.tier === 1).slice(0, 12);
       </div>
     </div>
     <GeoBar pageUrl={pageUrl} mdUrl={`${pageUrl}.md`} />
+  </div>
+
+  <div class="wrap">
+    <Image src={ambianceImage} alt={`Diamant, ambiance ${shape.name}`} width={1100} height={480} loading="lazy" class="ambiance-banner" />
   </div>
 
   <section>
@@ -126,6 +132,13 @@ const topCities = [...cities].filter((c) => c.tier === 1).slice(0, 12);
     padding: 1.5rem;
     border: 1px solid var(--filet);
     background: var(--noir-carbone);
+  }
+  :global(.ambiance-banner) {
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 2rem 0;
   }
   .chapo {
     font-size: 1.02rem;

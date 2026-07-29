@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import GeoBar from '../../components/GeoBar.astro';
+import Calculator from '../../components/Calculator.astro';
 import pricingMatrix from '../../../data/pricing-matrix.json';
+
+const pageUrl = 'https://rachat-diamants.fr/bareme-rachat-diamant/';
 ---
 
 <BaseLayout
-  title="Barème de rachat de diamants — méthodologie"
-  description="Notre méthode de calcul du barème de rachat de diamants, coefficient par coefficient."
+  title="Barème de rachat de diamants — méthodologie et calculateur"
+  description="Notre méthode de calcul du barème de rachat de diamants, coefficient par coefficient, avec calculateur d'estimation gratuit."
 >
   <div class="wrap page-head">
     <h1>Le barème de rachat rachat-diamants.fr</h1>
@@ -14,6 +18,7 @@ import pricingMatrix from '../../../data/pricing-matrix.json';
       prix propriétaire sous licence (type Rapaport), nous publions notre propre méthode de calcul,
       en toute transparence.
     </p>
+    <GeoBar pageUrl={pageUrl} mdUrl={`${pageUrl}.md`} />
   </div>
 
   <section>
@@ -25,6 +30,10 @@ import pricingMatrix from '../../../data/pricing-matrix.json';
         </p>
       </div>
 
+      <h2>Calculateur d'estimation</h2>
+      <p>Ajustez les caractéristiques pour obtenir une fourchette indicative en temps réel.</p>
+      <Calculator />
+
       <h2>Formule</h2>
       <pre><code>prix_retail_estime = base_ct(palier_carat)
                      × facteur_couleur × facteur_purete × facteur_taille
@@ -35,7 +44,7 @@ import pricingMatrix from '../../../data/pricing-matrix.json';
 prix_rachat_bas    = prix_retail_estime × {pricingMatrix.taux_rachat_bas}
 prix_rachat_haut   = prix_retail_estime × {pricingMatrix.taux_rachat_haut}</code></pre>
 
-      <p class="disclaimer-inline">Dernière révision affichée : {pricingMatrix.last_review}. Calculateur interactif à venir (lot L3).</p>
+      <p class="disclaimer-inline">Dernière révision affichée : {pricingMatrix.last_review}.</p>
     </div>
   </section>
 </BaseLayout>

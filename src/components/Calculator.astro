@@ -1,0 +1,284 @@
+---
+import shapes from '../../data/shapes.json';
+import colors from '../../data/colors.json';
+import clarity from '../../data/clarity.json';
+import pricingMatrix from '../../data/pricing-matrix.json';
+
+const mainColors = colors.filter((c) => c.category !== 'fancy');
+---
+
+<div class="calculator" data-calculator>
+  <div class="field">
+    <label for="calc-shape">Forme</label>
+    <select id="calc-shape">
+      {shapes.map((s) => <option value={s.slug}>{s.name}</option>)}
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="calc-carat">Carat : <output id="calc-carat-value">1.00</output> ct</label>
+    <input type="range" id="calc-carat" min="0.1" max="5" step="0.05" value="1" />
+  </div>
+
+  <div class="field">
+    <label for="calc-color">Couleur</label>
+    <select id="calc-color">
+      {mainColors.map((c) => <option value={c.slug} selected={c.slug === 'g'}>{c.grade}</option>)}
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="calc-clarity">Pureté</label>
+    <select id="calc-clarity">
+      {clarity.map((c) => <option value={c.slug} selected={c.slug === 'vs1'}>{c.grade}</option>)}
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="calc-cut">Qualité de taille</label>
+    <select id="calc-cut">
+      <option value="excellent">Excellent</option>
+      <option value="very_good">Very Good</option>
+      <option value="good">Good</option>
+      <option value="fair">Fair</option>
+      <option value="poor">Poor</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="calc-fluorescence">Fluorescence</label>
+    <select id="calc-fluorescence">
+      <option value="none">Aucune</option>
+      <option value="faint">Faible</option>
+      <option value="medium">Moyenne</option>
+      <option value="strong">Forte</option>
+      <option value="very_strong">Très forte</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="calc-certificat">Certificat</label>
+    <select id="calc-certificat">
+      <option value="gia">GIA</option>
+      <option value="hrd">HRD</option>
+      <option value="igi">IGI</option>
+      <option value="aucun">Aucun</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="calc-origine">Origine</label>
+    <select id="calc-origine">
+      <option value="naturel">Naturel</option>
+      <option value="synthese">Synthèse (laboratoire)</option>
+    </select>
+  </div>
+
+  <div class="result">
+    <div class="result-block">
+      <span class="result-label">Estimation retail</span>
+      <span class="result-value" id="calc-retail">—</span>
+    </div>
+    <div class="result-block accent">
+      <span class="result-label">Fourchette de rachat</span>
+      <span class="result-value" id="calc-rachat">—</span>
+    </div>
+    <p id="calc-synthese-warning" class="synthese-warning" hidden>
+      Un diamant de synthèse a une valeur de rachat très inférieure à un diamant naturel
+      équivalent — cette estimation en tient compte.
+    </p>
+    <p class="disclaimer-inline">
+      Fourchette indicative, calculée à partir d'un barème de marché non validé par un expert
+      métier. Ni offre ferme, ni conseil en investissement.
+    </p>
+    <a class="btn" href="/estimation/">Demander une estimation précise</a>
+  </div>
+</div>
+
+<script define:vars={{ pricingMatrix, shapesData: shapes }}>
+  function getCaratBandKey(carat, bands) {
+    const keys = Object.keys(bands).filter((k) => k !== '_comment');
+    for (const band of keys) {
+      if (band.endsWith('+')) {
+        if (carat >= parseFloat(band)) return band;
+        continue;
+      }
+      const [min, max] = band.split('-').map(Number);
+      if (carat >= min && carat <= max) return band;
+    }
+    return keys[0];
+  }
+
+  function formatEUR(value) {
+    return new Intl.NumberFormat('fr-FR', {
+      style: 'currency',
+      currency: 'EUR',
+      maximumFractionDigits: 0,
+    }).format(value);
+  }
+
+  function estimate(input) {
+    const bandKey = getCaratBandKey(input.carat, pricingMatrix.base_ct_by_carat_band);
+    const baseCt = pricingMatrix.base_ct_by_carat_band[bandKey];
+    const shape = shapesData.find((s) => s.slug === input.shape) ?? shapesData[0];
+
+    const fc = pricingMatrix.facteur_couleur[input.color] ?? 1;
+    const fp = pricingMatrix.facteur_purete[input.clarity] ?? 1;
+    const ft = pricingMatrix.facteur_taille[input.cut] ?? 1;
+    const ff = pricingMatrix.facteur_fluorescence[input.fluorescence] ?? 1;
+    const fcert = pricingMatrix.facteur_certificat[input.certificat] ?? 1;
+    const forig = pricingMatrix.facteur_origine[input.origine] ?? 1;
+
+    const retail = baseCt * fc * fp * ft * shape.price_factor * ff * fcert * forig * input.carat;
+
+    return {
+      retail: { low: Math.round(retail * 0.95), high: Math.round(retail * 1.05) },
+      rachat: {
+        low: Math.round(retail * pricingMatrix.taux_rachat_bas),
+        high: Math.round(retail * pricingMatrix.taux_rachat_haut),
+      },
+    };
+  }
+
+  function init() {
+    const root = document.querySelector('[data-calculator]');
+    if (!root) return;
+
+    const els = {
+      shape: root.querySelector('#calc-shape'),
+      carat: root.querySelector('#calc-carat'),
+      caratValue: root.querySelector('#calc-carat-value'),
+      color: root.querySelector('#calc-color'),
+      clarity: root.querySelector('#calc-clarity'),
+      cut: root.querySelector('#calc-cut'),
+      fluorescence: root.querySelector('#calc-fluorescence'),
+      certificat: root.querySelector('#calc-certificat'),
+      origine: root.querySelector('#calc-origine'),
+      retail: root.querySelector('#calc-retail'),
+      rachat: root.querySelector('#calc-rachat'),
+      syntheseWarning: root.querySelector('#calc-synthese-warning'),
+    };
+
+    function update() {
+      const carat = parseFloat(els.carat.value);
+      els.caratValue.textContent = carat.toFixed(2);
+
+      const result = estimate({
+        shape: els.shape.value,
+        carat,
+        color: els.color.value,
+        clarity: els.clarity.value,
+        cut: els.cut.value,
+        fluorescence: els.fluorescence.value,
+        certificat: els.certificat.value,
+        origine: els.origine.value,
+      });
+
+      els.retail.textContent = `${formatEUR(result.retail.low)} – ${formatEUR(result.retail.high)}`;
+      els.rachat.textContent = `${formatEUR(result.rachat.low)} – ${formatEUR(result.rachat.high)}`;
+      els.syntheseWarning.hidden = els.origine.value !== 'synthese';
+    }
+
+    Object.values(els).forEach((el) => {
+      if (el && (el.tagName === 'SELECT' || el.tagName === 'INPUT')) {
+        el.addEventListener('input', update);
+      }
+    });
+
+    update();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
+
+<style>
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    background: var(--noir-carbone);
+    border: 1px solid var(--filet);
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 1.6rem 0;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .field label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--platine);
+  }
+  .field select,
+  .field input[type='range'] {
+    font: inherit;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid var(--filet-fort);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--eclat);
+  }
+  .field input[type='range'] {
+    padding: 0.3rem 0;
+    border: none;
+    background: transparent;
+    accent-color: var(--accent);
+  }
+  .result {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--filet-fort);
+    padding-top: 1.4rem;
+    margin-top: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .result-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid var(--filet);
+  }
+  .result-block.accent {
+    border-color: var(--accent);
+    background: rgba(166, 124, 46, 0.06);
+  }
+  .result-label {
+    font-size: 0.8rem;
+    color: var(--gris-fume);
+  }
+  .result-value {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--eclat);
+    font-variant-numeric: tabular-nums;
+  }
+  .synthese-warning {
+    font-size: 0.85rem;
+    color: var(--alerte);
+    margin: 0;
+  }
+  .disclaimer-inline {
+    font-size: 0.76rem;
+    color: var(--gris-sourd);
+    margin: 0;
+  }
+  .calculator .btn {
+    align-self: flex-start;
+  }
+  @media (max-width: 640px) {
+    .calculator {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

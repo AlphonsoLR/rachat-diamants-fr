@@ -24,96 +24,109 @@ import clarity from '../../../data/clarity.json';
       <input type="hidden" name="_next" value="https://rachat-diamants.fr/estimation/merci/" />
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
-      <h2>Ce que vous possédez</h2>
-      <div class="grid-2">
-        <label>
-          Type d'objet
-          <select name="Type d'objet" required>
-            <option value="">Sélectionner…</option>
-            <option>Diamant seul (non monté)</option>
-            <option>Bague</option>
-            <option>Solitaire</option>
-            <option>Parure</option>
-            <option>Lot de bijoux</option>
-            <option>Autre</option>
-          </select>
+      <fieldset class="step">
+        <legend><span class="step-num">1</span> Ce que vous possédez</legend>
+        <div class="grid-2">
+          <label>
+            Type d'objet
+            <select name="Type d'objet" required>
+              <option value="">Sélectionner…</option>
+              <option>Diamant seul (non monté)</option>
+              <option>Bague</option>
+              <option>Solitaire</option>
+              <option>Parure</option>
+              <option>Lot de bijoux</option>
+              <option>Autre</option>
+            </select>
+          </label>
+          <label>
+            Forme (si connue)
+            <select name="Forme">
+              <option value="Je ne sais pas">Je ne sais pas</option>
+              {shapes.map((s) => <option>{s.name}</option>)}
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="step">
+        <legend><span class="step-num">2</span> Caractéristiques connues</legend>
+        <div class="grid-3">
+          <label>
+            Carat (poids)
+            <input type="text" name="Carat" placeholder="ex. 1.20 ou « je ne sais pas »" />
+          </label>
+          <label>
+            Couleur
+            <select name="Couleur">
+              <option value="Je ne sais pas">Je ne sais pas</option>
+              {colors.map((c) => <option>{c.label}</option>)}
+            </select>
+          </label>
+          <label>
+            Pureté
+            <select name="Pureté">
+              <option value="Je ne sais pas">Je ne sais pas</option>
+              {clarity.map((c) => <option>{c.grade}</option>)}
+            </select>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="step">
+        <legend><span class="step-num">3</span> Certificat</legend>
+        <div class="grid-2">
+          <label>
+            Laboratoire de certification
+            <select name="Certificat">
+              <option>Aucun</option>
+              <option>GIA</option>
+              <option>HRD</option>
+              <option>IGI</option>
+              <option>Autre / je ne sais pas</option>
+            </select>
+          </label>
+          <label>
+            Photo du diamant ou du certificat (facultatif)
+            <span class="file-input">
+              <input type="file" name="attachment" accept="image/*,.pdf" id="attachment" />
+              <label for="attachment" class="file-button">Choisir un fichier</label>
+              <span class="file-hint">JPG, PNG ou PDF</span>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="step">
+        <legend><span class="step-num">4</span> Vos coordonnées</legend>
+        <div class="grid-2">
+          <label>
+            Nom
+            <input type="text" name="Nom" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="Email" required />
+          </label>
+          <label>
+            Téléphone (facultatif)
+            <input type="tel" name="Téléphone" />
+          </label>
+          <label>
+            Ville
+            <input type="text" name="Ville" />
+          </label>
+        </div>
+        <label class="full">
+          Message (facultatif)
+          <textarea name="Message" rows="4" placeholder="Toute précision utile — contexte, urgence, etc."></textarea>
         </label>
-        <label>
-          Forme (si connue)
-          <select name="Forme">
-            <option value="Je ne sais pas">Je ne sais pas</option>
-            {shapes.map((s) => <option>{s.name}</option>)}
-          </select>
-        </label>
+      </fieldset>
+
+      <div class="submit-row">
+        <p class="reassurance">Sans engagement. Vos coordonnées ne sont utilisées que pour vous répondre.</p>
+        <button type="submit" class="btn">Envoyer ma demande</button>
       </div>
-
-      <h2>Caractéristiques connues</h2>
-      <div class="grid-3">
-        <label>
-          Carat (poids)
-          <input type="text" name="Carat" placeholder="ex. 1.20 ou « je ne sais pas »" />
-        </label>
-        <label>
-          Couleur
-          <select name="Couleur">
-            <option value="Je ne sais pas">Je ne sais pas</option>
-            {colors.map((c) => <option>{c.label}</option>)}
-          </select>
-        </label>
-        <label>
-          Pureté
-          <select name="Pureté">
-            <option value="Je ne sais pas">Je ne sais pas</option>
-            {clarity.map((c) => <option>{c.grade}</option>)}
-          </select>
-        </label>
-      </div>
-
-      <h2>Certificat</h2>
-      <div class="grid-2">
-        <label>
-          Laboratoire de certification
-          <select name="Certificat">
-            <option>Aucun</option>
-            <option>GIA</option>
-            <option>HRD</option>
-            <option>IGI</option>
-            <option>Autre / je ne sais pas</option>
-          </select>
-        </label>
-        <label>
-          Photo du diamant ou du certificat (facultatif, augmente la précision de la réponse)
-          <input type="file" name="attachment" accept="image/*,.pdf" />
-        </label>
-      </div>
-
-      <h2>Vos coordonnées</h2>
-      <div class="grid-2">
-        <label>
-          Nom
-          <input type="text" name="Nom" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="Email" required />
-        </label>
-        <label>
-          Téléphone (facultatif)
-          <input type="tel" name="Téléphone" />
-        </label>
-        <label>
-          Ville
-          <input type="text" name="Ville" />
-        </label>
-      </div>
-
-      <label class="full">
-        Message (facultatif)
-        <textarea name="Message" rows="4" placeholder="Toute précision utile — contexte, urgence, etc."></textarea>
-      </label>
-
-      <p class="reassurance">Sans engagement. Vos coordonnées ne sont utilisées que pour vous répondre.</p>
-      <button type="submit" class="btn">Envoyer ma demande</button>
     </form>
   </div>
 </BaseLayout>
@@ -122,52 +135,135 @@ import clarity from '../../../data/clarity.json';
   .page-head { padding-top: 2.5rem; }
   .chapo { max-width: 60ch; }
   .estimation-form {
-    max-width: 760px;
+    max-width: 780px;
     margin: 0 auto 4rem;
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1.6rem;
   }
-  .estimation-form h2 {
-    font-size: 1.1rem;
-    margin: 1rem 0 0;
+  .step {
+    border: 1px solid var(--filet);
+    border-radius: 14px;
+    padding: 1.6rem 1.8rem 1.8rem;
+    background: var(--noir-carbone);
+  }
+  .step legend {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--eclat);
+    padding: 0 0.4rem;
+  }
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--gradient-sparkle);
+    color: var(--eclat);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    flex: none;
   }
   .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.2rem;
+    margin-top: 1.2rem;
   }
   .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.2rem;
+    margin-top: 1.2rem;
   }
   label {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.45rem;
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--platine);
   }
   label.full {
     grid-column: 1 / -1;
+    margin-top: 1.2rem;
   }
   input,
   select,
   textarea {
     font: inherit;
-    padding: 0.6rem 0.7rem;
+    padding: 0.65rem 0.8rem;
     border: 1px solid var(--filet-fort);
     border-radius: 8px;
     background: #fff;
     color: var(--eclat);
+    transition: border-color 0.15s ease-out;
+  }
+  select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235B6479' stroke-width='1.6' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    padding-right: 2.2rem;
+  }
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border-color: var(--accent);
   }
   input:focus,
   select:focus,
   textarea:focus {
     outline: 2px solid var(--accent);
     outline-offset: 1px;
+    border-color: var(--accent);
+  }
+  .file-input {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .file-input input[type='file'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .file-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--filet-fort);
+    border-radius: 8px;
+    background: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--eclat);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .file-button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .file-hint {
+    font-size: 0.76rem;
+    font-weight: 400;
+    color: var(--gris-sourd);
+  }
+  .submit-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
   }
   .reassurance {
     font-size: 0.8rem;
@@ -175,7 +271,6 @@ import clarity from '../../../data/clarity.json';
     margin: 0;
   }
   .btn {
-    align-self: flex-start;
     border: none;
     cursor: pointer;
   }
@@ -183,6 +278,13 @@ import clarity from '../../../data/clarity.json';
     .grid-2,
     .grid-3 {
       grid-template-columns: 1fr;
+    }
+    .submit-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .btn {
+      justify-content: center;
     }
   }
 </style>

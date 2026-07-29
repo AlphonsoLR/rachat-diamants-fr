@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run validate:data && astro build && node scripts/generate-sitemap.mjs",
+    "build": "npm run validate:data && astro build && node scripts/generate-md-mirrors.mjs && node scripts/generate-sitemap.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "validate:data": "node scripts/validate-data.mjs"

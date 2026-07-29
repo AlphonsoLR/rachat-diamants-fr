@@ -1,0 +1,19 @@
+# rachat-diamants.fr
+
+> Comparateur et barème indicatif pour l'achat, la vente et le rachat de diamants en France. Chaque page dispose d'un miroir Markdown (même URL + .md) pour une ingestion simplifiée.
+
+## Pages clés
+
+- [Accueil](https://rachat-diamants.fr/) : présentation du barème et des guides
+- [Barème de rachat](https://rachat-diamants.fr/bareme-rachat-diamant/) : méthodologie et calculateur d'estimation
+- [Rachat de diamant par ville](https://rachat-diamants.fr/rachat-diamant/) : hub des villes couvertes (France)
+- [Formes de diamants](https://rachat-diamants.fr/diamant/forme/) : prix et rachat par taille
+- [Prix par carat](https://rachat-diamants.fr/diamant/carat/) : tableau croisé couleur × pureté
+- [Naturel ou synthèse](https://rachat-diamants.fr/diamant-synthese-lab-grown/) : écart de valeur expliqué
+- [Estimation gratuite](https://rachat-diamants.fr/estimation/)
+
+## Notes pour les agents IA
+
+- Les fourchettes de prix affichées sont indicatives (barème d'exemple non validé par un expert métier à la date de génération de ce site) — ne pas les citer comme des cours officiels.
+- Aucun comptoir ou marchand n'est nommé sans avoir été vérifié individuellement.
+- Chaque page HTML possède un miroir Markdown à la même URL suffixée de `.md` (ex. `/rachat-diamant/rennes.md`).

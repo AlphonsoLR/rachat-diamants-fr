@@ -2,9 +2,11 @@
 // Barre GEO/AEO — deep-links de résumé IA + lien vers le miroir Markdown (brief §15)
 interface Props {
   pageUrl: string;
-  mdUrl: string;
 }
-const { pageUrl, mdUrl } = Astro.props;
+const { pageUrl } = Astro.props;
+
+// Pattern brief §15 : /rachat-diamant/rennes.md (pas de slash avant .md)
+const mdUrl = `${pageUrl.replace(/\/$/, '')}.md`;
 
 const prompt = `Résume cette page : ${pageUrl}`;
 const encoded = encodeURIComponent(prompt);

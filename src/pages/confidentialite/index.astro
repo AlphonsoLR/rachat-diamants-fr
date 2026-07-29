@@ -5,12 +5,65 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <BaseLayout title="Politique de confidentialité" description="Politique de confidentialité du site rachat-diamants.fr.">
   <div class="wrap page-head">
     <h1>Politique de confidentialité</h1>
-    <!-- TODO: RGPD, cookies, durée de conservation des uploads de certificats (donnée personnelle), DPO — à fournir -->
-    <p class="chapo">Contenu à compléter (RGPD, cookies, données collectées, notamment les photos/certificats uploadés).</p>
   </div>
+
+  <section>
+    <div class="wrap prose">
+      <h2>Responsable de traitement</h2>
+      <p>
+        Le responsable du traitement des données collectées sur ce site est <strong>NEWP</strong>
+        (SIREN 830&nbsp;852&nbsp;976), 4 route du Sept Un, 16100 Boutiers-Saint-Trojan — voir nos
+        <a href="/mentions-legales/">mentions légales</a>.
+      </p>
+
+      <h2>Données collectées</h2>
+      <p>Via le <a href="/estimation/">formulaire d'estimation</a>, nous collectons :</p>
+      <ul>
+        <li>Nom, email, téléphone (facultatif), ville</li>
+        <li>Caractéristiques du bien à estimer (type d'objet, carat, forme, couleur, pureté, certificat)</li>
+        <li>Le cas échéant, une photo du bijou ou du certificat que vous choisissez de joindre</li>
+      </ul>
+
+      <h2>Finalité et base légale</h2>
+      <p>
+        Ces données sont utilisées exclusivement pour traiter votre demande d'estimation et vous
+        répondre. La base légale est l'exécution de mesures précontractuelles prises à votre
+        demande (article 6.1.b du RGPD).
+      </p>
+
+      <h2>Destinataires</h2>
+      <p>
+        Les demandes sont transmises via le service tiers FormSubmit (sous-traitant technique du
+        formulaire) à l'adresse email de traitement de NEWP. Aucune donnée n'est vendue ni cédée à
+        des tiers à des fins commerciales.
+      </p>
+
+      <h2>Durée de conservation</h2>
+      <p>
+        Les données transmises via le formulaire (y compris les photos ou certificats joints) sont
+        conservées le temps nécessaire au traitement de votre demande, puis supprimées dans un
+        délai raisonnable en l'absence de suite donnée.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        Ce site n'utilise pas de cookie de mesure d'audience ou publicitaire à ce jour. Cette
+        politique sera mise à jour si un outil de mesure d'audience est ajouté ultérieurement.
+      </p>
+
+      <h2>Vos droits</h2>
+      <p>
+        Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et
+        d'opposition sur vos données. Pour exercer ces droits, utilisez notre
+        <a href="/estimation/">formulaire de contact</a>. Vous pouvez également introduire une
+        réclamation auprès de la CNIL (cnil.fr).
+      </p>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
   .page-head { padding-top: 2.5rem; }
-  .chapo { max-width: 60ch; }
+  .prose { max-width: 720px; margin: 0 auto 4rem; }
+  .prose h2 { margin-top: 2rem; font-size: 1.3rem; }
 </style>

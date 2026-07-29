@@ -5,12 +5,47 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 <BaseLayout title="Mentions légales" description="Mentions légales du site rachat-diamants.fr.">
   <div class="wrap page-head">
     <h1>Mentions légales</h1>
-    <!-- TODO: éditeur, hébergeur, directeur de publication, SIREN/SIRET — infos réelles à fournir, ne pas inventer -->
-    <p class="chapo">Contenu à compléter avec les informations légales réelles de l'éditeur.</p>
   </div>
+
+  <section>
+    <div class="wrap prose">
+      <h2>Éditeur du site</h2>
+      <p>
+        Le site rachat-diamants.fr est édité par la société <strong>NEWP</strong>, société par
+        actions simplifiée (SAS) au capital social variable, immatriculée au Registre du Commerce
+        et des Sociétés sous le numéro SIREN 830&nbsp;852&nbsp;976 (SIRET 830&nbsp;852&nbsp;976&nbsp;00034),
+        dont le siège social est situé 4 route du Sept Un, 16100 Boutiers-Saint-Trojan, France.
+      </p>
+      <p>N° de TVA intracommunautaire : FR89830852976.</p>
+      <p>
+        Fiche complète et à jour de l'entreprise consultable sur
+        {' '}<a href="https://www.pappers.fr/entreprise/newp-830852976" target="_blank" rel="noopener noreferrer">Pappers.fr</a>.
+      </p>
+      <p>
+        Direction de la publication : Kévin Papot (Président) et Sébastien Joumel (Directeur
+        général délégué).
+      </p>
+
+      <h2>Hébergement</h2>
+      <p>
+        Le site est hébergé par <strong>Cloudflare, Inc.</strong>, 101 Townsend St, San Francisco,
+        CA 94107, États-Unis (hébergement statique via Cloudflare Pages).
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        L'ensemble des contenus de ce site (textes, barème, calculateur) est la propriété de NEWP,
+        sauf mention contraire. Toute reproduction sans autorisation est interdite.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Pour toute question relative au site, utilisez notre <a href="/estimation/">formulaire</a>.</p>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
   .page-head { padding-top: 2.5rem; }
-  .chapo { max-width: 60ch; }
+  .prose { max-width: 720px; margin: 0 auto 4rem; }
+  .prose h2 { margin-top: 2rem; font-size: 1.3rem; }
 </style>

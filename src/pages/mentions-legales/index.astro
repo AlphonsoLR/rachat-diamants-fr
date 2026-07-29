@@ -8,7 +8,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </div>
 
   <section>
-    <div class="wrap prose">
+    <div class="wrap">
+    <div class="prose">
       <h2>Éditeur du site</h2>
       <p>
         Le site rachat-diamants.fr est édité par la société <strong>NEWP</strong>, société par
@@ -41,11 +42,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h2>Contact</h2>
       <p>Pour toute question relative au site, utilisez notre <a href="/estimation/">formulaire</a>.</p>
     </div>
+    </div>
   </section>
 </BaseLayout>
 
 <style>
   .page-head { padding-top: 2.5rem; }
-  .prose { max-width: 720px; margin: 0 auto 4rem; }
+  .prose { max-width: 720px; padding-bottom: 4rem; }
   .prose h2 { margin-top: 2rem; font-size: 1.3rem; }
 </style>

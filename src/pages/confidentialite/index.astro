@@ -8,7 +8,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </div>
 
   <section>
-    <div class="wrap prose">
+    <div class="wrap">
+    <div class="prose">
       <h2>Responsable de traitement</h2>
       <p>
         Le responsable du traitement des données collectées sur ce site est <strong>NEWP</strong>
@@ -59,11 +60,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         réclamation auprès de la CNIL (cnil.fr).
       </p>
     </div>
+    </div>
   </section>
 </BaseLayout>
 
 <style>
   .page-head { padding-top: 2.5rem; }
-  .prose { max-width: 720px; margin: 0 auto 4rem; }
+  .prose { max-width: 720px; padding-bottom: 4rem; }
   .prose h2 { margin-top: 2rem; font-size: 1.3rem; }
 </style>

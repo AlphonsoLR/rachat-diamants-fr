@@ -1,0 +1,81 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  guide: {
+    id: string;
+    data: {
+      title: string;
+      description: string;
+      pubDate: Date;
+      heroImage?: import('astro:assets').ImageMetadata;
+      heroImageAlt?: string;
+    };
+  };
+}
+
+const { guide } = Astro.props;
+const formattedDate = guide.data.pubDate.toLocaleDateString('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<a class="guide-card" href={`/guides/${guide.id}/`}>
+  {guide.data.heroImage && (
+    <Image src={guide.data.heroImage} alt={guide.data.heroImageAlt ?? ''} width={420} height={280} loading="lazy" />
+  )}
+  <div class="body">
+    <h3>{guide.data.title}</h3>
+    <p>{guide.data.description}</p>
+    <time datetime={guide.data.pubDate.toISOString()}>{formattedDate}</time>
+  </div>
+</a>
+
+<style>
+  .guide-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid var(--filet);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .guide-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(13, 29, 58, 0.1);
+  }
+  .guide-card :global(img) {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+  .body {
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .body h3 {
+    font-family: var(--font-heading);
+    font-size: 19px;
+    margin: 0;
+    color: var(--eclat);
+  }
+  .body p {
+    color: var(--gris-fume);
+    font-size: 14.5px;
+    margin: 0;
+    line-height: 1.5;
+    max-width: none;
+  }
+  .body time {
+    color: var(--gris-sourd);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+</style>

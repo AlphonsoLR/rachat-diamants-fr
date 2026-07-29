@@ -1,22 +1,40 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { getCollection } from 'astro:content';
+
+const guides = (await getCollection('guides')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 ---
 
 <BaseLayout
   title="Guides — rachat et vente de diamants"
-  description="Guides pratiques sur la vente, l'estimation et la fiscalité des diamants."
+  description="Guides pratiques sur la vente, la certification, la fiscalité et l'estimation des diamants."
 >
   <div class="wrap page-head">
     <h1>Guides</h1>
     <p class="chapo">
-      Cluster éditorial en attente de sélection par ratio allintitle/KGR (cf. brief §09) — aucun
-      article publié tant que la recherche de mots-clés n'a pas été faite avec un outil réel
-      (DataForSEO, SerpApi, Haloscan, ou Keyword Planner).
+      Succession, certification, fiscalité, sécurité, techniques du diamant — nos guides pour
+      vendre ou acheter en toute connaissance de cause.
     </p>
   </div>
+
+  <section>
+    <div class="wrap">
+      <div class="grid">
+        {guides.map((guide) => <GuideCard guide={guide} />)}
+      </div>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
   .page-head { padding-top: 2.5rem; }
   .chapo { max-width: 60ch; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+  }
 </style>

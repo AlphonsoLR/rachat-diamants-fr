@@ -16,15 +16,15 @@ import pricingMatrix from '../../../data/pricing-matrix.json';
 import { estimate, formatRange } from '../../lib/pricing';
 
 export function getStaticPaths() {
-  // Tier 1 + tier 2 (100 villes) — cf. jalon L5 du brief. Tier 3 (jusqu'à 1000) viendra ensuite.
+  // 1000 villes (tier 1+2+3) — cf. jalon T3 du brief §5.
   return cities
-    .filter((c) => c.tier <= 2)
+    .filter((c) => c.tier <= 3)
     .map((city) => ({ params: { ville: city.slug }, props: { city } }));
 }
 
 const { city } = Astro.props;
 const pageUrl = `https://rachat-diamants.fr/rachat-diamant/${city.slug}/`;
-const generatedSlugs = new Set(cities.filter((c) => c.tier <= 2).map((c) => c.slug));
+const generatedSlugs = new Set(cities.filter((c) => c.tier <= 3).map((c) => c.slug));
 
 const priceRows = carats
   .filter((c) => [0.5, 1.0, 1.5, 2.0, 3.0].includes(c.value))

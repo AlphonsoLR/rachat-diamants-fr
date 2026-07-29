@@ -4,6 +4,7 @@ import cities from '../../../data/cities.json';
 
 const t1 = cities.filter((c) => c.tier === 1);
 const t2 = cities.filter((c) => c.tier === 2);
+const t3 = cities.filter((c) => c.tier === 3);
 
 // Regroupement région → département → villes, maillage en 2 clics max (brief §12)
 function groupByRegion(list: typeof cities) {
@@ -36,9 +37,8 @@ const regions = groupByRegion(cities);
   <div class="wrap page-head">
     <h1>Rachat de diamant par ville</h1>
     <p class="chapo">
-      {t1.length + t2.length} villes couvertes ({t1.length} métropoles en couverture prioritaire,
-      {t2.length} villes complémentaires). Objectif final : 1 000 villes (cf. phasage T1/T2/T3 du
-      brief) — regroupées ici par région puis département.
+      {cities.length} villes couvertes ({t1.length} métropoles T1, {t2.length} villes T2, {t3.length}{' '}
+      villes T3) — regroupées ici par région puis département.
     </p>
   </div>
 

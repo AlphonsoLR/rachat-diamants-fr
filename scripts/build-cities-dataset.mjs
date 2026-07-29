@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 
 const RAW_PATH = process.argv[2] ?? '/tmp/communes_full.json';
 const OUT_PATH = new URL('../data/cities.json', import.meta.url);
-const TOP_N = 100; // T1 (30) + un lot T2 réel pour démarrer — pas les 1000, cf. phasage L2/L5 du brief
+const TOP_N = 1000; // objectif final du brief §5 (30 T1 + 170 T2 + 800 T3)
 
 function slugify(str) {
   return str
@@ -68,9 +68,9 @@ const cities = sorted.map((c) => {
   };
 });
 
-// tier : 30 premières = T1, reste du top 100 = T2 (T3/reste des 1000 villes hors scope de cette première passe)
+// tier selon brief §5 : 30 T1 (métropoles), 170 T2 (>40k hab.), 800 T3 (le reste)
 cities.forEach((c, i) => {
-  c.tier = i < 30 ? 1 : 2;
+  c.tier = i < 30 ? 1 : i < 200 ? 2 : 3;
 });
 
 // nearby_cities : 8 plus proches (haversine) parmi le même jeu de données
@@ -89,4 +89,7 @@ for (const city of cities) {
 
 mkdirSync(new URL('../data/', import.meta.url), { recursive: true });
 writeFileSync(OUT_PATH, JSON.stringify(cities, null, 2));
-console.log(`cities.json généré : ${cities.length} villes réelles (30 tier 1, ${cities.length - 30} tier 2).`);
+const t1 = cities.filter((c) => c.tier === 1).length;
+const t2 = cities.filter((c) => c.tier === 2).length;
+const t3 = cities.filter((c) => c.tier === 3).length;
+console.log(`cities.json généré : ${cities.length} villes réelles (${t1} tier 1, ${t2} tier 2, ${t3} tier 3).`);

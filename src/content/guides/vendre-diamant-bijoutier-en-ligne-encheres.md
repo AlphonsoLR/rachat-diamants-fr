@@ -4,7 +4,7 @@ description: "Comparatif des trois principaux canaux pour vendre un diamant en F
 pubDate: 2026-06-18
 cluster: canaux-vente
 heroImage: ../../assets/images/pexels-1927266.jpg
-heroImageAlt: Diamant présenté sur un support de velours
+heroImageAlt: Diamant présenté sur velours
 ---
 
 Trois grands canaux permettent de vendre un diamant en France, chacun avec ses avantages, ses délais et ses contraintes propres.

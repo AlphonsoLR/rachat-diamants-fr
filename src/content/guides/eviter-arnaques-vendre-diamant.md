@@ -3,8 +3,8 @@ title: "Éviter les arnaques en vendant un diamant"
 description: "Les signaux d'alerte pour repérer un acheteur de diamants peu sérieux, et les recours possibles en cas de litige."
 pubDate: 2026-03-08
 cluster: confiance
-heroImage: ../../assets/images/pexels-2735981.jpg
-heroImageAlt: Bijoutier examinant une pierre
+heroImage: ../../assets/images/pexels-10983783.jpg
+heroImageAlt: Paire de boucles d'oreilles en diamant
 ---
 
 Le secteur du rachat de bijoux et de diamants attire, comme tout marché de valeur, des pratiques peu scrupuleuses. Voici les signaux à connaître avant de vendre.

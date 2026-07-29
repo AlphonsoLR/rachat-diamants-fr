@@ -4,7 +4,7 @@ description: "Taille rose, taille de mine, taille ancienne à coussin : comment 
 pubDate: 2026-05-20
 cluster: tailles-anciennes
 heroImage: ../../assets/images/pexels-3091638.jpg
-heroImageAlt: Bague ancienne en diamant, style vintage
+heroImageAlt: Bijou ancien serti d'un diamant
 ---
 
 Les diamants sertis dans des bijoux anciens présentent souvent des tailles aujourd'hui disparues, très différentes du rond brillant moderne. Les reconnaître change beaucoup pour l'estimation.

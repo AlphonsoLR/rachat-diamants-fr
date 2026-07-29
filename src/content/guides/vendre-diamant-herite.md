@@ -3,8 +3,8 @@ title: "Vendre un diamant hérité : démarches, prix et fiscalité"
 description: "Comment estimer et vendre un diamant issu d'une succession, avec ou sans certificat d'origine."
 pubDate: 2025-11-10
 cluster: succession
-heroImage: ../../assets/images/pexels-2735981.jpg
-heroImageAlt: Bague ancienne sertie d'un diamant
+heroImage: ../../assets/images/pexels-1927260.jpg
+heroImageAlt: Coffret ancien avec bijou en diamant
 ---
 
 Hériter d'un bijou orné d'un diamant soulève souvent les mêmes questions : que vaut-il réellement, et comment le vendre sereinement sans document d'origine ?

@@ -3,8 +3,8 @@ title: "Lire un certificat GIA : ce qu'il faut savoir avant de vendre"
 description: "Comment déchiffrer un certificat GIA (4C, inscription laser, plot diagram) et pourquoi il compte pour la revente."
 pubDate: 2025-12-05
 cluster: certification
-heroImage: ../../assets/images/pexels-2799863.jpg
-heroImageAlt: Diamant examiné à la loupe
+heroImage: ../../assets/images/pexels-115567.jpg
+heroImageAlt: Bague en diamant, détail rapproché
 ---
 
 Le Gemological Institute of America (GIA) est le laboratoire de référence mondial pour la certification des diamants. Voici comment lire un rapport GIA et pourquoi il pèse autant dans une estimation.

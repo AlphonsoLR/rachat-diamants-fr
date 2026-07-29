@@ -3,8 +3,8 @@ title: "Diamant naturel ou de synthèse : comment les distinguer"
 description: "Pourquoi un diamant de synthèse est indiscernable à l'œil nu d'un diamant naturel, et quelles méthodes permettent de les différencier."
 pubDate: 2026-01-15
 cluster: synthese
-heroImage: ../../assets/images/pexels-3091638.jpg
-heroImageAlt: Bague en diamant, gros plan macro
+heroImage: ../../assets/images/pexels-6098251.jpg
+heroImageAlt: Bagues en diamant en gros plan
 ---
 
 Chimiquement identique au diamant naturel, le diamant de synthèse (ou « lab-grown ») pose une question simple mais cruciale avant toute vente : comment savoir lequel vous possédez ?

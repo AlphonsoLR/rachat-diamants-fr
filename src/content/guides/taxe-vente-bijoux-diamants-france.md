@@ -3,8 +3,8 @@ title: "Taxe sur la vente de bijoux et diamants en France"
 description: "Panorama des deux régimes fiscaux applicables à la vente d'un diamant par un particulier en France : taxe forfaitaire ou plus-value."
 pubDate: 2026-02-10
 cluster: fiscalite
-heroImage: ../../assets/images/pexels-1927266.jpg
-heroImageAlt: Bague en diamant posée sur un support
+heroImage: ../../assets/images/pexels-6863338.jpg
+heroImageAlt: Documents fiscaux sur un bureau
 ---
 
 Vendre un diamant ou un bijou en tant que particulier en France déclenche, en principe, une imposition. Voici les grands principes — à vérifier impérativement avec un professionnel avant toute vente, les seuils et taux évoluant régulièrement.

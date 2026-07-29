@@ -3,8 +3,8 @@ title: "Fluorescence, table et profondeur : comprendre la technique du diamant"
 description: "Ce que signifient la fluorescence, la table et la profondeur d'un diamant, et leur impact réel sur le prix."
 pubDate: 2026-04-12
 cluster: technique-4c
-heroImage: ../../assets/images/pexels-2799863.jpg
-heroImageAlt: Diamant taillé, reflets de lumière
+heroImage: ../../assets/images/pexels-2735970.jpg
+heroImageAlt: Boucles d'oreilles diamant, éclat rapproché
 ---
 
 Au-delà des 4C (carat, couleur, pureté, taille), quelques critères techniques plus discrets influencent la valeur et l'apparence d'un diamant. Voici l'essentiel pour les comprendre.

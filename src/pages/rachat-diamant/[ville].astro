@@ -16,15 +16,15 @@ import pricingMatrix from '../../../data/pricing-matrix.json';
 import { estimate, formatRange } from '../../lib/pricing';
 
 export function getStaticPaths() {
-  // Tier 1 uniquement pour cette première passe (30 villes) — cf. jalon L2 du brief.
+  // Tier 1 + tier 2 (100 villes) — cf. jalon L5 du brief. Tier 3 (jusqu'à 1000) viendra ensuite.
   return cities
-    .filter((c) => c.tier === 1)
+    .filter((c) => c.tier <= 2)
     .map((city) => ({ params: { ville: city.slug }, props: { city } }));
 }
 
 const { city } = Astro.props;
 const pageUrl = `https://rachat-diamants.fr/rachat-diamant/${city.slug}/`;
-const tier1Slugs = new Set(cities.filter((c) => c.tier === 1).map((c) => c.slug));
+const generatedSlugs = new Set(cities.filter((c) => c.tier <= 2).map((c) => c.slug));
 
 const priceRows = carats
   .filter((c) => [0.5, 1.0, 1.5, 2.0, 3.0].includes(c.value))
@@ -82,7 +82,7 @@ const breadcrumbSchema = {
   <div class="wrap page-head">
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
       <a href="/">Accueil</a> › <a href="/rachat-diamant/">Rachat de diamant</a> ›
-      {city.region.name} › {city.name}
+      <a href={`/rachat-diamant/region/${city.region.slug}/`}>{city.region.name}</a> › {city.name}
     </nav>
     <div class="head-grid">
       <div>
@@ -223,12 +223,12 @@ const breadcrumbSchema = {
     <div class="wrap">
       <h2>Autour de {city.name}</h2>
       <p>
-        Département : {city.department.name} · Région : {city.region.name}
-        <span class="disclaimer-inline"> (pages département/région à venir)</span>
+        Département : <a href={`/rachat-diamant/departement/${city.department.slug}/`}>{city.department.name}</a> ·
+        Région : <a href={`/rachat-diamant/region/${city.region.slug}/`}>{city.region.name}</a>
       </p>
       <div class="grid grid-4">
         {city.nearby_cities.map((n) =>
-          tier1Slugs.has(n.slug) ? (
+          generatedSlugs.has(n.slug) ? (
             <a class="city-link" href={`/rachat-diamant/${n.slug}/`}>{n.name} <span>{n.km} km</span></a>
           ) : (
             <span class="city-link soon">{n.name} <span>{n.km} km</span></span>

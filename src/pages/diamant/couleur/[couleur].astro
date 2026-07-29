@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GeoBar from '../../../components/GeoBar.astro';
+import colors from '../../../../data/colors.json';
+import carats from '../../../../data/carats.json';
+import { estimate, formatRange } from '../../../lib/pricing';
+
+export function getStaticPaths() {
+  return colors.map((color) => ({ params: { couleur: color.slug }, props: { color } }));
+}
+
+const { color } = Astro.props;
+const pageUrl = `https://rachat-diamants.fr/diamant/couleur/${color.slug}/`;
+const otherColors = colors.filter((c) => c.slug !== color.slug);
+
+const priceRows = carats
+  .filter((c) => [0.5, 1.0, 1.5, 2.0].includes(c.value))
+  .map((c) => {
+    const est = estimate({ carat: c.value, colorSlug: color.slug, claritySlug: 'vs1' });
+    return { carat: c.label, retail: formatRange(est.retail), rachat: formatRange(est.rachat) };
+  });
+---
+
+<BaseLayout
+  title={`Diamant couleur ${color.label} : prix et rachat`}
+  description={`Ce que signifie la couleur ${color.label} pour un diamant, et son impact sur le prix de rachat.`}
+>
+  <div class="wrap page-head">
+    <nav class="breadcrumb"><a href="/">Accueil</a> › <a href="/diamant/couleur/">Couleurs</a> › {color.label}</nav>
+    <h1>Diamant couleur {color.label}</h1>
+    <p class="chapo">
+      Sur l'échelle GIA (D à Z), {color.label.toLowerCase()} se situe dans la catégorie
+      « {color.category.replace('-', ' ')} ». Plus la lettre est proche de D, plus le diamant est
+      incolore — et plus la prime au carat est élevée.
+    </p>
+    <GeoBar pageUrl={pageUrl} mdUrl={`${pageUrl}.md`} />
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Prix indicatif par carat — couleur {color.grade}</h2>
+      <p>Estimation en pureté VS1, taille Excellent.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Carat</th><th class="num">Retail estimé</th><th class="num">Rachat estimé</th></tr></thead>
+          <tbody>
+            {priceRows.map((r) => (
+              <tr><td>{r.carat}</td><td class="num">{r.retail}</td><td class="num">{r.rachat}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="disclaimer-inline">Estimations issues d'un barème de marché indicatif, non validé par un expert métier.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Les autres couleurs</h2>
+      <div class="grid">
+        {otherColors.map((c) => (
+          <a class="color-link" href={`/diamant/couleur/${c.slug}/`}>{c.label}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-top: 2.5rem; }
+  .breadcrumb { font-size: 0.78rem; color: var(--gris-sourd); margin-bottom: 1.5rem; }
+  .breadcrumb a { color: var(--gris-sourd); border-bottom: none; }
+  .chapo { max-width: 60ch; font-size: 1.02rem; }
+  .disclaimer-inline { font-size: 0.78rem; color: var(--gris-sourd); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+    margin-top: 1rem;
+  }
+  .color-link {
+    display: block;
+    text-align: center;
+    background: var(--noir-carbone);
+    padding: 0.9rem 0.5rem;
+    color: var(--platine);
+    border-bottom: none;
+    font-size: 0.82rem;
+  }
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>

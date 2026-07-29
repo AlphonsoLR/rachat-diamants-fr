@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GeoBar from '../../../components/GeoBar.astro';
+import clarity from '../../../../data/clarity.json';
+import carats from '../../../../data/carats.json';
+import { estimate, formatRange } from '../../../lib/pricing';
+
+export function getStaticPaths() {
+  return clarity.map((c) => ({ params: { purete: c.slug }, props: { clarity: c } }));
+}
+
+const { clarity: cl } = Astro.props;
+const pageUrl = `https://rachat-diamants.fr/diamant/purete/${cl.slug}/`;
+const otherClarity = clarity.filter((c) => c.slug !== cl.slug);
+
+const priceRows = carats
+  .filter((c) => [0.5, 1.0, 1.5, 2.0].includes(c.value))
+  .map((c) => {
+    const est = estimate({ carat: c.value, colorSlug: 'g', claritySlug: cl.slug });
+    return { carat: c.label, retail: formatRange(est.retail), rachat: formatRange(est.rachat) };
+  });
+---
+
+<BaseLayout
+  title={`Diamant pureté ${cl.grade} : prix et rachat`}
+  description={`Ce que signifie la pureté ${cl.grade} pour un diamant, et son impact sur le prix de rachat.`}
+>
+  <div class="wrap page-head">
+    <nav class="breadcrumb"><a href="/">Accueil</a> › <a href="/diamant/purete/">Pureté</a> › {cl.grade}</nav>
+    <h1>Diamant pureté {cl.grade}</h1>
+    <p class="chapo">{cl.description}</p>
+    <GeoBar pageUrl={pageUrl} mdUrl={`${pageUrl}.md`} />
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Prix indicatif par carat — pureté {cl.grade}</h2>
+      <p>Estimation en couleur G, taille Excellent.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Carat</th><th class="num">Retail estimé</th><th class="num">Rachat estimé</th></tr></thead>
+          <tbody>
+            {priceRows.map((r) => (
+              <tr><td>{r.carat}</td><td class="num">{r.retail}</td><td class="num">{r.rachat}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="disclaimer-inline">Estimations issues d'un barème de marché indicatif, non validé par un expert métier.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Les autres puretés</h2>
+      <div class="grid">
+        {otherClarity.map((c) => (
+          <a class="clarity-link" href={`/diamant/purete/${c.slug}/`}>{c.grade}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-top: 2.5rem; }
+  .breadcrumb { font-size: 0.78rem; color: var(--gris-sourd); margin-bottom: 1.5rem; }
+  .breadcrumb a { color: var(--gris-sourd); border-bottom: none; }
+  .chapo { max-width: 60ch; font-size: 1.02rem; }
+  .disclaimer-inline { font-size: 0.78rem; color: var(--gris-sourd); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+    margin-top: 1rem;
+  }
+  .clarity-link {
+    display: block;
+    text-align: center;
+    background: var(--noir-carbone);
+    padding: 0.9rem 0.5rem;
+    color: var(--platine);
+    border-bottom: none;
+    font-size: 0.85rem;
+  }
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>

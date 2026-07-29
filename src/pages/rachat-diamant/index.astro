@@ -5,15 +5,25 @@ import cities from '../../../data/cities.json';
 const t1 = cities.filter((c) => c.tier === 1);
 const t2 = cities.filter((c) => c.tier === 2);
 
-// Regroupement région → villes, pour un maillage en 2 clics max (brief §12)
+// Regroupement région → département → villes, maillage en 2 clics max (brief §12)
 function groupByRegion(list: typeof cities) {
-  const map = new Map<string, typeof cities>();
+  const map = new Map<string, { region: (typeof cities)[number]['region']; cities: typeof cities }>();
   for (const c of list) {
-    const key = c.region.name;
-    if (!map.has(key)) map.set(key, []);
-    map.get(key)!.push(c);
+    const key = c.region.slug;
+    if (!map.has(key)) map.set(key, { region: c.region, cities: [] });
+    map.get(key)!.cities.push(c);
   }
-  return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  return [...map.values()].sort((a, b) => a.region.name.localeCompare(b.region.name));
+}
+
+function groupByDepartment(list: typeof cities) {
+  const map = new Map<string, { department: (typeof cities)[number]['department']; cities: typeof cities }>();
+  for (const c of list) {
+    const key = c.department.slug;
+    if (!map.has(key)) map.set(key, { department: c.department, cities: [] });
+    map.get(key)!.cities.push(c);
+  }
+  return [...map.values()].sort((a, b) => a.department.name.localeCompare(b.department.name));
 }
 
 const regions = groupByRegion(cities);
@@ -26,25 +36,32 @@ const regions = groupByRegion(cities);
   <div class="wrap page-head">
     <h1>Rachat de diamant par ville</h1>
     <p class="chapo">
-      {t1.length} métropoles en couverture complète, {t2.length} villes supplémentaires en cours
-      d'enrichissement. Objectif final : 1 000 villes (cf. phasage T1/T2/T3).
+      {t1.length + t2.length} villes couvertes ({t1.length} métropoles en couverture prioritaire,
+      {t2.length} villes complémentaires). Objectif final : 1 000 villes (cf. phasage T1/T2/T3 du
+      brief) — regroupées ici par région puis département.
     </p>
   </div>
 
   <section>
     <div class="wrap">
-      {regions.map(([region, list]) => (
+      {regions.map(({ region, cities: regionCities }) => (
         <details class="region-block">
-          <summary>{region} <span>({list.length})</span></summary>
-          <div class="grid">
-            {list.map((c) =>
-              c.tier === 1 ? (
-                <a href={`/rachat-diamant/${c.slug}/`}>{c.name}</a>
-              ) : (
-                <span class="soon" title="Page en préparation (tier 2)">{c.name}</span>
-              )
-            )}
-          </div>
+          <summary>
+            <a href={`/rachat-diamant/region/${region.slug}/`}>{region.name}</a>
+            <span>({regionCities.length})</span>
+          </summary>
+          {groupByDepartment(regionCities).map(({ department, cities: depCities }) => (
+            <div class="dep-block">
+              <a class="dep-title" href={`/rachat-diamant/departement/${department.slug}/`}>
+                {department.name} ({department.code})
+              </a>
+              <div class="grid">
+                {depCities.map((c) => (
+                  <a href={`/rachat-diamant/${c.slug}/`}>{c.name}</a>
+                ))}
+              </div>
+            </div>
+          ))}
         </details>
       ))}
     </div>
@@ -64,26 +81,37 @@ const regions = groupByRegion(cities);
   }
   .region-block summary {
     cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+  .region-block summary a {
     font-family: var(--font-heading);
     color: var(--eclat);
     font-size: 1.1rem;
+    border-bottom: none;
   }
   .region-block summary span {
     color: var(--gris-sourd);
     font-size: 0.8rem;
   }
+  .dep-block {
+    margin: 1.2rem 0 0 1rem;
+  }
+  .dep-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--platine);
+    border-bottom: none;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 0.5rem 1rem;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
   }
   .grid a {
     font-size: 0.85rem;
     border-bottom: none;
-  }
-  .grid .soon {
-    font-size: 0.85rem;
-    color: var(--gris-sourd);
   }
 </style>

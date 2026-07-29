@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import carats from '../../../../data/carats.json';
+import { caratSlug } from '../../../lib/slugs';
+---
+
+<BaseLayout title="Prix des diamants par carat" description="Fourchette de prix et de rachat des diamants, classés par poids en carats.">
+  <div class="wrap page-head">
+    <h1>Prix des diamants par carat</h1>
+    <p class="chapo">Sélectionnez un poids pour voir le tableau croisé couleur × pureté.</p>
+  </div>
+  <section>
+    <div class="wrap">
+      <div class="grid">
+        {carats.map((c) => (
+          <a class="carat-link" href={`/diamant/carat/${caratSlug(c.value)}/`}>{c.label}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-top: 2.5rem; }
+  .chapo { max-width: 60ch; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+  }
+  .carat-link {
+    display: block;
+    text-align: center;
+    background: var(--noir-carbone);
+    padding: 1rem 0.5rem;
+    color: var(--platine);
+    border-bottom: none;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>

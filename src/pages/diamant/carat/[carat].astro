@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GeoBar from '../../../components/GeoBar.astro';
+import BottomLine from '../../../components/BottomLine.astro';
+import carats from '../../../../data/carats.json';
+import colors from '../../../../data/colors.json';
+import clarity from '../../../../data/clarity.json';
+import { estimate, formatEUR } from '../../../lib/pricing';
+import { caratSlug } from '../../../lib/slugs';
+
+export function getStaticPaths() {
+  return carats.map((carat) => ({
+    params: { carat: caratSlug(carat.value) },
+    props: { carat },
+  }));
+}
+
+const { carat } = Astro.props;
+const pageUrl = `https://rachat-diamants.fr/diamant/carat/${caratSlug(carat.value)}/`;
+const mainColors = colors.filter((c) => c.category !== 'fancy');
+
+// Tableau croisé couleur (colonnes) x pureté (lignes) — estimation retail moyenne
+const crossTable = clarity.map((cl) => ({
+  clarity: cl,
+  cells: mainColors.map((co) => {
+    const est = estimate({ carat: carat.value, colorSlug: co.slug, claritySlug: cl.slug });
+    return Math.round((est.retail.low + est.retail.high) / 2);
+  }),
+}));
+
+const referenceEstimate = estimate({ carat: carat.value, colorSlug: 'g', claritySlug: 'vs1' });
+---
+
+<BaseLayout
+  title={`Prix et rachat d'un diamant de ${carat.label}`}
+  description={`Fourchette de prix et de rachat pour un diamant de ${carat.label} selon la couleur et la pureté.`}
+>
+  <div class="wrap page-head">
+    <nav class="breadcrumb"><a href="/">Accueil</a> › <a href="/diamant/carat/">Carats</a> › {carat.label}</nav>
+    <h1>Prix et rachat d'un diamant de {carat.label}</h1>
+    <p class="chapo">
+      Estimation en qualité de référence G/VS1, taille Excellent :
+      <strong>{formatEUR(referenceEstimate.retail.low)} – {formatEUR(referenceEstimate.retail.high)}</strong> en retail,
+      rachat indicatif {formatEUR(referenceEstimate.rachat.low)} – {formatEUR(referenceEstimate.rachat.high)}.
+    </p>
+    {carat.threshold_effect && (
+      <div class="note warn">
+        <span class="label">Effet de seuil</span>
+        <p>{carat.note}</p>
+      </div>
+    )}
+    <GeoBar pageUrl={pageUrl} mdUrl={`${pageUrl}.md`} />
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Tableau croisé couleur × pureté — {carat.label}</h2>
+      <p>Estimation retail moyenne, en euros, taille Excellent.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Pureté \ Couleur</th>
+              {mainColors.map((c) => <th class="num">{c.grade}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {crossTable.map((row) => (
+              <tr>
+                <td>{row.clarity.grade}</td>
+                {row.cells.map((v) => <td class="num">{formatEUR(v)}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="disclaimer-inline">
+        Estimations calculées à partir d'un barème de marché indicatif, non validé par un expert
+        métier — à ne pas utiliser en production.
+      </p>
+
+      <BottomLine>
+        Un diamant de {carat.label} en qualité G/VS1 se rachète indicativement entre{' '}
+        {formatEUR(referenceEstimate.rachat.low)} et {formatEUR(referenceEstimate.rachat.high)} en France (barème d'exemple, {new Date().getFullYear()}).
+      </BottomLine>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Les autres carats</h2>
+      <div class="grid">
+        {carats.filter((c) => c.value !== carat.value).map((c) => (
+          <a class="carat-link" href={`/diamant/carat/${caratSlug(c.value)}/`}>{c.label}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding-top: 2.5rem;
+  }
+  .breadcrumb {
+    font-size: 0.78rem;
+    color: var(--gris-sourd);
+    margin-bottom: 1.5rem;
+  }
+  .breadcrumb a {
+    color: var(--gris-sourd);
+    border-bottom: none;
+  }
+  .chapo {
+    max-width: 60ch;
+    font-size: 1.02rem;
+  }
+  .disclaimer-inline {
+    font-size: 0.78rem;
+    color: var(--gris-sourd);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+    margin-top: 1rem;
+  }
+  .carat-link {
+    display: block;
+    text-align: center;
+    background: var(--noir-carbone);
+    padding: 0.9rem 0.5rem;
+    color: var(--platine);
+    border-bottom: none;
+    font-size: 0.85rem;
+  }
+  @media (max-width: 700px) {
+    .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

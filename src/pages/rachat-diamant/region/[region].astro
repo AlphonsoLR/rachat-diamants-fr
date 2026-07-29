@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import cities from '../../../../data/cities.json';
+
+export function getStaticPaths() {
+  const regions = new Map<string, (typeof cities)[number]['region']>();
+  for (const c of cities) {
+    if (!regions.has(c.region.slug)) regions.set(c.region.slug, c.region);
+  }
+  return [...regions.entries()].map(([slug, region]) => {
+    const regionCities = cities.filter((c) => c.region.slug === slug);
+    const departments = [...new Map(regionCities.map((c) => [c.department.slug, c.department])).values()];
+    return { params: { region: slug }, props: { region, regionCities, departments } };
+  });
+}
+
+const { region, regionCities, departments } = Astro.props;
+const totalPopulation = regionCities.reduce((sum, c) => sum + c.population, 0);
+---
+
+<BaseLayout
+  title={`Rachat de diamant en ${region.name}`}
+  description={`Estimation et rachat de diamants en région ${region.name} : villes et départements couverts.`}
+>
+  <div class="wrap page-head">
+    <nav class="breadcrumb"><a href="/">Accueil</a> › <a href="/rachat-diamant/">Rachat de diamant</a> › {region.name}</nav>
+    <h1>Rachat de diamant — {region.name}</h1>
+    <p class="chapo">
+      {regionCities.length} ville{regionCities.length > 1 ? 's' : ''} couverte{regionCities.length > 1 ? 's' : ''} en région
+      {region.name}, réparties sur {departments.length} département{departments.length > 1 ? 's' : ''},
+      pour une population cumulée d'environ {totalPopulation.toLocaleString('fr-FR')} habitants.
+    </p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Départements</h2>
+      <div class="grid grid-4">
+        {departments.map((d) => (
+          <a class="dep-link" href={`/rachat-diamant/departement/${d.slug}/`}>{d.name} ({d.code})</a>
+        ))}
+      </div>
+
+      <h2>Villes de la région</h2>
+      <div class="grid grid-4">
+        {regionCities.map((c) => (
+          <a class="city-link" href={`/rachat-diamant/${c.slug}/`}>{c.name}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-top: 2.5rem; }
+  .breadcrumb { font-size: 0.78rem; color: var(--gris-sourd); margin-bottom: 1.5rem; }
+  .breadcrumb a { color: var(--gris-sourd); border-bottom: none; }
+  .chapo { max-width: 60ch; font-size: 1.02rem; }
+  h2 { margin-top: 2.5rem; }
+  .grid {
+    display: grid;
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+    margin-top: 1rem;
+  }
+  .grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .dep-link, .city-link {
+    display: block;
+    background: var(--noir-carbone);
+    padding: 0.9rem 1rem;
+    color: var(--platine);
+    border-bottom: none;
+    font-size: 0.88rem;
+  }
+  @media (max-width: 700px) {
+    .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>

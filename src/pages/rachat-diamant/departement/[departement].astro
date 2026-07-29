@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import cities from '../../../../data/cities.json';
+
+export function getStaticPaths() {
+  const departments = new Map<string, (typeof cities)[number]['department']>();
+  for (const c of cities) {
+    if (!departments.has(c.department.slug)) departments.set(c.department.slug, c.department);
+  }
+  return [...departments.entries()].map(([slug, department]) => {
+    const departmentCities = cities.filter((c) => c.department.slug === slug);
+    return { params: { departement: slug }, props: { department, departmentCities } };
+  });
+}
+
+const { department, departmentCities } = Astro.props;
+const totalPopulation = departmentCities.reduce((sum, c) => sum + c.population, 0);
+---
+
+<BaseLayout
+  title={`Rachat de diamant dans le ${department.name} (${department.code})`}
+  description={`Estimation et rachat de diamants dans le département ${department.name} : villes couvertes et repères locaux.`}
+>
+  <div class="wrap page-head">
+    <nav class="breadcrumb"><a href="/">Accueil</a> › <a href="/rachat-diamant/">Rachat de diamant</a> › {department.name}</nav>
+    <h1>Rachat de diamant — {department.name} ({department.code})</h1>
+    <p class="chapo">
+      {departmentCities.length} ville{departmentCities.length > 1 ? 's' : ''} couverte{departmentCities.length > 1 ? 's' : ''} dans
+      le département {department.name}, pour une population cumulée d'environ {totalPopulation.toLocaleString('fr-FR')} habitants.
+    </p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Villes du département</h2>
+      <div class="grid">
+        {departmentCities.map((c) => (
+          <a class="city-link" href={`/rachat-diamant/${c.slug}/`}>{c.name}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-head { padding-top: 2.5rem; }
+  .breadcrumb { font-size: 0.78rem; color: var(--gris-sourd); margin-bottom: 1.5rem; }
+  .breadcrumb a { color: var(--gris-sourd); border-bottom: none; }
+  .chapo { max-width: 60ch; font-size: 1.02rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--filet);
+    border: 1px solid var(--filet);
+    margin-top: 1rem;
+  }
+  .city-link {
+    display: block;
+    background: var(--noir-carbone);
+    padding: 0.9rem 1rem;
+    color: var(--platine);
+    border-bottom: none;
+    font-size: 0.88rem;
+  }
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>

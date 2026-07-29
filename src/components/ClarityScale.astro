@@ -8,6 +8,7 @@ interface Props {
 const { highlight } = Astro.props;
 ---
 
+<div class="scale-wrap">
 <div class="scale">
   {clarity.map((c) => {
     const factor = pricing.facteur_purete[c.slug] ?? 1;
@@ -19,13 +20,18 @@ const { highlight } = Astro.props;
     );
   })}
 </div>
+</div>
 
 <style>
+  .scale-wrap {
+    overflow-x: auto;
+    margin: 1.4rem 0;
+  }
   .scale {
     display: flex;
     border: 1px solid var(--filet);
+    min-width: 420px;
     max-width: var(--mesure);
-    margin: 1.4rem 0;
   }
   .step {
     flex: 1;

@@ -9,6 +9,7 @@ const { highlight } = Astro.props;
 const scale = colors.filter((c) => c.category !== 'fancy');
 ---
 
+<div class="scale-wrap">
 <div class="scale">
   {scale.map((c) => {
     const factor = pricing.facteur_couleur[c.slug] ?? 1;
@@ -20,13 +21,18 @@ const scale = colors.filter((c) => c.category !== 'fancy');
     );
   })}
 </div>
+</div>
 
 <style>
+  .scale-wrap {
+    overflow-x: auto;
+    margin: 1.4rem 0;
+  }
   .scale {
     display: flex;
     border: 1px solid var(--filet);
+    min-width: 480px;
     max-width: var(--mesure);
-    margin: 1.4rem 0;
   }
   .step {
     flex: 1;

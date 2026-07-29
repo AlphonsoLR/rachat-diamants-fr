@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Demande envoyée" description="Votre demande d'estimation a bien été envoyée.">
+  <div class="wrap confirmation">
+    <h1>Merci, votre demande a bien été envoyée</h1>
+    <p>Nous vous répondrons sous 24 à 48 h.</p>
+    <a href="/">Retour à l'accueil</a>
+  </div>
+</BaseLayout>
+
+<style>
+  .confirmation {
+    padding: 80px 22px;
+    text-align: center;
+  }
+  .confirmation h1 {
+    font-size: clamp(24px, 3.5vw, 32px);
+    margin-bottom: 12px;
+  }
+  .confirmation p {
+    color: var(--gris-fume);
+    margin-bottom: 20px;
+  }
+</style>

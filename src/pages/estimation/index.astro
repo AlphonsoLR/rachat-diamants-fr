@@ -1,5 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import shapes from '../../../data/shapes.json';
+import colors from '../../../data/colors.json';
+import clarity from '../../../data/clarity.json';
 ---
 
 <BaseLayout
@@ -9,17 +12,177 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class="wrap page-head">
     <h1>Estimation gratuite</h1>
     <p class="chapo">
-      Formulaire en 4 étapes à construire (lot L7 du brief) : objet possédé, caractéristiques
-      connues, certificat, coordonnées. Anti-spam honeypot + Cloudflare Turnstile, sans reCAPTCHA.
+      Décrivez ce que vous possédez — même approximativement, indiquez « je ne sais pas » sur les
+      champs incertains. Réponse sous 24 à 48 h, sans engagement.
     </p>
-    <div class="note">
-      <span class="label">À faire</span>
-      <p>Formulaire non encore implémenté — placeholder de structure uniquement.</p>
-    </div>
+  </div>
+
+  <div class="wrap">
+    <form action="https://formsubmit.co/contact@newp.fr" method="POST" class="estimation-form">
+      <input type="hidden" name="_subject" value="Nouvelle demande d'estimation — rachat-diamants.fr" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_next" value="https://rachat-diamants.fr/estimation/merci/" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+      <h2>Ce que vous possédez</h2>
+      <div class="grid-2">
+        <label>
+          Type d'objet
+          <select name="Type d'objet" required>
+            <option value="">Sélectionner…</option>
+            <option>Diamant seul (non monté)</option>
+            <option>Bague</option>
+            <option>Solitaire</option>
+            <option>Parure</option>
+            <option>Lot de bijoux</option>
+            <option>Autre</option>
+          </select>
+        </label>
+        <label>
+          Forme (si connue)
+          <select name="Forme">
+            <option value="Je ne sais pas">Je ne sais pas</option>
+            {shapes.map((s) => <option>{s.name}</option>)}
+          </select>
+        </label>
+      </div>
+
+      <h2>Caractéristiques connues</h2>
+      <div class="grid-3">
+        <label>
+          Carat (poids)
+          <input type="text" name="Carat" placeholder="ex. 1.20 ou « je ne sais pas »" />
+        </label>
+        <label>
+          Couleur
+          <select name="Couleur">
+            <option value="Je ne sais pas">Je ne sais pas</option>
+            {colors.map((c) => <option>{c.label}</option>)}
+          </select>
+        </label>
+        <label>
+          Pureté
+          <select name="Pureté">
+            <option value="Je ne sais pas">Je ne sais pas</option>
+            {clarity.map((c) => <option>{c.grade}</option>)}
+          </select>
+        </label>
+      </div>
+
+      <h2>Certificat</h2>
+      <div class="grid-2">
+        <label>
+          Laboratoire de certification
+          <select name="Certificat">
+            <option>Aucun</option>
+            <option>GIA</option>
+            <option>HRD</option>
+            <option>IGI</option>
+            <option>Autre / je ne sais pas</option>
+          </select>
+        </label>
+        <label>
+          Photo du diamant ou du certificat (facultatif, augmente la précision de la réponse)
+          <input type="file" name="attachment" accept="image/*,.pdf" />
+        </label>
+      </div>
+
+      <h2>Vos coordonnées</h2>
+      <div class="grid-2">
+        <label>
+          Nom
+          <input type="text" name="Nom" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="Email" required />
+        </label>
+        <label>
+          Téléphone (facultatif)
+          <input type="tel" name="Téléphone" />
+        </label>
+        <label>
+          Ville
+          <input type="text" name="Ville" />
+        </label>
+      </div>
+
+      <label class="full">
+        Message (facultatif)
+        <textarea name="Message" rows="4" placeholder="Toute précision utile — contexte, urgence, etc."></textarea>
+      </label>
+
+      <p class="reassurance">Sans engagement. Vos coordonnées ne sont utilisées que pour vous répondre.</p>
+      <button type="submit" class="btn">Envoyer ma demande</button>
+    </form>
   </div>
 </BaseLayout>
 
 <style>
   .page-head { padding-top: 2.5rem; }
   .chapo { max-width: 60ch; }
+  .estimation-form {
+    max-width: 760px;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .estimation-form h2 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--platine);
+  }
+  label.full {
+    grid-column: 1 / -1;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid var(--filet-fort);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--eclat);
+  }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .reassurance {
+    font-size: 0.8rem;
+    color: var(--gris-sourd);
+    margin: 0;
+  }
+  .btn {
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 640px) {
+    .grid-2,
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

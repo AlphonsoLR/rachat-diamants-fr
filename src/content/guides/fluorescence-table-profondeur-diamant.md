@@ -17,6 +17,8 @@ Environ un tiers des diamants naturels émettent une lueur (le plus souvent bleu
 - Une fluorescence **forte** peut donner un aspect légèrement laiteux ou huileux à certaines pierres, en particulier sur les couleurs très élevées (D à F) — d'où une décote généralement appliquée par les acheteurs.
 - Paradoxalement, sur des couleurs plus basses (I, J, K), une fluorescence bleue peut légèrement neutraliser une teinte jaunâtre, sans effet négatif notable.
 
+Le diamant n'est pas un cas isolé : la fluorine, la calcite ou la willemite réagissent elles aussi aux ultraviolets, parfois de façon bien plus visible. Ce panorama des <a href="https://expo-mineraux-nimes.fr/mineraux-fluorescents" target="_blank" rel="noopener">minéraux qui brillent sous lampe UV</a> explique la différence entre UV longs et UV courts, et les précautions à prendre pour les observer.
+
 ## La table et la profondeur
 
 Ces deux mesures, exprimées en pourcentage du diamètre de la pierre, conditionnent directement son jeu de lumière :

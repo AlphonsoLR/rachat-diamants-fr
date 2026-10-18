@@ -15,7 +15,21 @@ export const CitySchema = z.object({
     .object({ name: z.string(), city: z.string(), postal: z.string(), distance_km: z.number() })
     .nullable(),
   local_merchants: z.array(
-    z.object({ name: z.string(), address: z.string(), source: z.string() })
+    z.object({
+      name: z.string(),
+      address: z.string(),
+      source: z.string(),
+      street: z.string().optional(),
+      postal: z.string().optional(),
+      locality: z.string().optional(),
+      phone: z.string().optional(),
+      phone_e164: z.string().optional(),
+      hours: z.string().optional(),
+      gbp: z.string().url().optional(),
+      lat: z.number().optional(),
+      lng: z.number().optional(),
+      rating_note: z.string().optional(),
+    })
   ),
   nearby_cities: z.array(z.object({ slug: z.string(), name: z.string(), km: z.number() })),
   content_seed: z.number().int(),

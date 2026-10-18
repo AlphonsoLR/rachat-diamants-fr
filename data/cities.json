@@ -1019,7 +1019,23 @@
     "lng": 0.1312,
     "tier": 1,
     "nearest_partner": null,
-    "local_merchants": [],
+    "local_merchants": [
+      {
+        "name": "Maison Or et Bijoux - Le Havre",
+        "address": "46 place de l'Hôtel de Ville, 76600 Le Havre",
+        "street": "46 place de l'Hôtel de Ville",
+        "postal": "76600",
+        "locality": "Le Havre",
+        "phone": "02 35 55 00 37",
+        "phone_e164": "+33235550037",
+        "hours": "du lundi au samedi, 9h – 19h non-stop ; dimanche sur rendez-vous",
+        "gbp": "https://maps.google.com/?cid=15794313756841541299",
+        "lat": 49.4927567,
+        "lng": 0.109474,
+        "rating_note": "5,0 sur 5 pour 1 avis Google (relevé le 16/10/2026, fiche créée en octobre 2026)",
+        "source": "Fiche Google Business Profile vérifiée le 18/10/2026"
+      }
+    ],
     "nearby_cities": [
       {
         "slug": "montivilliers",

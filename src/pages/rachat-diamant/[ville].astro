@@ -23,6 +23,22 @@ export function getStaticPaths() {
 }
 
 const { city } = Astro.props;
+// Préposition : « au Havre », « aux Sables-d'Olonne », sinon « à <ville> ».
+const aCity = city.name.startsWith('Le ') ? `au ${city.name.slice(3)}` : city.name.startsWith('Les ') ? `aux ${city.name.slice(4)}` : `à ${city.name}`;
+const ACity = aCity.charAt(0).toUpperCase() + aCity.slice(1);
+const deCity = city.name.startsWith('Le ') ? `du ${city.name.slice(3)}` : city.name.startsWith('Les ') ? `des ${city.name.slice(4)}` : `de ${city.name}`;
+const merchants = city.local_merchants ?? [];
+// Pas d'aggregateRating ni d'url de site : citation NAP + fiche Google uniquement.
+const merchantsLd = merchants.filter((m) => m.gbp).map((m) => ({
+  '@context': 'https://schema.org',
+  '@type': 'JewelryStore',
+  name: m.name,
+  ...(m.phone_e164 ? { telephone: m.phone_e164 } : {}),
+  address: { '@type': 'PostalAddress', streetAddress: m.street ?? m.address, postalCode: m.postal, addressLocality: m.locality ?? city.name, addressCountry: 'FR' },
+  ...(m.lat ? { geo: { '@type': 'GeoCoordinates', latitude: m.lat, longitude: m.lng } } : {}),
+  hasMap: m.gbp,
+  sameAs: [m.gbp],
+}));
 const pageUrl = `https://rachat-diamants.fr/rachat-diamant/${city.slug}/`;
 const generatedSlugs = new Set(cities.filter((c) => c.tier <= 3).map((c) => c.slug));
 
@@ -42,8 +58,8 @@ const oneCaratEstimate = estimate({ carat: 1.0, colorSlug: 'g', claritySlug: 'vs
 const oneCaratRachatRange = formatRange(oneCaratEstimate.rachat);
 
 const faqItems = [
-  { q: `Combien vaut mon diamant à ${city.name} ?`, a: `Le calcul dépend du carat, de la couleur, de la pureté et de la taille. Utilisez notre estimation gratuite pour une fourchette personnalisée.` },
-  { q: `Où faire estimer un diamant à ${city.name} ?`, a: `Aucun comptoir n'est encore recensé précisément pour ${city.name} sur ce site — nous ne citons pas d'enseigne tant qu'elle n'a pas été vérifiée individuellement.` },
+  { q: `Combien vaut mon diamant ${aCity} ?`, a: `Le calcul dépend du carat, de la couleur, de la pureté et de la taille. Utilisez notre estimation gratuite pour une fourchette personnalisée.` },
+  { q: `Où faire estimer un diamant ${aCity} ?`, a: merchants.length ? `Nous recensons ${merchants.length > 1 ? 'les comptoirs suivants' : 'un comptoir'} ${aCity} : ${merchants.map((m) => `${m.name}, ${m.address}${m.phone ? ` (${m.phone})` : ''}`).join(' ; ')}. Demandez toujours une estimation écrite et un second avis avant de vendre.` : `Aucun comptoir n'est encore recensé précisément pour ${city.name} sur ce site — nous ne citons pas d'enseigne tant qu'elle n'a pas été vérifiée individuellement.` },
   { q: 'Faut-il un certificat pour vendre son diamant ?', a: "Un certificat (GIA, HRD, IGI) n'est pas obligatoire mais augmente sensiblement la confiance de l'acheteur et donc le prix proposé." },
   { q: 'Quelle fiscalité sur la vente d\'un diamant en France ?', a: "Une taxe forfaitaire ou un régime de plus-value optionnel peuvent s'appliquer selon les cas — voir notre guide fiscalité (chiffres à confirmer auprès d'un professionnel)." },
   { q: 'Un diamant de synthèse a-t-il une valeur de rachat ?', a: "Oui, mais nettement inférieure à un diamant naturel équivalent — voir notre page dédiée naturel/synthèse." },
@@ -73,8 +89,8 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`Rachat de diamant à ${city.name} — Prix, barème & estimation gratuite`}
-  description={`Combien vaut votre diamant à ${city.name} (${city.department.name}) ? Barème de rachat par carat, couleur et pureté. Estimation gratuite sous 24 h, sans engagement.`}
+  title={`Rachat de diamant ${aCity} — Prix, barème & estimation gratuite`}
+  description={`Combien vaut votre diamant ${aCity} (${city.department.name}) ? Barème de rachat par carat, couleur et pureté. Estimation gratuite sous 24 h, sans engagement.`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
@@ -86,10 +102,10 @@ const breadcrumbSchema = {
     </nav>
     <div class="head-grid">
       <div>
-        <h1>Rachat, achat et vente de diamants à {city.name}</h1>
+        <h1>Rachat, achat et vente de diamants {aCity}</h1>
         <p class="authority">Barème révisé le {pricingMatrix.last_review} · Lecture 6 min</p>
         <p class="chapo">
-          À {city.name} ({city.department.name}), la valeur de rachat d'un diamant dépend d'abord de
+          {ACity} ({city.department.name}), la valeur de rachat d'un diamant dépend d'abord de
           son certificat, puis de ses 4C. Voici nos fourchettes de référence et la méthode complète.
         </p>
         <div class="cta-row">
@@ -105,9 +121,9 @@ const breadcrumbSchema = {
     <div class="en-bref">
       <span class="label">En bref</span>
       <ul>
-        <li>Un diamant 1 carat G/VS1 se rachète indicativement entre <strong>{oneCaratRachatRange}</strong> à {city.name}.</li>
-        <li>{city.population.toLocaleString('fr-FR')} habitants à {city.name} ({city.department.name}, {city.region.name}).</li>
-        <li>Aucun comptoir partenaire recensé pour l'instant à {city.name} — liste en cours de constitution.</li>
+        <li>Un diamant 1 carat G/VS1 se rachète indicativement entre <strong>{oneCaratRachatRange}</strong> {aCity}.</li>
+        <li>{city.population.toLocaleString('fr-FR')} habitants {aCity} ({city.department.name}, {city.region.name}).</li>
+        <li>{merchants.length ? `${merchants.length} comptoir${merchants.length > 1 ? 's' : ''} recensé${merchants.length > 1 ? 's' : ''} ${aCity} (voir plus bas), sans classement.` : `Aucun comptoir partenaire recensé pour l'instant ${aCity} — liste en cours de constitution.`}</li>
         <li>Délai indicatif de rachat : 48 h après réception et vérification du diamant.</li>
       </ul>
     </div>
@@ -115,7 +131,7 @@ const breadcrumbSchema = {
 
   <section id="bareme">
     <div class="wrap">
-      <h2>Barème de rachat à {city.name}</h2>
+      <h2>Barème de rachat {aCity}</h2>
       <p>Fourchettes en qualité de référence G / VS1 / taille Excellent.</p>
       <PriceTable rows={priceRows} />
       <p class="disclaimer-inline">
@@ -145,7 +161,7 @@ const breadcrumbSchema = {
       <ClarityScale highlight="vs1" />
 
       <BottomLine>
-        À {city.name}, la valeur de rachat dépend d'abord du certificat, puis du couple
+        {ACity}, la valeur de rachat dépend d'abord du certificat, puis du couple
         couleur/pureté : un diamant G/VS1 certifié GIA se rachète nettement au-dessus d'une pierre
         équivalente sans certificat.
       </BottomLine>
@@ -155,7 +171,7 @@ const breadcrumbSchema = {
   <section>
     <div class="wrap two-col">
       <div>
-        <h2>Vendre à {city.name}</h2>
+        <h2>Vendre {aCity}</h2>
         <ol>
           <li>Estimation en ligne gratuite (photos + caractéristiques connues)</li>
           <li>Envoi assuré ou rendez-vous en agence partenaire</li>
@@ -164,7 +180,7 @@ const breadcrumbSchema = {
         </ol>
       </div>
       <div>
-        <h2>Acheter à {city.name}</h2>
+        <h2>Acheter {aCity}</h2>
         <p>
           Un diamant certifié GIA, HRD ou IGI, accompagné d'une garantie de rachat, reste le choix
           le plus sûr pour un premier achat.
@@ -185,11 +201,31 @@ const breadcrumbSchema = {
 
   <section>
     <div class="wrap">
-      <h2>Experts &amp; comptoirs à {city.name}</h2>
-      <p class="disclaimer-inline">
-        Aucun comptoir n'est encore recensé individuellement pour {city.name}. Nous ne citons pas
-        d'enseigne tant qu'elle n'a pas été vérifiée (liste indicative, sans classement, à venir).
-      </p>
+      <h2>Experts &amp; comptoirs {aCity}</h2>
+      {merchants.length ? (
+        <>
+          {merchants.map((m) => (
+            <div class="merchant-card">
+              <p><strong>{m.name}</strong><br />
+                {m.address}
+                {m.phone && (<><br />Téléphone : <a href={`tel:${m.phone_e164 ?? m.phone}`}>{m.phone}</a></>)}
+                {m.hours && (<><br />Horaires : {m.hours}</>)}
+              </p>
+              {m.gbp && <p><a href={m.gbp} target="_blank" rel="noopener">Voir l'itinéraire et les avis sur Google Maps</a>{m.rating_note && <> · {m.rating_note}</>}</p>}
+            </div>
+          ))}
+          <p class="disclaimer-inline">
+            Liste indicative, sans classement ni partenariat commercial : nous ne citons une enseigne qu'après
+            vérification de son adresse. Rachat-diamants.fr n'intervient pas dans la transaction.
+          </p>
+          {merchantsLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+        </>
+      ) : (
+        <p class="disclaimer-inline">
+          Aucun comptoir n'est encore recensé individuellement pour {city.name}. Nous ne citons pas
+          d'enseigne tant qu'elle n'a pas été vérifiée (liste indicative, sans classement, à venir).
+        </p>
+      )}
 
       <h3>Ce qu'il faut vérifier avant de vendre</h3>
       <ul>
@@ -201,7 +237,7 @@ const breadcrumbSchema = {
       </ul>
 
       <BottomLine>
-        À {city.name}, comme partout en France, obtenir un second avis avant de vendre reste la
+        {ACity}, comme partout en France, obtenir un second avis avant de vendre reste la
         meilleure protection contre une offre en dessous du marché.
       </BottomLine>
     </div>
@@ -221,7 +257,7 @@ const breadcrumbSchema = {
 
   <section>
     <div class="wrap">
-      <h2>Autour de {city.name}</h2>
+      <h2>Autour {deCity}</h2>
       <p>
         Département : <a href={`/rachat-diamant/departement/${city.department.slug}/`}>{city.department.name}</a> ·
         Région : <a href={`/rachat-diamant/region/${city.region.slug}/`}>{city.region.name}</a>
@@ -247,6 +283,12 @@ const breadcrumbSchema = {
 </BaseLayout>
 
 <style>
+  .merchant-card {
+    border: 1px solid rgba(127, 127, 127, 0.25);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
   .page-head {
     padding-top: 2.5rem;
   }
